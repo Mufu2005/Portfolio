@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "JYx9M9mfgVI=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\FrontEnd.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mufum\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\microsoft.visualstudio.azure.containers.tools.targets.1.21.0.nupkg.sha512"
+  ],
+  "logs": []
+}
