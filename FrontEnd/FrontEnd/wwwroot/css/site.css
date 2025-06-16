@@ -18,5 +18,36 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: #22223B;
+    background: url('../Assets/home page.jpg');
+    background-size: cover;
+    
 }
+
+.space-mono-regular {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.space-mono-bold {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.space-mono-regular-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.Ntext {
+    margin-top: 35vh;
+    margin-left: vh;
+    font-size: 9vh;
+    font-family: Cambria;
+    color: #C5172E;
+}
+
