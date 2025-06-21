@@ -2,91 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GTA VI Style Scroll Fixed Text</title>
+  <title>Scroll Test</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+      body {
+        margin: 0;
+        height: 300vh;
+        background: black;
+        background: url('../FrontEnd/FrontEnd/wwwroot/Assets/home page.jpg') no-repeat center center;
+        background-size: cover;
+      }
 
-    html, body {
-      height: 100%;
-      font-family: Arial, sans-serif;
-      scroll-behavior: smooth;
-    }
+      .intro-text {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        color: white;
+        font-size: 5rem;
+        transition: none;
+        opacity: 1;
+        pointer-events: none;
+      }
 
-    body {
-      background: black;
-      background: url('../FrontEnd/FrontEnd/wwwroot/Assets/home\ page.jpg') no-repeat center center;
-    }
-
-    .intro-section {
-      height: 100vh;
-      background: black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-    }
-
-    .intro-text {
-      position: fixed;
-      color: white;
-      font-size: 5rem;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      transition: all 0.5s ease;
-      z-index: 10;
-    }
-
-    .intro-text.shrink {
-      position: fixed;
-      top: 50;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 10rem;
-    }
-
-    .main-content {
-      min-height: 200vh;
-      
-      background-size: cover;
-      color: white;
-      padding: 100px 40px;
-    }
-
-    .main-content h1 {
-      display: inline-block;
-      padding: 10px;
-    }
+      .main-content {
+        min-height: 200vh;
+        color: white;
+        padding: 100px 40px;
+        position: relative;
+        z-index: 1;
+      }
+      .intro-section {
+        height: 125vh;
+        background: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
   </style>
 </head>
 <body>
-
-  <!-- Intro section just for space to scroll through -->
   <div class="intro-section"></div>
-
-  <!-- Always-visible text that animates -->
   <div class="intro-text" id="introText">WELCOME</div>
-
-  <!-- Main page content -->
   <div class="main-content">
     <h1>Welcome to Vice City</h1>
     <p>Here's where your journey begins. Scroll through to discover more...</p>
   </div>
 
   <script>
-    const introText = document.getElementById('introText');
+    document.addEventListener("DOMContentLoaded", () => {
+      const introText = document.getElementById('introText');
 
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 100) {
-        introText.classList.add('shrink');
-      } else {
-        introText.classList.remove('shrink');
-      }
+      window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+        const maxScroll = 300;
+
+        const progress = Math.min(scrollY / maxScroll, 1);
+        const scale = 1 + progress * 3;
+        const opacity = 1 - progress;
+
+        introText.style.transform = `translate(-50%, -50%) scale(${scale})`;
+        introText.style.opacity = opacity;
+      });
     });
   </script>
 
