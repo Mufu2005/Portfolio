@@ -35,5 +35,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
         lastScrollY = scrollY;
+
+
     });
+
+    const connectSection = document.querySelector('.connect-section');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                connectSection.classList.remove('invisible');
+                connectSection.classList.add('visible');
+            }
+        });
+    }, {
+        threshold: 0.3,
+    });
+
+    if (connectSection) {
+        observer.observe(connectSection);
+    }
+
+    if (entry.isIntersecting) {
+        console.log("Connect section is now visible");
+        connectSection.classList.remove('invisible');
+        connectSection.classList.add('visible');
+    }
+    
 });
+
+
+

@@ -25,6 +25,10 @@ body {
     
 }
 
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
 .space-mono-regular {
     font-family: "Space Mono", monospace;
     font-weight: 400;
@@ -89,7 +93,7 @@ body {
         display: inline-block;
     }
         .navbar-nav .nav-link.space-mono-regular:hover {
-            background: rgba(255, 255, 255);
+            background: rgba(255, 255, 255, 0.25);
             color: #C5172E !important;
         }
 
@@ -121,7 +125,7 @@ body {
 }
 
 .main-content {
-    min-height: 200vh;
+    min-height: 120vh;
     color: white;
     padding: 100px 40px;
     position: relative;
@@ -138,3 +142,70 @@ body {
     font-family: Cambria;
     color: #C5172E;
 }
+
+.frosted-box {
+    background: rgba(255, 255, 255, 0.1); /* semi-transparent */
+    backdrop-filter: blur(10px); /* blur behind the element */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border-radius: 15px; /* rounded corners */
+    padding: 20px; /* space inside the box */
+    color: white; /* ensure text is visible */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    max-height: 80vh;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+}
+
+    .frosted-box::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Edge */
+    }
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .glass-card:hover {
+        transform: scale(1.02);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+    }
+
+.connect-button {
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+    .connect-button:hover {
+        background: rgba(255, 255, 255, 0.25);
+        color: #C5172E;
+        transform: translateY(-2px);
+    }
+
+.invisible {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
