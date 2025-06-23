@@ -64,5 +64,70 @@ document.addEventListener("DOMContentLoaded", () => {
     
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const container = document.querySelector('.background-anim-container');
+    const codeSnippets = [
+        `if (user.isLoggedIn) {\n  showDashboard();\n}`,
+        `const api = await fetch('/api/flights');`,
+        `<div class="frosted-box">Hello World</div>`,
+        `public IActionResult Index() => View();`,
+        `let progress = scrollY / maxScroll;`
+    ];
+
+    const numShapes = 10;
+    const shapeTypes = ['circle', 'square', 'triangle', 'pentagon'];
+    const verticalSpacing = window.innerHeight / numShapes;
+
+    for (let i = 0; i < numShapes; i++) {
+        const shape = document.createElement('div');
+        const isCode = Math.random() > 0.7;
+
+        shape.classList.add('shape');
+
+        if (isCode) {
+            shape.classList.add('code-snippet');
+            shape.textContent = codeSnippets[Math.floor(Math.random() * codeSnippets.length)];
+        } else {
+            const type = shapeTypes[Math.floor(Math.random() * shapeTypes.length)];
+            shape.classList.add(type);
+
+            // Apply size to all shapes including triangle
+            const size = 100 + Math.random() * 200;
+            shape.style.width = `${size}px`;
+            shape.style.height = `${size}px`;
+        }
+
+        // Positioning
+        const topOffset = i * verticalSpacing + Math.random() * 40;
+        shape.style.top = `${topOffset}px`;
+        shape.style.left = `${Math.random() * 100}vw`;
+
+        // Animation duration
+        const duration = 20 + Math.random() * 40;
+        shape.style.animationDuration = `${duration}s`;
+
+        // Random rotation
+        shape.style.transform = `rotate(${Math.random() * 360}deg)`;
+
+        container.appendChild(shape);
+    }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const items = document.querySelectorAll('.timeline-item');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, {
+        threshold: 0.2
+    });
+
+    items.forEach(item => observer.observe(item));
+});
+
 
 

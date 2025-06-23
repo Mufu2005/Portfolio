@@ -25,7 +25,7 @@
       }
 
       .main-content {
-        min-height: 200vh;
+        min-height: 1000vh;
         color: white;
         padding: 100px 40px;
         position: relative;
@@ -39,9 +39,67 @@
         align-items: center;
         position: relative;
       }
+
+      .background-anim-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.shape {
+  position: absolute;
+  border: 5px solid rgba(255, 255, 255, 0.196);
+  background: none;
+  opacity: 1;
+  animation: floatShape linear infinite;
+  pointer-events: none;
+}
+
+.shape.circle {
+  border-radius: 50%;
+}
+
+.shape.square {
+  border-radius: 10px;
+}
+
+.shape.triangle {
+   width: 100px;
+  height: 100px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  background: none;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.shape.code-snippet {
+  border: none;
+  background: none;
+  color: rgba(255, 255, 255, 0.29);
+  font-family: monospace;
+  white-space: pre;
+  font-size: 1.2rem;
+}
+
+@keyframes floatShape {
+  from {
+    transform: translateY(0) rotate(0deg);
+  }
+  to {
+    transform: translateY(-120vh) rotate(360deg);
+  }
+}
+
   </style>
 </head>
 <body>
+  <div class="background-anim-container">
+  <!-- Shapes will be generated dynamically via JS -->
+</div>
   <div class="intro-section"></div>
   <div class="intro-text" id="introText">WELCOME</div>
   <div class="main-content">
@@ -65,6 +123,55 @@
         introText.style.opacity = opacity;
       });
     });
+
+   document.addEventListener("DOMContentLoaded", () => {
+    const container = document.querySelector('.background-anim-container');
+    const codeSnippets = [
+        `if (user.isLoggedIn) {\n  showDashboard();\n}`,
+        `const api = await fetch('/api/flights');`,
+        `<div class="frosted-box">Hello World</div>`,
+        `public IActionResult Index() => View();`,
+        `let progress = scrollY / maxScroll;`
+    ];
+
+    const numShapes = 8;
+    const shapeTypes = ['circle', 'square', 'triangle'];
+    const verticalSpacing = window.innerHeight / numShapes;
+
+for (let i = 0; i < numShapes; i++) {
+    const shape = document.createElement('div');
+    const isCode = Math.random() > 0.7;
+
+    shape.classList.add('shape');
+
+    if (isCode) {
+        shape.classList.add('code-snippet');
+        shape.textContent = codeSnippets[Math.floor(Math.random() * codeSnippets.length)];
+    } else {
+        const type = shapeTypes[Math.floor(Math.random() * shapeTypes.length)];
+        shape.classList.add(type);
+
+        // Apply size to all shapes including triangle
+        const size = 100 + Math.random() * 200;
+        shape.style.width = `${size}px`;
+        shape.style.height = `${size}px`;
+    }
+
+    // Positioning
+    const topOffset = i * verticalSpacing + Math.random() * 40;
+    shape.style.top = `${topOffset}px`;
+    shape.style.left = `${Math.random() * 100}vw`;
+
+    // Animation duration
+    const duration = 20 + Math.random() * 40;
+    shape.style.animationDuration = `${duration}s`;
+
+    // Random rotation
+    shape.style.transform = `rotate(${Math.random() * 360}deg)`;
+
+    container.appendChild(shape);
+}
+});
   </script>
 
 </body>
