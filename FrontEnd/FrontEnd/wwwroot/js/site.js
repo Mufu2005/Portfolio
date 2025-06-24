@@ -129,5 +129,20 @@ document.addEventListener("DOMContentLoaded", () => {
     items.forEach(item => observer.observe(item));
 });
 
+let lastKnownScroll = 0;
+let ticking = false;
+
+window.addEventListener('scroll', function () {
+    lastKnownScroll = window.scrollY;
+    if (!ticking) {
+        window.requestAnimationFrame(function () {
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrolled = (lastKnownScroll / docHeight) * 100;
+            document.getElementById('progress').style.width = `${scrolled}%`;
+            ticking = false;
+        });
+        ticking = true;
+    }
+});
 
 

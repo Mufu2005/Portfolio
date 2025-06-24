@@ -1,4 +1,5 @@
 wwwroot\Assets\home page.jpg
+wwwroot\Assets\Me.jpg
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\site.js

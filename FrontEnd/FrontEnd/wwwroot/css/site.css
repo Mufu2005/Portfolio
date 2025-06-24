@@ -19,10 +19,17 @@ html {
 
 body {
     margin-bottom: 60px;
-    background-color: #22223B;
     background-color: black;
     background-size: cover;
     
+}
+
+.fullscreen-center {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* or any background you like */
+    padding: 20px;
 }
 
     body::-webkit-scrollbar {
@@ -123,7 +130,7 @@ body {
 
 .intro-section {
     height: 100vh;
-    background: black;
+    background: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -335,5 +342,25 @@ body {
 .timeline-item.right .timeline-content {
     margin-left: 30px;
     text-align: left;
+}
+
+button.frosted-box {
+    padding: 4px;
+    color: white;
+    transition: 0.3s ease;
+}
+
+button.frosted-box:hover {
+    color: #C5172E;
+}
+
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background: linear-gradient(to right, #4ade80, #22d3ee);
+    width: 0%;
+    z-index: 1000;
 }
 

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scroll Welcome Animation</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #0f172a;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow-x: hidden;
+    }
+
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 5px;
+      background: linear-gradient(to right, #4ade80, #22d3ee);
+      width: 0%;
+      z-index: 1000;
+    }
+
+    .spacer {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .welcome-container {
+      display: flex;
+      gap: 0.3em;
+      font-size: 5rem;
+      opacity: 0;
+    }
+
+    .letter {
+      opacity: 0;
+      transform: translateY(60px);
+      display: inline-block;
+    }
+
+    .parallax-bg {
+      background: linear-gradient(120deg, #1e293b 0%, #334155 100%);
+      background-attachment: fixed;
+      background-size: cover;
+      padding: 100px 0;
+    }
+
+    svg {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      top: 10%;
+      right: 10%;
+    }
+
+    path {
+      stroke: #38bdf8;
+      stroke-width: 3;
+      fill: none;
+      stroke-dasharray: 250;
+      stroke-dashoffset: 250;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="progress-bar" id="progress"></div>
+
+  <div class="spacer">
+    <h2>Scroll down to be greeted in style...</h2>
+  </div>
+
+  <div class="parallax-bg">
+    <section id="welcome-section">
+      <div class="welcome-container" id="welcome">
+        <span class="letter">W</span>
+        <span class="letter">E</span>
+        <span class="letter">L</span>
+        <span class="letter">C</span>
+        <span class="letter">O</span>
+        <span class="letter">M</span>
+        <span class="letter">E</span>
+      </div>
+
+      <svg viewBox="0 0 100 100">
+        <path d="M10,90 Q50,10 90,90" id="spark-path" />
+      </svg>
+    </section>
+  </div>
+
+  <div class="spacer"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script>
+    // Scroll-triggered animation
+    const welcome = document.querySelector('#welcome');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          anime({
+            targets: '.letter',
+            opacity: [0, 1],
+            translateY: [60, 0],
+            easing: 'easeOutBounce',
+            duration: 1200,
+            delay: anime.stagger(150)
+          });
+
+          anime({
+            targets: '#spark-path',
+            strokeDashoffset: [anime.setDashoffset, 0],
+            easing: 'easeInOutSine',
+            duration: 2000,
+            delay: 500
+          });
+
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    observer.observe(document.querySelector('#welcome-section'));
+
+    // Scroll progress bar
+    window.addEventListener('scroll', () => {
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrolled = (window.scrollY / docHeight) * 100;
+      document.getElementById('progress').style.width = `${scrolled}%`;
+    });
+  </script>
+</body>
+</html>
