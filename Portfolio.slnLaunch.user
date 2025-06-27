@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "FrontEnd\\FrontEnd\\FrontEnd.csproj",
+        "Action": "StartWithoutDebugging",
+        "DebugTarget": "http"
+      },
+      {
+        "Path": "Services\\AdminService\\AdminService.csproj",
+        "Action": "StartWithoutDebugging",
+        "DebugTarget": "http"
+      }
+    ]
+  }
+]
