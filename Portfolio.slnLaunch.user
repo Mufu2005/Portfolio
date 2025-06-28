@@ -4,12 +4,12 @@
     "Projects": [
       {
         "Path": "FrontEnd\\FrontEnd\\FrontEnd.csproj",
-        "Action": "StartWithoutDebugging",
+        "Action": "Start",
         "DebugTarget": "http"
       },
       {
         "Path": "Services\\AdminService\\AdminService.csproj",
-        "Action": "StartWithoutDebugging",
+        "Action": "Start",
         "DebugTarget": "http"
       }
     ]

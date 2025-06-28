@@ -9,10 +9,10 @@ namespace AdminService.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class LoginController : Controller
+    public class AuthContoller : Controller
     {
         private readonly ApplicationDbContext _context;
-        public LoginController(ApplicationDbContext context)
+        public AuthContoller(ApplicationDbContext context)
         {
             this._context = context;
 
@@ -91,7 +91,7 @@ namespace AdminService.Controllers
             return Ok();
         }
 
-        [HttpGet("login")]
+        [HttpPost("login")]
         [AllowAnonymous]
         public async Task<IActionResult> Login([FromBody] LoginDto dto)
         {
@@ -102,6 +102,23 @@ namespace AdminService.Controllers
             }
 
             return Ok();
+        }
+
+        [HttpPost("update")]
+        [AllowAnonymous]
+        public async Task<IActionResult> Update([FromBody] UpdateDto dto)
+        {
+            var user = await _context.LoginModels.SingleOrDefaultAsync(x => x.Username == dto.Username);
+            if(user == null || user.Password != dto.Password)
+            {
+                return Unauthorized("Invalid Credentials");
+            }
+
+            user.Username = dto.newUsername;
+            user.Password = dto.newPassword;
+            await _context.SaveChangesAsync();
+            return Ok();
+            
         }
     }
 }

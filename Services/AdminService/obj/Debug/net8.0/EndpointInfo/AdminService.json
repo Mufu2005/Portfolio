@@ -5,10 +5,10 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Login": {
+    "/api/AuthContoller": {
       "get": {
         "tags": [
-          "Login"
+          "AuthContoller"
         ],
         "responses": {
           "200": {
@@ -18,7 +18,7 @@
       },
       "post": {
         "tags": [
-          "Login"
+          "AuthContoller"
         ],
         "requestBody": {
           "content": {
@@ -46,10 +46,10 @@
         }
       }
     },
-    "/api/Login/{id}": {
+    "/api/AuthContoller/{id}": {
       "get": {
         "tags": [
-          "Login"
+          "AuthContoller"
         ],
         "parameters": [
           {
@@ -70,7 +70,7 @@
       },
       "put": {
         "tags": [
-          "Login"
+          "AuthContoller"
         ],
         "parameters": [
           {
@@ -110,7 +110,7 @@
       },
       "delete": {
         "tags": [
-          "Login"
+          "AuthContoller"
         ],
         "parameters": [
           {
@@ -130,10 +130,10 @@
         }
       }
     },
-    "/api/Login/login": {
-      "get": {
+    "/api/AuthContoller/login": {
+      "post": {
         "tags": [
-          "Login"
+          "AuthContoller"
         ],
         "requestBody": {
           "content": {
@@ -150,6 +150,37 @@
             "application/*+json": {
               "schema": {
                 "$ref": "#/components/schemas/LoginDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/AuthContoller/update": {
+      "post": {
+        "tags": [
+          "AuthContoller"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateDto"
               }
             }
           }
@@ -214,6 +245,34 @@
             "nullable": true
           },
           "password": {
+            "minLength": 1,
+            "type": "string",
+            "format": "password"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateDto": {
+        "required": [
+          "newPassword",
+          "password"
+        ],
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "minLength": 1,
+            "type": "string",
+            "format": "password"
+          },
+          "newUsername": {
+            "type": "string",
+            "nullable": true
+          },
+          "newPassword": {
             "minLength": 1,
             "type": "string",
             "format": "password"

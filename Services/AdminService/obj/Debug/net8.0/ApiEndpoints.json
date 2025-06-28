@@ -1,8 +1,8 @@
 [
   {
-    "ContainingType": "AdminService.Controllers.LoginController",
+    "ContainingType": "AdminService.Controllers.AuthContoller",
     "Method": "GetCredentials",
-    "RelativePath": "api/Login",
+    "RelativePath": "api/AuthContoller",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -10,9 +10,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AdminService.Controllers.LoginController",
+    "ContainingType": "AdminService.Controllers.AuthContoller",
     "Method": "PostCredentials",
-    "RelativePath": "api/Login",
+    "RelativePath": "api/AuthContoller",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -26,9 +26,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AdminService.Controllers.LoginController",
+    "ContainingType": "AdminService.Controllers.AuthContoller",
     "Method": "GetUserById",
-    "RelativePath": "api/Login/{id}",
+    "RelativePath": "api/AuthContoller/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -42,9 +42,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AdminService.Controllers.LoginController",
+    "ContainingType": "AdminService.Controllers.AuthContoller",
     "Method": "UpdateUser",
-    "RelativePath": "api/Login/{id}",
+    "RelativePath": "api/AuthContoller/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -63,9 +63,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AdminService.Controllers.LoginController",
+    "ContainingType": "AdminService.Controllers.AuthContoller",
     "Method": "DeleteUser",
-    "RelativePath": "api/Login/{id}",
+    "RelativePath": "api/AuthContoller/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -79,16 +79,32 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AdminService.Controllers.LoginController",
+    "ContainingType": "AdminService.Controllers.AuthContoller",
     "Method": "Login",
-    "RelativePath": "api/Login/login",
-    "HttpMethod": "GET",
+    "RelativePath": "api/AuthContoller/login",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "dto",
         "Type": "AdminService.Models.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AdminService.Controllers.AuthContoller",
+    "Method": "Update",
+    "RelativePath": "api/AuthContoller/update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "AdminService.Models.UpdateDto",
         "IsRequired": true
       }
     ],

@@ -4,6 +4,15 @@
 @{
 }
 
+@model FrontEnd.Models.LoginModel
+
+@if (TempData["LoginError"] != null)
+{
+    <script>
+        alert('@TempData["LoginError"]');
+    </script>
+}
+
 <section class="container my-5">
     <div class="background-anim-container">
         <!-- Shapes will be generated dynamically via JS -->
@@ -14,17 +23,17 @@
     <div class="fullscreen-center">
     <h1 class="mb-4 space-mono-regular text-center">Welcome Back</h1>
 
-    <form class="w-50 mx-auto">
+    <form class="w-50 mx-auto" asp-action="Login" method="post">
         <!-- Username Field -->
         <div class="mb-3">
             <label for="Username" class="form-label space-mono-regular green">Username</label>
-            <input type="text" id="Username" name="Username" class="form-control" placeholder="Enter your Username" required />
+            <input type="text" id="Username" name="Username" class="form-control" placeholder="Enter your Username" required asp-for="Username" />
         </div>
 
         <!-- Password Field -->
         <div class="mb-3">
             <label for="password" class="form-label space-mono-regular green">Password</label>
-            <input type="password" id="password" name="Password" class="form-control" placeholder="Enter your password" required />
+            <input type="password" id="password" name="Password" class="form-control" placeholder="Enter your password" required asp-for="Password"/>
         </div>
 
         <!-- Submit Button -->
@@ -34,5 +43,8 @@
             </button>
         </div>
     </form>
+        <div class="text-end">
+            <a class="space-mono-regular green" asp-controller="Admin" asp-action="Update">Update</a>
+        </div>
     </div>
 </section>

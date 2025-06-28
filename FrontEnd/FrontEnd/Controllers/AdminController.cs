@@ -25,10 +25,10 @@ namespace FrontEnd.Controllers
         
         public async Task<IActionResult> Login(LoginModel model)
         {
-            var response = await _client.PostAsJsonAsync("api/login", model);
+            var response = await _client.PostAsJsonAsync("api/AuthContoller/login", model);
             if (!response.IsSuccessStatusCode)
             {
-                ModelState.AddModelError("", "LoginFailed");
+                TempData["LoginError"] = "Invalid username or password.";
                 return View(model);
             }
 
@@ -37,6 +37,30 @@ namespace FrontEnd.Controllers
 
         }
 
+        public IActionResult Update()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Update(LoginModel model, String NewUsername, String NewPass)
+        {
+            var dto = new AdminService.Models.UpdateDto
+            {
+                Username = model.Username,
+                Password = model.Password,
+                newPassword = NewPass,
+                newUsername = NewUsername
+            };
+            var response = await _client.PostAsJsonAsync("api/AuthContoller/update", dto);
+            if (!response.IsSuccessStatusCode)
+            {
+                TempData["LoginError"] = "Invalid username or password";
+                return View();
+            }
+
+            return RedirectToAction("Login", "Admin");
+        }
 
     }
 }
