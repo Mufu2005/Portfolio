@@ -145,5 +145,31 @@ window.addEventListener('scroll', function () {
     }
 });
 
+const showUsernameForm = document.getElementById('showUsernameForm');
+const showPasswordForm = document.getElementById('showPasswordForm');
+const toggleButtons = document.getElementById('toggleButtons');
+
+const currentUsername = document.getElementById('currentUsername');
+const currentPassword = document.getElementById('currentPassword');
+const newUsernameSection = document.getElementById('newUsernameSection');
+const newPasswordSection = document.getElementById('newPasswordSection');
+const submitSection = document.getElementById('submitSection');
+
+showUsernameForm.addEventListener('click', () => {
+    toggleButtons.classList.add('d-none');
+    currentUsername.classList.remove('d-none');
+    currentPassword.classList.remove('d-none');
+    newUsernameSection.classList.remove('d-none');
+    submitSection.classList.remove('d-none');
+});
+
+showPasswordForm.addEventListener('click', () => {
+    toggleButtons.classList.add('d-none');
+    currentUsername.classList.remove('d-none');
+    currentPassword.classList.remove('d-none');
+    newPasswordSection.classList.remove('d-none');
+    submitSection.classList.remove('d-none');
+});
+
 
 

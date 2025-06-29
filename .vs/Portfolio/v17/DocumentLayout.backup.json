@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\views\\admin\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\views\\admin\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E731CD7F-45D1-4D49-8C8B-27BC07E5EBC8}|Services\\AdminService\\AdminService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\adminservice\\controllers\\authcontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E731CD7F-45D1-4D49-8C8B-27BC07E5EBC8}|Services\\AdminService\\AdminService.csproj|solutionrelative:services\\adminservice\\controllers\\authcontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\views\\admin\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\views\\admin\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E731CD7F-45D1-4D49-8C8B-27BC07E5EBC8}|Services\\AdminService\\AdminService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\adminservice\\controllers\\authcontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E731CD7F-45D1-4D49-8C8B-27BC07E5EBC8}|Services\\AdminService\\AdminService.csproj|solutionrelative:services\\adminservice\\controllers\\authcontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,19 +38,19 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "FrontEnd\\FrontEnd\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAFEBAAAAAAAAAAAkwHQBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-06-29T13:11:19.163Z",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "FrontEnd\\FrontEnd\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-29T19:21:50.733Z",
               "EditorCaption": ""
             },
             {
@@ -52,6 +60,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Views\\Admin\\Index.cshtml*",
+              "RelativeToolTip": "FrontEnd\\FrontEnd\\Views\\Admin\\Index.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-29T18:31:32.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\wwwroot\\css\\site.css*",
+              "RelativeToolTip": "FrontEnd\\FrontEnd\\wwwroot\\css\\site.css*",
+              "ViewState": "AgIAACoAAAAAAAAAAAAqwEQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-29T13:11:19.163Z",
+              "EditorCaption": ""
             }
           ]
         }
@@ -76,20 +110,20 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "site.js",
               "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\wwwroot\\js\\site.js",
               "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\wwwroot\\js\\site.js",
               "RelativeToolTip": "FrontEnd\\FrontEnd\\wwwroot\\js\\site.js",
-              "ViewState": "AgIAADoAAAAAAAAAAAAAAJUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAK8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-06-29T13:11:08.369Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "AuthContoller.cs",
               "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\AdminService\\Controllers\\AuthContoller.cs",
               "RelativeDocumentMoniker": "Services\\AdminService\\Controllers\\AuthContoller.cs",
@@ -97,8 +131,7 @@
               "RelativeToolTip": "Services\\AdminService\\Controllers\\AuthContoller.cs",
               "ViewState": "AgIAAE0AAAAAAAAAAAAQwHcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T12:47:34.96Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-27T12:47:34.96Z"
             }
           ]
         }
@@ -123,26 +156,26 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Update.cshtml",
               "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Views\\Admin\\Update.cshtml",
               "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Views\\Admin\\Update.cshtml",
               "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Views\\Admin\\Update.cshtml",
               "RelativeToolTip": "FrontEnd\\FrontEnd\\Views\\Admin\\Update.cshtml",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAIwBoAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-29T13:15:46.237Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Controllers\\AdminController.cs",
               "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Controllers\\AdminController.cs",
               "RelativeToolTip": "FrontEnd\\FrontEnd\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAmwCgAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAkwCkAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-27T17:01:32.59Z",
               "EditorCaption": ""

@@ -33,8 +33,13 @@ namespace FrontEnd.Controllers
             }
 
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "Admin");
 
+        }
+
+        public IActionResult Index()
+        {
+            return View();
         }
 
         public IActionResult Update()

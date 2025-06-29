@@ -17,17 +17,18 @@
         <!-- Shapes will be generated dynamically via JS -->
     </div>
 
-    <div class="text-end mb-3">
+    
+
+    <div class="text-end gap-3 mb-3" id="toggleButtons">
+            <button class="btn space-mono-regular green bg-transparent me-2" id="showUsernameForm" type="button">Username</button>
+            <button class="btn space-mono-regular green bg-transparent me-2" id="showPasswordForm" type="button">Password</button>
         <a class="space-mono-regular green" asp-controller="Admin" asp-action="Login">Login</a>
     </div>
 
     <div class="fullscreen-center">
         <h1 class="mb-4 space-mono-regular text-center">Update</h1>
         
-        <div class="d-flex justify-content-center gap-3 my-4" id="toggleButtons">
-            <button class="btn space-mono-regular green bg-transparent me-2" id="showUsernameForm" type="button">Username</button>
-            <button class="btn space-mono-regular green bg-transparent" id="showPasswordForm" type="button">Password</button>
-        </div>
+        
 
         <form class="w-50 mx-auto" asp-action="Update" method="post">
             <!-- Current Username -->
@@ -63,33 +64,3 @@
         </form>
     </div>
 </section>
-
-@section Scripts {
-    <script>
-        const showUsernameForm = document.getElementById('showUsernameForm');
-        const showPasswordForm = document.getElementById('showPasswordForm');
-        const toggleButtons = document.getElementById('toggleButtons');
-
-        const currentUsername = document.getElementById('currentUsername');
-        const currentPassword = document.getElementById('currentPassword');
-        const newUsernameSection = document.getElementById('newUsernameSection');
-        const newPasswordSection = document.getElementById('newPasswordSection');
-        const submitSection = document.getElementById('submitSection');
-
-        showUsernameForm.addEventListener('click', () => {
-            toggleButtons.classList.add('d-none');
-            currentUsername.classList.remove('d-none');
-            currentPassword.classList.remove('d-none');
-            newUsernameSection.classList.remove('d-none');
-            submitSection.classList.remove('d-none');
-        });
-
-        showPasswordForm.addEventListener('click', () => {
-            toggleButtons.classList.add('d-none');
-            currentUsername.classList.remove('d-none');
-            currentPassword.classList.remove('d-none');
-            newPasswordSection.classList.remove('d-none');
-            submitSection.classList.remove('d-none');
-        });
-    </script>
-}

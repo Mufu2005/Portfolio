@@ -61,6 +61,21 @@ body {
     font-style: italic;
 }
 
+.dm-sans-bold {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    /* Responsive text scaling */
+    font-size: clamp(2rem, 20vw, 15rem);
+    line-height: 1;
+    margin: 0;
+}
+
 .navbar {
     position: fixed;
     top: 2%;
