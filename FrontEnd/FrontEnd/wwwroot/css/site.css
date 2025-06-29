@@ -364,3 +364,11 @@ button.frosted-box:hover {
     z-index: 1000;
 }
 
+.btn.visible{
+    opacity: 1;
+}
+
+.btn.invisible{
+    opacity: 0;
+}
+

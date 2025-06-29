@@ -16,37 +16,46 @@
     <div class="background-anim-container">
         <!-- Shapes will be generated dynamically via JS -->
     </div>
-    <div class="text-end">
+
+    <div class="text-end mb-3">
         <a class="space-mono-regular green" asp-controller="Admin" asp-action="Login">Login</a>
     </div>
+
     <div class="fullscreen-center">
         <h1 class="mb-4 space-mono-regular text-center">Update</h1>
+        
+        <div class="d-flex justify-content-center gap-3 my-4" id="toggleButtons">
+            <button class="btn space-mono-regular green bg-transparent me-2" id="showUsernameForm" type="button">Username</button>
+            <button class="btn space-mono-regular green bg-transparent" id="showPasswordForm" type="button">Password</button>
+        </div>
 
         <form class="w-50 mx-auto" asp-action="Update" method="post">
-            <!-- Username Field -->
-            <div class="mb-3">
+            <!-- Current Username -->
+            <div class="mb-3 d-none" id="currentUsername">
                 <label for="Username" class="form-label space-mono-regular green">Username</label>
-                <input type="text" id="Username" name="Username" class="form-control" placeholder="Enter your Username" required asp-for="Username" />
+                <input type="text" id="Username" name="Username" class="form-control" placeholder="Enter your Username" />
             </div>
 
-            <!-- Password Field -->
-            <div class="mb-3">
-                <label for="password" class="form-label space-mono-regular green">Password</label>
-                <input type="password" id="password" name="Password" class="form-control" placeholder="Enter your password" required asp-for="Password" />
+            <!-- Current Password -->
+            <div class="mb-3 d-none" id="currentPassword">
+                <label for="Password" class="form-label space-mono-regular green">Password</label>
+                <input type="password" id="Password" name="Password" class="form-control" placeholder="Enter your password" />
             </div>
 
-            <div class="mb-3">
-                <label for="Username" class="form-label space-mono-regular green">New Username</label>
-                <input type="text" id="NewUsername" name="NewUsername" class="form-control" placeholder="Enter your New Username" required asp-for="Username" />
+            <!-- New Username -->
+            <div class="mb-3 d-none" id="newUsernameSection">
+                <label for="NewUsername" class="form-label space-mono-regular green">New Username</label>
+                <input type="text" id="NewUsername" name="NewUsername" class="form-control" placeholder="Enter your new username" />
             </div>
 
-            <div class="mb-3">
-                <label for="password" class="form-label space-mono-regular green">New Password</label>
+            <!-- New Password -->
+            <div class="mb-3 d-none" id="newPasswordSection">
+                <label for="NewPass" class="form-label space-mono-regular green">New Password</label>
                 <input type="password" id="NewPass" name="NewPass" class="form-control" placeholder="Enter your new password" />
             </div>
 
-            <!-- Submit Button -->
-            <div class="text-center">
+            <!-- Submit Button (hidden initially) -->
+            <div class="text-center mt-4 d-none" id="submitSection">
                 <button type="submit" class="px-4 space-mono-regular frosted-box button">
                     Update
                 </button>
@@ -54,3 +63,33 @@
         </form>
     </div>
 </section>
+
+@section Scripts {
+    <script>
+        const showUsernameForm = document.getElementById('showUsernameForm');
+        const showPasswordForm = document.getElementById('showPasswordForm');
+        const toggleButtons = document.getElementById('toggleButtons');
+
+        const currentUsername = document.getElementById('currentUsername');
+        const currentPassword = document.getElementById('currentPassword');
+        const newUsernameSection = document.getElementById('newUsernameSection');
+        const newPasswordSection = document.getElementById('newPasswordSection');
+        const submitSection = document.getElementById('submitSection');
+
+        showUsernameForm.addEventListener('click', () => {
+            toggleButtons.classList.add('d-none');
+            currentUsername.classList.remove('d-none');
+            currentPassword.classList.remove('d-none');
+            newUsernameSection.classList.remove('d-none');
+            submitSection.classList.remove('d-none');
+        });
+
+        showPasswordForm.addEventListener('click', () => {
+            toggleButtons.classList.add('d-none');
+            currentUsername.classList.remove('d-none');
+            currentPassword.classList.remove('d-none');
+            newPasswordSection.classList.remove('d-none');
+            submitSection.classList.remove('d-none');
+        });
+    </script>
+}

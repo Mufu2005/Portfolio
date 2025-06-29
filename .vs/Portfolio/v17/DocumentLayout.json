@@ -7,44 +7,20 @@
       "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\views\\admin\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\views\\admin\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\views\\admin\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E731CD7F-45D1-4D49-8C8B-27BC07E5EBC8}|Services\\AdminService\\AdminService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\adminservice\\controllers\\authcontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E731CD7F-45D1-4D49-8C8B-27BC07E5EBC8}|Services\\AdminService\\AdminService.csproj|solutionrelative:services\\adminservice\\controllers\\authcontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\models\\updatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\models\\updatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E731CD7F-45D1-4D49-8C8B-27BC07E5EBC8}|Services\\AdminService\\AdminService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\adminservice\\models\\updatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E731CD7F-45D1-4D49-8C8B-27BC07E5EBC8}|Services\\AdminService\\AdminService.csproj|solutionrelative:services\\adminservice\\models\\updatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E731CD7F-45D1-4D49-8C8B-27BC07E5EBC8}|Services\\AdminService\\AdminService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\adminservice\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E731CD7F-45D1-4D49-8C8B-27BC07E5EBC8}|Services\\AdminService\\AdminService.csproj|solutionrelative:services\\adminservice\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E731CD7F-45D1-4D49-8C8B-27BC07E5EBC8}|Services\\AdminService\\AdminService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\adminservice\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E731CD7F-45D1-4D49-8C8B-27BC07E5EBC8}|Services\\AdminService\\AdminService.csproj|solutionrelative:services\\adminservice\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E731CD7F-45D1-4D49-8C8B-27BC07E5EBC8}|Services\\AdminService\\AdminService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\adminservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E731CD7F-45D1-4D49-8C8B-27BC07E5EBC8}|Services\\AdminService\\AdminService.csproj|solutionrelative:services\\adminservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E731CD7F-45D1-4D49-8C8B-27BC07E5EBC8}|Services\\AdminService\\AdminService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\adminservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E731CD7F-45D1-4D49-8C8B-27BC07E5EBC8}|Services\\AdminService\\AdminService.csproj|solutionrelative:services\\adminservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,19 +30,19 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UpdateDto.cs",
-              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Models\\UpdateDto.cs",
-              "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Models\\UpdateDto.cs",
-              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Models\\UpdateDto.cs*",
-              "RelativeToolTip": "FrontEnd\\FrontEnd\\Models\\UpdateDto.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T13:26:35.066Z",
+              "DocumentIndex": 1,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "FrontEnd\\FrontEnd\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAFEBAAAAAAAAAAAkwHQBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-29T13:11:19.163Z",
               "EditorCaption": ""
             },
             {
@@ -76,106 +52,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Views\\Admin\\Login.cshtml",
-              "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Views\\Admin\\Login.cshtml",
-              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Views\\Admin\\Login.cshtml",
-              "RelativeToolTip": "FrontEnd\\FrontEnd\\Views\\Admin\\Login.cshtml",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAmwB0AAACRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-28T12:35:27.766Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Update.cshtml",
-              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Views\\Admin\\Update.cshtml",
-              "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Views\\Admin\\Update.cshtml",
-              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Views\\Admin\\Update.cshtml*",
-              "RelativeToolTip": "FrontEnd\\FrontEnd\\Views\\Admin\\Update.cshtml*",
-              "ViewState": "AgIAABAAAAAAAAAAAAAuwCYAAABWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-28T12:35:21.53Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UpdateDto.cs",
-              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\AdminService\\Models\\UpdateDto.cs",
-              "RelativeDocumentMoniker": "Services\\AdminService\\Models\\UpdateDto.cs",
-              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\AdminService\\Models\\UpdateDto.cs*",
-              "RelativeToolTip": "Services\\AdminService\\Models\\UpdateDto.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T11:42:30.788Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Program.cs",
-              "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Program.cs",
-              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Program.cs",
-              "RelativeToolTip": "FrontEnd\\FrontEnd\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T18:14:11.814Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\AdminService\\Program.cs",
-              "RelativeDocumentMoniker": "Services\\AdminService\\Program.cs",
-              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\AdminService\\Program.cs",
-              "RelativeToolTip": "Services\\AdminService\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T11:20:15.986Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\AdminService\\appsettings.json",
-              "RelativeDocumentMoniker": "Services\\AdminService\\appsettings.json",
-              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\AdminService\\appsettings.json",
-              "RelativeToolTip": "Services\\AdminService\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-27T10:51:31.903Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LoginModel.cs",
-              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\AdminService\\Models\\LoginModel.cs",
-              "RelativeDocumentMoniker": "Services\\AdminService\\Models\\LoginModel.cs",
-              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\AdminService\\Models\\LoginModel.cs",
-              "RelativeToolTip": "Services\\AdminService\\Models\\LoginModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T10:45:11.001Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\AdminService\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Services\\AdminService\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\AdminService\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Services\\AdminService\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T10:32:08.669Z"
             }
           ]
         }
@@ -187,10 +63,10 @@
       "FloatingWindowState": {
         "Id": "a8230668-45f5-4233-bcca-77552fa64f9c",
         "Display": 1,
-        "X": -6,
-        "Y": 0,
+        "X": 138,
+        "Y": 125,
         "Width": 582,
-        "Height": 1157,
+        "Height": 882,
         "WindowState": 0
       },
       "DocumentGroups": [
@@ -200,13 +76,26 @@
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "FrontEnd\\FrontEnd\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAAJUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-29T13:11:08.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "AuthContoller.cs",
               "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\AdminService\\Controllers\\AuthContoller.cs",
               "RelativeDocumentMoniker": "Services\\AdminService\\Controllers\\AuthContoller.cs",
-              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\AdminService\\Controllers\\AuthContoller.cs*",
-              "RelativeToolTip": "Services\\AdminService\\Controllers\\AuthContoller.cs*",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAQwHkAAAAJAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\AdminService\\Controllers\\AuthContoller.cs",
+              "RelativeToolTip": "Services\\AdminService\\Controllers\\AuthContoller.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAQwHcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-27T12:47:34.96Z",
               "EditorCaption": ""
@@ -221,10 +110,10 @@
       "FloatingWindowState": {
         "Id": "38ad0367-fe60-4d06-8bd0-67708bed2a0b",
         "Display": 1,
-        "X": 1164,
-        "Y": 104,
+        "X": 77,
+        "Y": 170,
         "Width": 889,
-        "Height": 863,
+        "Height": 862,
         "WindowState": 0
       },
       "DocumentGroups": [
@@ -234,13 +123,26 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Views\\Admin\\Update.cshtml",
+              "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Views\\Admin\\Update.cshtml",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Views\\Admin\\Update.cshtml*",
+              "RelativeToolTip": "FrontEnd\\FrontEnd\\Views\\Admin\\Update.cshtml*",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAIwBoAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-29T13:15:46.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Controllers\\AdminController.cs*",
-              "RelativeToolTip": "FrontEnd\\FrontEnd\\Controllers\\AdminController.cs*",
-              "ViewState": "AgIAABEAAAAAAAAAAAAmwD0AAAAzAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "FrontEnd\\FrontEnd\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAmwCgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-27T17:01:32.59Z",
               "EditorCaption": ""
