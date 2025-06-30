@@ -4,14 +4,18 @@
 @{
 }
 
+@{
+    ViewData["Title"] = "Admin";
+}
+
 <section class="container my-5">
 
 <div class="text-end gap-3 mb-3" id="toggleButtons">
-    <a class="space-mono-regular green" asp-controller="Home" asp-action="Index">Login</a>
+    <a class="space-mono-regular green" asp-controller="Admin" asp-action="Logout">Logout</a>
 </div>
 
  <div class="d-flex justify-content-center mb-4 flex-wrap gap-3">
-    <a class="space-mono-regular green frosted-box me-4" href="#">Projects</a>
+    <a class="space-mono-regular green frosted-box me-4" asp-controller="Admin" asp-action="Projects" >Projects</a>
     <a class="space-mono-regular green frosted-box me-4" href="#">Photography</a>
     <a class="space-mono-regular green frosted-box me-4" href="#">Videography</a>
     <a class="space-mono-regular green frosted-box me-4" href="#">Subscription</a>

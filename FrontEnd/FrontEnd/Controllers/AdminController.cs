@@ -32,12 +32,49 @@ namespace FrontEnd.Controllers
                 return View(model);
             }
 
-
+            HttpContext.Session.SetString("IsLoggedIn", "true");
             return RedirectToAction("Index", "Admin");
 
         }
 
+        public IActionResult Logout()
+        {
+
+            HttpContext.Session.SetString("IsLoggedIn", "flase");
+            return RedirectToAction("Index", "Home");
+        }
+
         public IActionResult Index()
+        {
+            var IsLoggedIn = HttpContext.Session.GetString("IsLoggedIn");
+            if (IsLoggedIn == "true")
+            {
+                return View();
+            }
+
+            else
+            {
+                return RedirectToAction("Unauthorized", "Admin");
+            }
+
+        }
+
+        public IActionResult Projects()
+        {
+            var IsLoggedIn = HttpContext.Session.GetString("IsLoggedIn");
+            if (IsLoggedIn == "true")
+            {
+                return View();
+            }
+
+            else
+            {
+                return RedirectToAction("Unauthorized", "Admin");
+            }
+
+        }
+
+        public IActionResult UnAuthorized()
         {
             return View();
         }
