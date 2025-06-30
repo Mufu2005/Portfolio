@@ -1,4 +1,5 @@
-﻿using FrontEnd.Models;
+﻿using System.Threading.Tasks;
+using FrontEnd.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
@@ -59,12 +60,14 @@ namespace FrontEnd.Controllers
 
         }
 
-        public IActionResult Projects()
+        [HttpGet]
+        public async Task<IActionResult> Projects(int id)
         {
             var IsLoggedIn = HttpContext.Session.GetString("IsLoggedIn");
             if (IsLoggedIn == "true")
             {
-                return View();
+                var projects = await _client.GetFromJsonAsync<List<ProjectModel>>("api/ProjectController/ListAllProject/{id}");
+                return View(projects);
             }
 
             else
@@ -73,6 +76,8 @@ namespace FrontEnd.Controllers
             }
 
         }
+
+        
 
         public IActionResult UnAuthorized()
         {
