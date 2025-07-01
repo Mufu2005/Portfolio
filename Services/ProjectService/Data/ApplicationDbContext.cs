@@ -1,4 +1,4 @@
-﻿using FrontEnd.Models;
+﻿using ProjectService.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace ProjectService.Data

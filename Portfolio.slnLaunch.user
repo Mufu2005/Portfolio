@@ -11,6 +11,11 @@
         "Path": "Services\\AdminService\\AdminService.csproj",
         "Action": "Start",
         "DebugTarget": "http"
+      },
+      {
+        "Path": "Services\\ProjectService\\ProjectService.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
       }
     ]
   }

@@ -8,13 +8,17 @@ namespace FrontEnd.Controllers
 {
     public class AdminController : Controller
     {
-        private string baseUrl = "http://localhost:5123/";
-        private HttpClient _client;
+        private string authBaseUrl = "http://localhost:5123/";
+        private HttpClient _authClient;
+        private String projectBaseUrl = "http://localhost:5053/";
+        private HttpClient _projectClient;
 
         public AdminController(IHttpClientFactory factory)
         {
-            _client = factory.CreateClient();
-            _client.BaseAddress = new Uri(baseUrl);
+            _authClient = factory.CreateClient();
+            _authClient.BaseAddress = new Uri(authBaseUrl);
+            _projectClient = factory.CreateClient(); 
+            _projectClient.BaseAddress = new Uri(projectBaseUrl);
         }
 
         public IActionResult Login()
@@ -26,7 +30,7 @@ namespace FrontEnd.Controllers
         
         public async Task<IActionResult> Login(LoginModel model)
         {
-            var response = await _client.PostAsJsonAsync("api/AuthContoller/login", model);
+            var response = await _authClient.PostAsJsonAsync("api/AuthContoller/login", model);
             if (!response.IsSuccessStatusCode)
             {
                 TempData["LoginError"] = "Invalid username or password.";
@@ -66,8 +70,13 @@ namespace FrontEnd.Controllers
             var IsLoggedIn = HttpContext.Session.GetString("IsLoggedIn");
             if (IsLoggedIn == "true")
             {
-                var projects = await _client.GetFromJsonAsync<List<ProjectModel>>("api/ProjectController/ListAllProject/{id}");
-                return View(projects);
+                var projects = await _projectClient.GetFromJsonAsync<List<ProjectModel>>("api/Project/list");
+                var view = new ProjectAdminViewModel
+                {
+                    AllProjects = projects,
+                    Project = new ProjectModel()
+                };
+                return View(view);
             }
 
             else
@@ -75,6 +84,21 @@ namespace FrontEnd.Controllers
                 return RedirectToAction("Unauthorized", "Admin");
             }
 
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(ProjectAdminViewModel model)
+        {
+            ProjectModel dto = model.Project;
+            var data = await _projectClient.PostAsJsonAsync("api/Project/create", dto);
+            return RedirectToAction("Projects", "Admin");
+        }
+
+        [HttpDelete]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var response = await _projectClient.DeleteAsync("api/Project/{id}");
+            return RedirectToAction("Projects", "Admin");
         }
 
         
@@ -99,7 +123,7 @@ namespace FrontEnd.Controllers
                 newPassword = NewPass,
                 newUsername = NewUsername
             };
-            var response = await _client.PostAsJsonAsync("api/AuthContoller/update", dto);
+            var response = await _authClient.PostAsJsonAsync("api/AuthContoller/update", dto);
             if (!response.IsSuccessStatusCode)
             {
                 TempData["LoginError"] = "Invalid username or password";

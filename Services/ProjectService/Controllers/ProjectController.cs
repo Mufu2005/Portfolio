@@ -1,4 +1,4 @@
-﻿using FrontEnd.Models;
+﻿using ProjectService.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProjectService.Data;
@@ -6,7 +6,7 @@ using ProjectService.Data;
 namespace ProjectService.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class ProjectController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -16,20 +16,15 @@ namespace ProjectService.Controllers
             this._context = context;
         }
 
-        public IActionResult Index()
+        [HttpGet("list")]
+        public IActionResult ListAllProject()
         {
-            return View();
-        }
-
-        [HttpGet]
-        public async Task<IActionResult> ListAllProject()
-        {
-            var projects = _context.ProjectModels.ToListAsync();
+            var projects = _context.ProjectModels.ToList();
             return Ok(projects);
         }
 
-        [HttpPost]
-        public IActionResult Create(ProjectModel model)
+        [HttpPost("create")]
+        public IActionResult Create([FromBody] ProjectModel model)
         {
             _context.ProjectModels.Add(model);
             _context.SaveChanges();
@@ -44,7 +39,7 @@ namespace ProjectService.Controllers
             {
                 return NotFound();
             }
-            
+
             project.Id = id;
             project.Title = model.Title;
             project.Description = model.Description;

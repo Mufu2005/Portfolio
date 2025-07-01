@@ -7,10 +7,13 @@
 	ViewData["Title"] = "Projects - Admin";
 }
 
-@model List<FrontEnd.Models.ProjectModel>
+@model FrontEnd.Models.ProjectAdminViewModel
 
 <section class="container my-5">
-	<h1 class="text-center mb-4">Projects</h1>
+	<div class="background-anim-container">
+		<!-- Shapes will be generated dynamically via JS -->
+	</div>
+	<h1 class="text-center mb-4 space-mono-bold text-white">Projects</h1>
 
 	<!-- Create Button -->
 	<div class="text-end mb-3">
@@ -18,21 +21,23 @@
 	</div>
 
 	<!-- Projects Table -->
-	<table class="table table-bordered">
-		<thead class="table-dark">
+	<table class="table frosted-box border">
+		<thead class="table-dark space-mono-regular green text-center table-borderless">
 			<tr>
+				<th>Id</th>
 				<th>Title</th>
 				<th>Description</th>
 				<th>Image</th>
 				<th>Project URL</th>
 				<th>Created At</th>
-				<th>Actions</th>
+				<th>U-D</th>
 			</tr>
 		</thead>
-		<tbody>
-			@foreach (var project in Model)
+		<tbody class="text-center">
+			@foreach (var project in Model.AllProjects)
 			{
 				<tr>
+					<td>@project.Id</td>
 					<td>@project.Title</td>
 					<td>@project.Description</td>
 					<td><img src="@project.ImageUrl" alt="@project.Title" width="100" /></td>
@@ -40,7 +45,7 @@
 					<td>@project.CreateAt.ToString("yyyy-MM-dd")</td>
 					<td>
 						<button class="btn btn-primary btn-sm" onclick="openModal('editModal')">Edit</button>
-						<button class="btn btn-danger btn-sm" onclick="openModal('deleteModal')">Delete</button>
+						<button class="btn btn-danger btn-sm" onclick="openDeleteModal(@project.Id)">Delete</button>
 					</td>
 				</tr>
 			}
@@ -57,8 +62,39 @@
 				<button type="button" class="btn-close" onclick="closeModal('createModal')"></button>
 			</div>
 			<div class="modal-body">
-				<!-- Add form for create here -->
-				<p>Form goes here</p>
+				<form asp-action="Create" method="post" enctype="multipart/form-data">
+					<!-- Title -->
+					<div class="mb-3">
+						<label asp-for="Project.Title" class="form-label space-mono-regular green"></label>
+						<input asp-for="Project.Title" class="form-control" />
+						<span asp-validation-for="Project.Title" class="text-danger"></span>
+					</div>
+
+					<!-- Description -->
+					<div class="mb-3">
+						<label asp-for="Project.Description" class="form-label space-mono-regular green"></label>
+						<textarea asp-for="Project.Description" class="form-control"></textarea>
+						<span asp-validation-for="Project.Description" class="text-danger"></span>
+					</div>
+
+					<!-- Project URL -->
+					<div class="mb-3">
+						<label asp-for="Project.ProjectUrl" class="form-label space-mono-regular green"></label>
+						<input asp-for="Project.ProjectUrl" class="form-control" />
+						<span asp-validation-for="Project.ProjectUrl" class="text-danger"></span>
+					</div>
+
+					<!-- Image Upload -->
+					<div class="mb-3">
+						<label class="form-label space-mono-regular green">Project Image</label>
+						<input asp-for="Project.ImageUrl" class="form-control" />
+					</div>
+
+					<!-- Submit -->
+					<div class="text-center">
+						<button type="submit" class="btn btn-success">Create</button>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
@@ -82,15 +118,20 @@
 <div id="deleteModal" class="modal" tabindex="-1">
 	<div class="modal-dialog">
 		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title">Delete Project</h5>
-				<button type="button" class="btn-close" onclick="closeModal('deleteModal')"></button>
-			</div>
-			<div class="modal-body">
-				<p>Are you sure you want to delete this project?</p>
-				<button class="btn btn-danger">Delete</button>
-				<button class="btn btn-secondary" onclick="closeModal('deleteModal')">Cancel</button>
-			</div>
+			<form id="deleteForm" asp-action="Delete" method="">
+				<div class="modal-header">
+					<h5 class="modal-title">Delete Project</h5>
+					<button type="button" class="btn-close" onclick="closeModal('deleteModal')"></button>
+				</div>
+				<div class="modal-body">
+					<input type="hidden" id="deleteProjectId" name="id" />
+					<p>Are you sure you want to delete this project?</p>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-danger">Delete</button>
+					<button type="button" class="btn btn-secondary" onclick="closeModal('deleteModal')">Cancel</button>
+				</div>
+			</form>
 		</div>
 	</div>
 </div>
@@ -100,6 +141,15 @@
 		function openModal(id) {
 			document.getElementById(id).style.display = 'block';
 		}
+		function closeModal(id) {
+			document.getElementById(id).style.display = 'none';
+		}
+
+			function openDeleteModal(projectId) {
+			document.getElementById("deleteProjectId").value = projectId;
+			document.getElementById("deleteModal").style.display = "block";
+		}
+
 		function closeModal(id) {
 			document.getElementById(id).style.display = 'none';
 		}
