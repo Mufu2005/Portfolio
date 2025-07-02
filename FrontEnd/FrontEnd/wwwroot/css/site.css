@@ -76,6 +76,13 @@ body {
     margin: 0;
 }
 
+.dm-sans{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
 .navbar {
     position: fixed;
     top: 2%;

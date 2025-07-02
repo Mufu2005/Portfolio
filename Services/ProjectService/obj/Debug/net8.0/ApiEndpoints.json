@@ -1,17 +1,12 @@
 [
   {
     "ContainingType": "ProjectService.Controllers.ProjectController",
-    "Method": "Edit",
-    "RelativePath": "api/Project/{id}",
+    "Method": "Create",
+    "RelativePath": "api/Project/create",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
       {
         "Name": "model",
         "Type": "ProjectService.Models.ProjectModel",
@@ -23,8 +18,8 @@
   {
     "ContainingType": "ProjectService.Controllers.ProjectController",
     "Method": "Delete",
-    "RelativePath": "api/Project/{id}",
-    "HttpMethod": "DELETE",
+    "RelativePath": "api/Project/delete/{id}",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -38,12 +33,17 @@
   },
   {
     "ContainingType": "ProjectService.Controllers.ProjectController",
-    "Method": "Create",
-    "RelativePath": "api/Project/create",
+    "Method": "Edit",
+    "RelativePath": "api/Project/edit/{id}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
       {
         "Name": "model",
         "Type": "ProjectService.Models.ProjectModel",

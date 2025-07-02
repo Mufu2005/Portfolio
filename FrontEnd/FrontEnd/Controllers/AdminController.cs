@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Net.Http.Json;
+using System.Threading.Tasks;
 using FrontEnd.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http.HttpResults;
@@ -94,14 +95,29 @@ namespace FrontEnd.Controllers
             return RedirectToAction("Projects", "Admin");
         }
 
-        [HttpDelete]
+        [HttpPost]
         public async Task<IActionResult> Delete(int id)
         {
-            var response = await _projectClient.DeleteAsync("api/Project/{id}");
+            var response = await _projectClient.PostAsync($"api/Project/delete/{id}",null);
+            if(!response.IsSuccessStatusCode)
+            {
+                TempData["Error"] = "Could not delete project.";
+            }
             return RedirectToAction("Projects", "Admin");
         }
 
-        
+        [HttpPost]
+        public async Task<IActionResult> Edit(int id, ProjectAdminViewModel model)
+        {
+            ProjectModel dto = model.Project;
+            var response = await _projectClient.PostAsJsonAsync($"api/Project/edit/{id}", dto);
+            if (!response.IsSuccessStatusCode)
+            {
+                TempData["error"] = "error editing the Project";
+            }
+
+            return RedirectToAction("Projects", "Admin");
+        }
 
         public IActionResult UnAuthorized()
         {

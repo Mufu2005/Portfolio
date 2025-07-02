@@ -48,7 +48,7 @@
         }
       }
     },
-    "/api/Project/{id}": {
+    "/api/Project/edit/{id}": {
       "post": {
         "tags": [
           "Project"
@@ -88,8 +88,10 @@
             "description": "OK"
           }
         }
-      },
-      "delete": {
+      }
+    },
+    "/api/Project/delete/{id}": {
+      "post": {
         "tags": [
           "Project"
         ],

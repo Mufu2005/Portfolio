@@ -31,7 +31,7 @@ namespace ProjectService.Controllers
             return Ok();
         }
 
-        [HttpPost("{id:int}")]
+        [HttpPost("edit/{id:int}")]
         public IActionResult Edit(int id, [FromBody] ProjectModel model)
         {
             var project = _context.ProjectModels.Find(id);
@@ -47,12 +47,12 @@ namespace ProjectService.Controllers
             project.ProjectUrl = model.ProjectUrl;
             project.CreateAt = model.CreateAt;
 
-            _context.ProjectModels.Add(project);
+            _context.ProjectModels.Update(project);
             _context.SaveChanges();
             return Ok(project);
         }
 
-        [HttpDelete ("{id:int}")]
+        [HttpPost("delete/{id:int}")]
         public IActionResult Delete(int id)
         {
             var project = _context.ProjectModels.Find(id);
