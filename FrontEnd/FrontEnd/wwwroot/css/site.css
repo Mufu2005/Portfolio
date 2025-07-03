@@ -394,3 +394,108 @@ button.frosted-box:hover {
     opacity: 0;
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1050;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+    .modal[style*="display: block"] {
+        opacity: 1;
+    }
+
+.modal-dialog {
+    margin: 10% auto;
+}
+
+.modal-content {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: transform 0.3s ease-in-out;
+}
+
+    /* Zoom on hover */
+    .modal-content:hover {
+        transform: scale(1.02);
+    }
+
+/* Full-page blur overlay */
+.blur-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(6px);
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1049;
+    display: none;
+}
+
+    .blur-bg.active {
+        display: block;
+    }
+
+input.form-control,
+textarea.form-control {
+    background: rgba(255, 255, 255, 0.05); /* semi-transparent */
+    backdrop-filter: blur(4px); /* frosted effect */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+    input.form-control::placeholder,
+    textarea.form-control::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    input.form-control:focus,
+    textarea.form-control:focus {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: #00ff99;
+        box-shadow: 0 0 5px rgba(0, 255, 153, 0.3);
+        color: #fff;
+    }
+
+.scrollable-table {
+    max-height: 70vh;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+}
+
+    /* Custom Scrollbar (Webkit based browsers) */
+    .scrollable-table::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .scrollable-table::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+    }
+
+    .scrollable-table::-webkit-scrollbar-thumb {
+        background: rgba(0, 255, 153, 0.6);
+        border-radius: 10px;
+    }
+
+        .scrollable-table::-webkit-scrollbar-thumb:hover {
+            background: rgba(0, 255, 153, 0.9);
+        }
+
+html {
+    scroll-behavior: smooth;
+}

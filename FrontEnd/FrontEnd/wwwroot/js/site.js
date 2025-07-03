@@ -171,5 +171,52 @@ showPasswordForm.addEventListener('click', () => {
     submitSection.classList.remove('d-none');
 });
 
+function openModal(id) {
+    document.getElementById(id).style.display = 'block';
+    document.getElementById("blur-background").classList.add("active");
+}
+function closeModal(id) {
+    document.getElementById(id).style.display = 'none';
+    document.getElementById("blur-background").classList.remove("active");
+}
 
+function openDeleteModal(projectId) {
+    document.getElementById("deleteProjectId").value = projectId;
+    document.getElementById("deleteModal").style.display = "block";
+    document.getElementById("blur-background").classList.add("active");
+}
 
+function closeModal(id) {
+    document.getElementById(id).style.display = 'none';
+    document.getElementById("blur-background").classList.remove("active");
+}
+
+function openEditModal(projectId) {
+    document.getElementById("EditProjectId").value = projectId;
+    document.getElementById("EditModal").style.display = "block";
+    document.getElementById("blur-background").classList.add("active");
+}
+
+function closeModal(id) {
+    document.getElementById(id).style.display = 'none';
+    document.getElementById("blur-background").classList.remove("active");
+}
+
+const lenis = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Smooth easing
+    direction: 'vertical',
+    smooth: true,
+    mouseMultiplier: 1,
+    gestureOrientation: 'vertical',
+    smoothTouch: true,
+    touchMultiplier: 2,
+    infinite: false,
+});
+
+function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);

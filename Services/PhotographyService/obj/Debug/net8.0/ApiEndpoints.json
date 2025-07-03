@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "PhotographyService.Controllers.PhotoContoller",
+    "Method": "Create",
+    "RelativePath": "api/PhotoContoller/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "PhotographyService.Models.PhotoModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PhotographyService.Controllers.PhotoContoller",
+    "Method": "ListAllPhotos",
+    "RelativePath": "api/PhotoContoller/list",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

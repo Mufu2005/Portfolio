@@ -13,6 +13,8 @@ namespace FrontEnd.Controllers
         private HttpClient _authClient;
         private String projectBaseUrl = "http://localhost:5053/";
         private HttpClient _projectClient;
+        private string photoBaseUrl = "http://localhost:5102/";
+        private HttpClient _photoClient;
 
         public AdminController(IHttpClientFactory factory)
         {
@@ -20,10 +22,17 @@ namespace FrontEnd.Controllers
             _authClient.BaseAddress = new Uri(authBaseUrl);
             _projectClient = factory.CreateClient(); 
             _projectClient.BaseAddress = new Uri(projectBaseUrl);
+            _photoClient = factory.CreateClient();
+            _photoClient.BaseAddress = new Uri(photoBaseUrl);
         }
 
         public IActionResult Login()
         {
+            string userAgent = Request.Headers["User-Agent"];
+            if (userAgent.Contains("Mobile") || userAgent.Contains("Android") || userAgent.Contains("iPhone"))
+            {
+                return RedirectToAction("Index", "Home"); // or show 403 page
+            }
             return View();
         }
 
@@ -66,7 +75,7 @@ namespace FrontEnd.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Projects(int id)
+        public async Task<IActionResult> Projects()
         {
             var IsLoggedIn = HttpContext.Session.GetString("IsLoggedIn");
             if (IsLoggedIn == "true")
@@ -147,6 +156,28 @@ namespace FrontEnd.Controllers
             }
 
             return RedirectToAction("Login", "Admin");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Photography()
+        {
+            var IsLoggedIn = HttpContext.Session.GetString("IsLoggedIn");
+            if (IsLoggedIn == "true")
+            {
+                var photo = await _photoClient.GetFromJsonAsync<List<PhotoModel>>("/api/PhotoContoller/list");
+                var view = new PhotographyAdminViewModel
+                {
+                    AllPhotos = photo,
+                    Photo = new PhotoModel()
+                };
+                return View(view);
+            }
+
+            else
+            {
+                return RedirectToAction("Unauthorized", "Admin");
+            }
+
         }
 
     }

@@ -14,6 +14,7 @@
 	<div class="background-anim-container">
 		<!-- Shapes will be generated dynamically via JS -->
 	</div>
+	<a class="space-mono-regular green" asp-controller="Admin" asp-action="Index">Return</a>
 	<h1 class="text-center mb-4 dm-sans text-white">PROJECTS CRUD</h1>
 
 	<!-- Create Button -->
@@ -22,36 +23,38 @@
 	</div>
 
 	<!-- Projects Table -->
-	<table class="table frosted-box border">
-		<thead class="table-dark space-mono-regular green text-center table-borderless">
-			<tr>
-				<th>Id</th>
-				<th>Title</th>
-				<th>Description</th>
-				<th>Image</th>
-				<th>Project URL</th>
-				<th>Created At</th>
-				<th>U-D</th>
-			</tr>
-		</thead>
-		<tbody class="text-center">
-			@foreach (var project in Model.AllProjects)
-			{
+	<div class="scrollable-table frosted-box border p-3" data-lenis-prevent>
+		<table class="table mb-0">
+			<thead class="table-dark space-mono-regular green text-center table-borderless">
 				<tr>
-					<td>@project.Id</td>
-					<td>@project.Title</td>
-					<td>@project.Description</td>
-					<td><img src="@project.ImageUrl" alt="@project.Title" width="100" /></td>
-					<td><a href="@project.ProjectUrl" target="_blank">Visit</a></td>
-					<td>@project.CreateAt.ToString("yyyy-MM-dd")</td>
-					<td>
-						<button class="btn btn-primary btn-sm" onclick="openEditModal(@project.Id)">Edit</button>
-						<button class="btn btn-danger btn-sm" onclick="openDeleteModal(@project.Id)">Delete</button>
-					</td>
+					<th>Id</th>
+					<th>Title</th>
+					<th>Description</th>
+					<th>Image</th>
+					<th>Project URL</th>
+					<th>Created At</th>
+					<th>U-D</th>
 				</tr>
-			}
-		</tbody>
-	</table>
+			</thead>
+			<tbody class="text-center text-white">
+				@foreach (var project in Model.AllProjects)
+				{
+					<tr>
+						<td>@project.Id</td>
+						<td>@project.Title</td>
+						<td>@project.Description</td>
+						<td><img src="@project.ImageUrl" alt="@project.Title" width="100" /></td>
+						<td><a href="@project.ProjectUrl" target="_blank">Visit</a></td>
+						<td>@project.CreateAt.ToString("yyyy-MM-dd")</td>
+						<td>
+							<button class="btn btn-primary btn-sm" onclick="openEditModal(@project.Id)">Edit</button>
+							<button class="btn btn-danger btn-sm" onclick="openDeleteModal(@project.Id)">Delete</button>
+						</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+	</div>
 </section>
 
 <!-- Modals -->
@@ -168,115 +171,4 @@
 		</div>
 	</div>
 </div>
-
-@section Scripts {
-	<script>
-		function openModal(id) {
-			document.getElementById(id).style.display = 'block';
-			document.getElementById("blur-background").classList.add("active");
-		}
-		function closeModal(id) {
-			document.getElementById(id).style.display = 'none';
-			document.getElementById("blur-background").classList.remove("active");
-		}
-
-		function openDeleteModal(projectId) {
-			document.getElementById("deleteProjectId").value = projectId;
-			document.getElementById("deleteModal").style.display = "block";
-			document.getElementById("blur-background").classList.add("active");
-		}
-
-		function closeModal(id) {
-			document.getElementById(id).style.display = 'none';
-			document.getElementById("blur-background").classList.remove("active");
-		}
-
-		function openEditModal(projectId) {
-			document.getElementById("EditProjectId").value = projectId;
-			document.getElementById("EditModal").style.display = "block";
-			document.getElementById("blur-background").classList.add("active");
-		}
-
-		function closeModal(id) {
-			document.getElementById(id).style.display = 'none';
-			document.getElementById("blur-background").classList.remove("active");
-		}
-	</script>
-	<style>
-		.modal {
-			display: none;
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-color: rgba(0, 0, 0, 0.5);
-			z-index: 1050;
-			opacity: 0;
-			transition: opacity 0.3s ease;
-		}
-
-			.modal[style*="display: block"] {
-				opacity: 1;
-			}
-
-		.modal-dialog {
-			margin: 10% auto;
-		}
-
-		.modal-content {
-			background: rgba(255, 255, 255, 0.15);
-			backdrop-filter: blur(10px);
-			border-radius: 20px;
-			box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-			border: 1px solid rgba(255, 255, 255, 0.18);
-			transition: transform 0.3s ease-in-out;
-		}
-
-			/* Zoom on hover */
-			.modal-content:hover {
-				transform: scale(1.02);
-			}
-
-		/* Full-page blur overlay */
-		.blur-bg {
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			backdrop-filter: blur(6px);
-			background-color: rgba(0, 0, 0, 0.2);
-			z-index: 1049;
-			display: none;
-		}
-
-			.blur-bg.active {
-				display: block;
-			}
-
-		input.form-control,
-		textarea.form-control {
-			background: rgba(255, 255, 255, 0.05); /* semi-transparent */
-			backdrop-filter: blur(4px); /* frosted effect */
-			border: 1px solid rgba(255, 255, 255, 0.2);
-			color: #fff;
-			border-radius: 8px;
-			transition: all 0.3s ease;
-		}
-
-			input.form-control::placeholder,
-			textarea.form-control::placeholder {
-				color: rgba(255, 255, 255, 0.5);
-			}
-
-			input.form-control:focus,
-			textarea.form-control:focus {
-				background: rgba(255, 255, 255, 0.1);
-				border-color: #00ff99;
-				box-shadow: 0 0 5px rgba(0, 255, 153, 0.3);
-				color: #fff;
-			}
-	</style>
-}
 
