@@ -30,20 +30,18 @@ namespace PhotographyService.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("CreatedAt")
+                    b.Property<DateTime?>("CreatedAt")
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("ImageUrl")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("Title")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");
 
-                    b.ToTable("photoDb");
+                    b.ToTable("photoTable");
                 });
 #pragma warning restore 612, 618
         }

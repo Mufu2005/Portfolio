@@ -10,10 +10,9 @@ namespace AdminService.Models
         [DataType(DataType.Password)]
         public String Password { get; set; }
 
-        public String newUsername { get; set; }
+        public String? newUsername { get; set; }
 
-        [Required]
         [DataType (DataType.Password)]
-        public String newPassword { get; set; }
+        public String? newPassword { get; set; }
     }
 }

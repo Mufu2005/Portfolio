@@ -10,6 +10,6 @@ namespace PhotographyService.Data
             
         }
 
-        public DbSet<PhotoModel> photoDb {  get; set; }
+        public DbSet<PhotoModel> photoTable {  get; set; }
     }
 }

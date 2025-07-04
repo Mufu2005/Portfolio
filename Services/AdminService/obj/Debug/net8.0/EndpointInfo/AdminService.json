@@ -215,7 +215,6 @@
       },
       "UpdateDto": {
         "required": [
-          "newPassword",
           "password"
         ],
         "type": "object",
@@ -234,9 +233,9 @@
             "nullable": true
           },
           "newPassword": {
-            "minLength": 1,
             "type": "string",
-            "format": "password"
+            "format": "password",
+            "nullable": true
           }
         },
         "additionalProperties": false

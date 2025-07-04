@@ -10,7 +10,7 @@ namespace ProjectService.Data
             
         }
 
-        public DbSet<ProjectModel> ProjectModels { get; set; }
+        public DbSet<ProjectModel> ProjectTable { get; set; }
     }
 
 

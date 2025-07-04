@@ -19,14 +19,14 @@ namespace ProjectService.Controllers
         [HttpGet("list")]
         public IActionResult ListAllProject()
         {
-            var projects = _context.ProjectModels.ToList();
+            var projects = _context.ProjectTable.ToList();
             return Ok(projects);
         }
 
         [HttpPost("create")]
         public IActionResult Create([FromBody] ProjectModel model)
         {
-            _context.ProjectModels.Add(model);
+            _context.ProjectTable.Add(model);
             _context.SaveChanges();
             return Ok();
         }
@@ -34,7 +34,7 @@ namespace ProjectService.Controllers
         [HttpPost("edit/{id:int}")]
         public IActionResult Edit(int id, [FromBody] ProjectModel model)
         {
-            var project = _context.ProjectModels.Find(id);
+            var project = _context.ProjectTable.Find(id);
             if (project == null)
             {
                 return NotFound();
@@ -47,7 +47,7 @@ namespace ProjectService.Controllers
             project.ProjectUrl = model.ProjectUrl;
             project.CreateAt = model.CreateAt;
 
-            _context.ProjectModels.Update(project);
+            _context.ProjectTable.Update(project);
             _context.SaveChanges();
             return Ok(project);
         }
@@ -55,13 +55,13 @@ namespace ProjectService.Controllers
         [HttpPost("delete/{id:int}")]
         public IActionResult Delete(int id)
         {
-            var project = _context.ProjectModels.Find(id);
+            var project = _context.ProjectTable.Find(id);
             if (project == null)
             {
                 return NotFound();
             }
 
-            _context.ProjectModels.Remove(project);
+            _context.ProjectTable.Remove(project);
             _context.SaveChanges();
             return Ok();
         }

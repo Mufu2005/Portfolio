@@ -41,10 +41,10 @@
 						<td>@photo.Id</td>
 						<td>@photo.Title</td>
 						<td><img src="@photo.ImageUrl" alt="@photo.Title" width="100" /></td>
-						<td>@photo.CreatedAt.ToString("yyyy-MM-dd")</td>
+						<td>@photo.CreatedAt?.ToString("yyyy-MM-dd")</td>
 						<td>
-							<button class="btn btn-primary btn-sm" onclick="openEditModal(@photo.Id)">Edit</button>
-							<button class="btn btn-danger btn-sm" onclick="openDeleteModal(@photo.Id)">Delete</button>
+							<button class="btn btn-primary btn-sm" onclick="openEditPhotoModal(@photo.Id)">Edit</button>
+							<button class="btn btn-danger btn-sm" onclick="openDeletePhotoModal(@photo.Id)">Delete</button>
 						</td>
 					</tr>
 				}
@@ -62,7 +62,7 @@
 				<button type="button" class="btn-close" onclick="closeModal('createModal')"></button>
 			</div>
 			<div class="modal-body">
-				<form asp-action="Create" method="post" enctype="multipart/form-data">
+				<form asp-action="CreatePhoto" method="post" enctype="multipart/form-data">
 					<!-- Title -->
 					<div class="mb-3">
 						<label asp-for="Photo.Title" class="form-label space-mono-regular green"></label>
@@ -95,7 +95,7 @@
 				<button type="button" class="btn-close" onclick="closeModal('EditModal')"></button>
 			</div>
 			<div class="modal-body">
-				<form asp-action="Edit" method="post" enctype="multipart/form-data">
+				<form asp-action="EditPhoto" method="post" enctype="multipart/form-data">
 					<input type="hidden" id="EditPhotoId" name="id" />
 					<!-- Title -->
 					<div class="mb-3">
@@ -124,7 +124,7 @@
 <div id="deleteModal" class="modal" tabindex="-1">
 	<div class="modal-dialog">
 		<div class="modal-content">
-			<form id="deleteForm" asp-action="Delete" method="post">
+			<form id="deleteForm" asp-action="DeletePhoto" method="post">
 				<div class="modal-header">
 					<h5 class="modal-title dm-sans text-white">Delete Photo</h5>
 					<button type="button" class="btn-close" onclick="closeModal('deleteModal')"></button>

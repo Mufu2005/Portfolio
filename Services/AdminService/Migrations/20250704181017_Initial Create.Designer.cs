@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AdminService.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250627124123_Initial Create")]
+    [Migration("20250704181017_Initial Create")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -42,7 +42,7 @@ namespace AdminService.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("LoginModels");
+                    b.ToTable("LoginTable");
                 });
 #pragma warning restore 612, 618
         }

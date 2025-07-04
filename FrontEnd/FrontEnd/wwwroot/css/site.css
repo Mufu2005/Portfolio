@@ -404,11 +404,13 @@ button.frosted-box:hover {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1050;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: all 0.3s ease;
+    pointer-events: none;
 }
 
     .modal[style*="display: block"] {
         opacity: 1;
+        pointer-events: auto;
     }
 
 .modal-dialog {

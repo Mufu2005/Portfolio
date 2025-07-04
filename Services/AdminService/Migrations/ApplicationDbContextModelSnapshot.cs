@@ -39,7 +39,7 @@ namespace AdminService.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("LoginModels");
+                    b.ToTable("LoginTable");
                 });
 #pragma warning restore 612, 618
         }

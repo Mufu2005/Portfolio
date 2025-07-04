@@ -218,10 +218,10 @@ C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\ProjectService\obj\Debug\net8
 C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\ProjectService\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\ProjectService\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\ProjectService\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\ProjectService\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\ProjectService\obj\Debug\net8.0\ProjectS.3DA867A9.Up2Date
 C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\ProjectService\obj\Debug\net8.0\ProjectService.dll
 C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\ProjectService\obj\Debug\net8.0\refint\ProjectService.dll
 C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\ProjectService\obj\Debug\net8.0\ProjectService.pdb
 C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\ProjectService\obj\Debug\net8.0\ProjectService.genruntimeconfig.cache
 C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\ProjectService\obj\Debug\net8.0\ref\ProjectService.dll
+C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\ProjectService\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

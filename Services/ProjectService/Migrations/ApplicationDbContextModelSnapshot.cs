@@ -22,7 +22,7 @@ namespace ProjectService.Migrations
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
 
-            modelBuilder.Entity("FrontEnd.Models.ProjectModel", b =>
+            modelBuilder.Entity("ProjectService.Models.ProjectModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -30,28 +30,24 @@ namespace ProjectService.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("CreateAt")
+                    b.Property<DateTime?>("CreateAt")
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("ImageUrl")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("ProjectUrl")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("Title")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");
 
-                    b.ToTable("ProjectModels");
+                    b.ToTable("ProjectTable");
                 });
 #pragma warning restore 612, 618
         }

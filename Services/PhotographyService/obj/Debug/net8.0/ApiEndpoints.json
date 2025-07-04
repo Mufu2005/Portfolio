@@ -17,6 +17,43 @@
   },
   {
     "ContainingType": "PhotographyService.Controllers.PhotoContoller",
+    "Method": "Delete",
+    "RelativePath": "api/PhotoContoller/delete/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PhotographyService.Controllers.PhotoContoller",
+    "Method": "Edit",
+    "RelativePath": "api/PhotoContoller/edit/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "PhotographyService.Models.PhotoModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PhotographyService.Controllers.PhotoContoller",
     "Method": "ListAllPhotos",
     "RelativePath": "api/PhotoContoller/list",
     "HttpMethod": "GET",

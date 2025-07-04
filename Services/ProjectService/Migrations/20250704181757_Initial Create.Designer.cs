@@ -5,14 +5,14 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using PhotographyService.Data;
+using ProjectService.Data;
 
 #nullable disable
 
-namespace PhotographyService.Migrations
+namespace ProjectService.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250703200439_Initial Create")]
+    [Migration("20250704181757_Initial Create")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -25,7 +25,7 @@ namespace PhotographyService.Migrations
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
 
-            modelBuilder.Entity("PhotographyService.Models.PhotoModel", b =>
+            modelBuilder.Entity("ProjectService.Models.ProjectModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -33,20 +33,24 @@ namespace PhotographyService.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("CreatedAt")
+                    b.Property<DateTime?>("CreateAt")
                         .HasColumnType("datetime(6)");
 
+                    b.Property<string>("Description")
+                        .HasColumnType("longtext");
+
                     b.Property<string>("ImageUrl")
-                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("ProjectUrl")
                         .HasColumnType("longtext");
 
                     b.Property<string>("Title")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");
 
-                    b.ToTable("photoDb");
+                    b.ToTable("ProjectTable");
                 });
 #pragma warning restore 612, 618
         }

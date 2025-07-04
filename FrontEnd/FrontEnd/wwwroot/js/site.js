@@ -175,10 +175,6 @@ function openModal(id) {
     document.getElementById(id).style.display = 'block';
     document.getElementById("blur-background").classList.add("active");
 }
-function closeModal(id) {
-    document.getElementById(id).style.display = 'none';
-    document.getElementById("blur-background").classList.remove("active");
-}
 
 function openDeleteModal(projectId) {
     document.getElementById("deleteProjectId").value = projectId;
@@ -186,13 +182,20 @@ function openDeleteModal(projectId) {
     document.getElementById("blur-background").classList.add("active");
 }
 
-function closeModal(id) {
-    document.getElementById(id).style.display = 'none';
-    document.getElementById("blur-background").classList.remove("active");
-}
-
 function openEditModal(projectId) {
     document.getElementById("EditProjectId").value = projectId;
+    document.getElementById("EditModal").style.display = "block";
+    document.getElementById("blur-background").classList.add("active");
+}
+
+function openDeletePhotoModal(photoId) {
+    document.getElementById("deletePhotoId").value = photoId;
+    document.getElementById("deleteModal").style.display = "block";
+    document.getElementById("blur-background").classList.add("active");
+}
+
+function openEditPhotoModal(photoId) {
+    document.getElementById("EditPhotoId").value = photoId;
     document.getElementById("EditModal").style.display = "block";
     document.getElementById("blur-background").classList.add("active");
 }

@@ -105,10 +105,10 @@ C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\AdminService\obj\Debug\net8.0
 C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\AdminService\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\AdminService\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\AdminService\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\AdminService\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\AdminService\obj\Debug\net8.0\AdminSer.1AF7464D.Up2Date
 C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\AdminService\obj\Debug\net8.0\AdminService.dll
 C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\AdminService\obj\Debug\net8.0\refint\AdminService.dll
 C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\AdminService\obj\Debug\net8.0\AdminService.pdb
 C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\AdminService\obj\Debug\net8.0\AdminService.genruntimeconfig.cache
 C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\AdminService\obj\Debug\net8.0\ref\AdminService.dll
+C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\AdminService\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

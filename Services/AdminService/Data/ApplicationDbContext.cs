@@ -10,6 +10,6 @@ namespace AdminService.Data
             
         }
 
-        public DbSet<LoginModel> LoginModels { get; set; } 
+        public DbSet<LoginModel> LoginTable { get; set; } 
     }
 }

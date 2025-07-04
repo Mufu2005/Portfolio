@@ -52,6 +52,36 @@ namespace FrontEnd.Controllers
 
         }
 
+        [HttpPost]
+        public async Task<IActionResult> Update(LoginModel model, String NewUsername, String NewPass)
+        {
+            var dto = new AdminService.Models.UpdateDto
+            {
+                Username = model.Username,
+                Password = model.Password,
+                newPassword = NewPass,
+                newUsername = NewUsername
+            };
+            var response = await _authClient.PostAsJsonAsync("api/AuthContoller/update", dto);
+            if (!response.IsSuccessStatusCode)
+            {
+                TempData["LoginError"] = "Invalid username or password";
+                return View();
+            }
+
+            return RedirectToAction("Login", "Admin");
+        }
+
+        public IActionResult Update()
+        {
+            return View();
+        }
+
+        public IActionResult UnAuthorized()
+        {
+            return View();
+        }
+        
         public IActionResult Logout()
         {
 
@@ -97,7 +127,7 @@ namespace FrontEnd.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(ProjectAdminViewModel model)
+        public async Task<IActionResult> CreateProject(ProjectAdminViewModel model)
         {
             ProjectModel dto = model.Project;
             var data = await _projectClient.PostAsJsonAsync("api/Project/create", dto);
@@ -105,7 +135,7 @@ namespace FrontEnd.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> DeleteProject(int id)
         {
             var response = await _projectClient.PostAsync($"api/Project/delete/{id}",null);
             if(!response.IsSuccessStatusCode)
@@ -116,7 +146,7 @@ namespace FrontEnd.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Edit(int id, ProjectAdminViewModel model)
+        public async Task<IActionResult> EditProject(int id, ProjectAdminViewModel model)
         {
             ProjectModel dto = model.Project;
             var response = await _projectClient.PostAsJsonAsync($"api/Project/edit/{id}", dto);
@@ -126,36 +156,6 @@ namespace FrontEnd.Controllers
             }
 
             return RedirectToAction("Projects", "Admin");
-        }
-
-        public IActionResult UnAuthorized()
-        {
-            return View();
-        }
-
-        public IActionResult Update()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> Update(LoginModel model, String NewUsername, String NewPass)
-        {
-            var dto = new AdminService.Models.UpdateDto
-            {
-                Username = model.Username,
-                Password = model.Password,
-                newPassword = NewPass,
-                newUsername = NewUsername
-            };
-            var response = await _authClient.PostAsJsonAsync("api/AuthContoller/update", dto);
-            if (!response.IsSuccessStatusCode)
-            {
-                TempData["LoginError"] = "Invalid username or password";
-                return View();
-            }
-
-            return RedirectToAction("Login", "Admin");
         }
 
         [HttpGet]
@@ -178,6 +178,30 @@ namespace FrontEnd.Controllers
                 return RedirectToAction("Unauthorized", "Admin");
             }
 
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeletePhoto(int id)
+        {
+            var response = await _photoClient.PostAsync($"/api/PhotoContoller/delete/{id}", null);
+            if (!response.IsSuccessStatusCode)
+            {
+                TempData["Error"] = "Could not delete project.";
+            }
+            return RedirectToAction("Projects", "Admin");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> EditPhoto(int id, PhotographyAdminViewModel model)
+        {
+            PhotoModel dto = model.Photo;
+            var response = await _photoClient.PostAsJsonAsync($"/api/PhotoContoller/edit/{id}", dto);
+            if (!response.IsSuccessStatusCode)
+            {
+                TempData["error"] = "error editing the Project";
+            }
+
+            return RedirectToAction("Projects", "Admin");
         }
 
     }

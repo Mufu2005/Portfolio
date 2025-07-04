@@ -20,7 +20,7 @@ namespace AdminService.Controllers
         [HttpGet]
         public ActionResult GetCredentials()
         {
-            var users = _context.LoginModels.ToList();
+            var users = _context.LoginTable.ToList();
             return Ok(users);
         }
 
@@ -33,7 +33,7 @@ namespace AdminService.Controllers
                 Username = dto.Username
             };
 
-            _context.LoginModels.Add(conversion);
+            _context.LoginTable.Add(conversion);
             _context.SaveChanges();
 
             return Ok(dto);
@@ -44,7 +44,7 @@ namespace AdminService.Controllers
         [Route("{id:int}")]
         public IActionResult GetUserById(int id)
         {
-            var user = _context.LoginModels.Find(id);
+            var user = _context.LoginTable.Find(id);
             if (user == null)
             {
                 return NotFound();
@@ -63,7 +63,7 @@ namespace AdminService.Controllers
                 Username = dto.Username
             };
 
-            var user = _context.LoginModels.Find(id);
+            var user = _context.LoginTable.Find(id);
             if(user == null)
             {
                 return BadRequest();
@@ -80,13 +80,13 @@ namespace AdminService.Controllers
         [Route("{id:int}")]
         public IActionResult DeleteUser(int id)
         {
-            var user = _context.LoginModels.Find(id);
+            var user = _context.LoginTable.Find(id);
             if(user == null)
             {
                 return NotFound();
             }
 
-            _context.LoginModels.Remove(user);
+            _context.LoginTable.Remove(user);
             _context.SaveChanges();
             return Ok();
         }
@@ -95,7 +95,7 @@ namespace AdminService.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> Login([FromBody] LoginDto dto)
         {
-            var user = await _context.LoginModels.SingleOrDefaultAsync(x => x.Username == dto.Username);
+            var user = await _context.LoginTable.SingleOrDefaultAsync(x => x.Username == dto.Username);
             if(user == null || user.Password != dto.Password)
             {
                 return Unauthorized("Invalid Credentials");
@@ -108,14 +108,22 @@ namespace AdminService.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> Update([FromBody] UpdateDto dto)
         {
-            var user = await _context.LoginModels.SingleOrDefaultAsync(x => x.Username == dto.Username);
+            var user = await _context.LoginTable.SingleOrDefaultAsync(x => x.Username == dto.Username);
             if(user == null || user.Password != dto.Password)
             {
                 return Unauthorized("Invalid Credentials");
             }
 
-            user.Username = dto.newUsername;
-            user.Password = dto.newPassword;
+            if (dto.newUsername != null)
+            {
+                user.Username = dto.newUsername;
+            }
+
+            if (dto.newPassword != null)
+            {
+                user.Password = dto.newPassword;
+            }
+            
             await _context.SaveChangesAsync();
             return Ok();
             

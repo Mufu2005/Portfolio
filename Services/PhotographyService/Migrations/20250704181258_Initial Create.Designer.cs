@@ -5,14 +5,14 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using ProjectService.Data;
+using PhotographyService.Data;
 
 #nullable disable
 
-namespace ProjectService.Migrations
+namespace PhotographyService.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250630203738_Initial Create")]
+    [Migration("20250704181258_Initial Create")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -25,7 +25,7 @@ namespace ProjectService.Migrations
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
 
-            modelBuilder.Entity("FrontEnd.Models.ProjectModel", b =>
+            modelBuilder.Entity("PhotographyService.Models.PhotoModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -33,28 +33,18 @@ namespace ProjectService.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("CreateAt")
+                    b.Property<DateTime?>("CreatedAt")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
                     b.Property<string>("ImageUrl")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("ProjectUrl")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("Title")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");
 
-                    b.ToTable("ProjectModels");
+                    b.ToTable("photoTable");
                 });
 #pragma warning restore 612, 618
         }
