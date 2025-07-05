@@ -1,13 +1,14 @@
 ﻿@*
-	For more information on enabling MVC for empty photos, visit https://go.microsoft.com/fwlink/?LinkID=397860
+	For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
 }
+
 @{
-	ViewData["Title"] = "Photography - Admin";
+	ViewData["Title"] = "Videography - Admin";
 }
 
-@model FrontEnd.Models.PhotographyAdminViewModel
+@model FrontEnd.Models.VideographyAdminViewModel;
 
 <section class="container my-5">
 	<div id="blur-background" class="blur-bg"></div>
@@ -15,11 +16,11 @@
 		<!-- Shapes will be generated dynamically via JS -->
 	</div>
 	<a class="space-mono-regular green" asp-controller="Admin" asp-action="Index">Return</a>
-	<h1 class="text-center mb-4 dm-sans text-white">PHOTOGRAPHY CRUD</h1>
+	<h1 class="text-center mb-4 dm-sans text-white">VIDEOGRAPHY CRUD</h1>
 
 	<!-- Create Button -->
 	<div class="text-end mb-3">
-		<button class="btn btn-success" onclick="openModal('createModal')">Add new Photo</button>
+		<button class="btn btn-success" onclick="openModal('createModal')">Add new Video</button>
 	</div>
 
 	<!-- Photos Table -->
@@ -35,13 +36,14 @@
 				</tr>
 			</thead>
 			<tbody class="text-center text-white">
-				@foreach (var photo in Model.AllPhotos)
+				@foreach (var photo in Model.AllVideo)
 				{
 					<tr>
 						<td>@photo.Id</td>
 						<td>@photo.Title</td>
-						<td><img src="@photo.ImageUrl" alt="@photo.Title" width="100" /></td>
-						<td>@photo.CreatedAt?.ToString("yyyy-MM-dd")</td>
+						<td><img src="@photo.ThumbnailUrl" alt="@photo.Title" width="100" /></td>
+						<td><img src="@photo.VideoUrl" alt="@photo.Title" width="100" /></td>
+						<td>@photo.CreatedDate?.ToString("yyyy-MM-dd")</td>
 						<td>
 							<button class="btn btn-primary btn-sm" onclick="openEditPhotoModal(@photo.Id)">Edit</button>
 							<button class="btn btn-danger btn-sm" onclick="openDeletePhotoModal(@photo.Id)">Delete</button>
@@ -58,23 +60,30 @@
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title dm-sans text-white">Add Photo</h5>
+				<h5 class="modal-title dm-sans text-white">Add Video</h5>
 				<button type="button" class="btn-close" onclick="closeModal('createModal')"></button>
 			</div>
 			<div class="modal-body">
-				<form asp-action="CreatePhoto" method="post" enctype="multipart/form-data">
+				<form asp-action="CreateVideo" method="post" enctype="multipart/form-data">
 					<!-- Title -->
 					<div class="mb-3">
-						<label asp-for="Photo.Title" class="form-label space-mono-regular green"></label>
-						<input asp-for="Photo.Title" class="form-control" />
-						<span asp-validation-for="Photo.Title" class="text-danger"></span>
+						<label asp-for="Video.Title" class="form-label space-mono-regular green"></label>
+						<input asp-for="Video.Title" class="form-control" />
+						<span asp-validation-for="Video.Title" class="text-danger"></span>
+					</div>
+
+					<!-- Video thumbnail URL -->
+					<div class="mb-3">
+						<label asp-for="Video.ThumbnailUrl" class="form-label space-mono-regular green"></label>
+						<input asp-for="Video.ThumbnailUrl" class="form-control" />
+						<span asp-validation-for="Video.ThumbnailUrl" class="text-danger"></span>
 					</div>
 
 					<!-- Photo URL -->
 					<div class="mb-3">
-						<label asp-for="Photo.ImageUrl" class="form-label space-mono-regular green"></label>
-						<input asp-for="Photo.ImageUrl" class="form-control" />
-						<span asp-validation-for="Photo.ImageUrl" class="text-danger"></span>
+						<label asp-for="Video.VideoUrl" class="form-label space-mono-regular green"></label>
+						<input asp-for="Video.VideoUrl" class="form-control" />
+						<span asp-validation-for="Video.VideoUrl" class="text-danger"></span>
 					</div>
 
 					<!-- Submit -->
@@ -95,20 +104,27 @@
 				<button type="button" class="btn-close" onclick="closeModal('EditModal')"></button>
 			</div>
 			<div class="modal-body">
-				<form asp-action="EditPhoto" asp-controller="Admin" method="post" enctype="multipart/form-data">
+				<form asp-action="EditVideo" asp-controller="Admin" method="post" enctype="multipart/form-data">
 					<input type="hidden" id="EditPhotoId" name="id" />
 					<!-- Title -->
 					<div class="mb-3">
-						<label asp-for="Photo.Title" class="form-label space-mono-regular green"></label>
-						<input asp-for="Photo.Title" class="form-control" />
-						<span asp-validation-for="Photo.Title" class="text-danger"></span>
+						<label asp-for="Video.Title" class="form-label space-mono-regular green"></label>
+						<input asp-for="Video.Title" class="form-control" />
+						<span asp-validation-for="Video.Title" class="text-danger"></span>
+					</div>
+
+					<!-- Video thumbnail URL -->
+					<div class="mb-3">
+						<label asp-for="Video.ThumbnailUrl" class="form-label space-mono-regular green"></label>
+						<input asp-for="Video.ThumbnailUrl" class="form-control" />
+						<span asp-validation-for="Video.ThumbnailUrl" class="text-danger"></span>
 					</div>
 
 					<!-- Photo URL -->
 					<div class="mb-3">
-						<label asp-for="Photo.ImageUrl" class="form-label space-mono-regular green"></label>
-						<input asp-for="Photo.ImageUrl" class="form-control" />
-						<span asp-validation-for="Photo.ImageUrl" class="text-danger"></span>
+						<label asp-for="Video.VideoUrl" class="form-label space-mono-regular green"></label>
+						<input asp-for="Video.VideoUrl" class="form-control" />
+						<span asp-validation-for="Video.VideoUrl" class="text-danger"></span>
 					</div>
 
 					<!-- Submit -->
@@ -124,7 +140,7 @@
 <div id="deleteModal" class="modal" tabindex="-1">
 	<div class="modal-dialog">
 		<div class="modal-content">
-			<form id="deleteForm" asp-action="DeletePhoto" method="post">
+			<form id="deleteForm" asp-action="DeleteVideo" method="post">
 				<div class="modal-header">
 					<h5 class="modal-title dm-sans text-white">Delete Photo</h5>
 					<button type="button" class="btn-close" onclick="closeModal('deleteModal')"></button>
@@ -141,4 +157,3 @@
 		</div>
 	</div>
 </div>
-

@@ -15,6 +15,8 @@ namespace FrontEnd.Controllers
         private HttpClient _projectClient;
         private string photoBaseUrl = "http://localhost:5102/";
         private HttpClient _photoClient;
+        private string videoBaseUrl = "http://localhost:5180/";
+        private HttpClient _videoClient;
 
         public AdminController(IHttpClientFactory factory)
         {
@@ -24,6 +26,8 @@ namespace FrontEnd.Controllers
             _projectClient.BaseAddress = new Uri(projectBaseUrl);
             _photoClient = factory.CreateClient();
             _photoClient.BaseAddress = new Uri(photoBaseUrl);
+            _videoClient = factory.CreateClient();
+            _videoClient.BaseAddress = new Uri(videoBaseUrl);
         }
 
         public IActionResult Login()
@@ -180,6 +184,14 @@ namespace FrontEnd.Controllers
 
         }
 
+        public async Task<IActionResult> CreatePhoto(PhotographyAdminViewModel model)
+        {
+            PhotoModel dto = model.Photo;
+            var data = await _photoClient.PostAsJsonAsync("api/PhotoContoller/create", dto);
+            return RedirectToAction("Photography", "Admin");
+        }
+
+
         [HttpPost]
         public async Task<IActionResult> DeletePhoto(int id)
         {
@@ -188,7 +200,7 @@ namespace FrontEnd.Controllers
             {
                 TempData["Error"] = "Could not delete project.";
             }
-            return RedirectToAction("Projects", "Admin");
+            return RedirectToAction("Photography", "Admin");
         }
 
         [HttpPost]
@@ -201,8 +213,60 @@ namespace FrontEnd.Controllers
                 TempData["error"] = "error editing the Project";
             }
 
-            return RedirectToAction("Projects", "Admin");
+            return RedirectToAction("Photography", "Admin");
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Videography()
+        {
+            var IsLoggedIn = HttpContext.Session.GetString("IsLoggedIn");
+            if (IsLoggedIn == "true")
+            {
+                var video = await _videoClient.GetFromJsonAsync<List<VideoModel>>("/api/Video/list");
+                var view = new VideographyAdminViewModel
+                {
+                    AllVideo = video,
+                    Video = new VideoModel()
+                };
+                return View(view);
+            }
+
+            else
+            {
+                return RedirectToAction("Unauthorized", "Admin");
+            }
+
+        }
+
+        public async Task<IActionResult> CreateVideo(VideographyAdminViewModel model)
+        {
+            VideoModel dto = model.Video;
+            var data = await _videoClient.PostAsJsonAsync("api/Video/create", dto);
+            return RedirectToAction("Videography", "Admin");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteVideo(int id)
+        {
+            var response = await _videoClient.PostAsync($"/api/Video/delete/{id}", null);
+            if (!response.IsSuccessStatusCode)
+            {
+                TempData["Error"] = "Could not delete project.";
+            }
+            return RedirectToAction("Videography", "Admin");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> EditVideo(int id, VideographyAdminViewModel model)
+        {
+            VideoModel dto = model.Video;
+            var response = await _videoClient.PostAsJsonAsync($"/api/Video/edit/{id}", dto);
+            if (!response.IsSuccessStatusCode)
+            {
+                TempData["error"] = "error editing the Project";
+            }
+
+            return RedirectToAction("Videography", "Admin");
+        }
     }
 }

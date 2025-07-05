@@ -40,10 +40,20 @@ namespace PhotographyService.Controllers
                 return NotFound();
             }
 
-            project.Id = id;
-            project.Title = model.Title;
-            project.ImageUrl = model.ImageUrl;
-            project.CreatedAt = model.CreatedAt;
+            if (model.Title != null)
+            {
+                project.Title = model.Title;
+            }
+
+            if (model.ImageUrl != null)
+            {
+                project.ImageUrl = model.ImageUrl;
+            }
+
+            if (model.CreatedAt.HasValue)
+            {
+                project.CreatedAt = model.CreatedAt;
+            }
 
             _context.photoTable.Update(project);
             _context.SaveChanges();

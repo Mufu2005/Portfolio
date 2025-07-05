@@ -3,44 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\models\\videomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\models\\videomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F2D4D97-1E4E-4C70-8F6B-D64E7DA997F6}|Services\\PhotographyService\\PhotographyService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\photographyservice\\controllers\\photocontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F2D4D97-1E4E-4C70-8F6B-D64E7DA997F6}|Services\\PhotographyService\\PhotographyService.csproj|solutionrelative:services\\photographyservice\\controllers\\photocontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{79959773-57DF-463A-A596-1EC3AEC02193}|Services\\VideographyService\\VideographyService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\videographyservice\\models\\videomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79959773-57DF-463A-A596-1EC3AEC02193}|Services\\VideographyService\\VideographyService.csproj|solutionrelative:services\\videographyservice\\models\\videomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1EA0C25-9A49-9F04-09E6-FB71B8B28BD7}|Services\\ProjectService\\ProjectService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\projectservice\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1EA0C25-9A49-9F04-09E6-FB71B8B28BD7}|Services\\ProjectService\\ProjectService.csproj|solutionrelative:services\\projectservice\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\views\\admin\\videography.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\views\\admin\\videography.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1EA0C25-9A49-9F04-09E6-FB71B8B28BD7}|Services\\ProjectService\\ProjectService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\projectservice\\models\\projectmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1EA0C25-9A49-9F04-09E6-FB71B8B28BD7}|Services\\ProjectService\\ProjectService.csproj|solutionrelative:services\\projectservice\\models\\projectmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E731CD7F-45D1-4D49-8C8B-27BC07E5EBC8}|Services\\AdminService\\AdminService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\adminservice\\controllers\\authcontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E731CD7F-45D1-4D49-8C8B-27BC07E5EBC8}|Services\\AdminService\\AdminService.csproj|solutionrelative:services\\adminservice\\controllers\\authcontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F2D4D97-1E4E-4C70-8F6B-D64E7DA997F6}|Services\\PhotographyService\\PhotographyService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\photographyservice\\models\\photomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F2D4D97-1E4E-4C70-8F6B-D64E7DA997F6}|Services\\PhotographyService\\PhotographyService.csproj|solutionrelative:services\\photographyservice\\models\\photomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\views\\admin\\photography.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\views\\admin\\photography.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{79959773-57DF-463A-A596-1EC3AEC02193}|Services\\VideographyService\\VideographyService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\videographyservice\\controllers\\videocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79959773-57DF-463A-A596-1EC3AEC02193}|Services\\VideographyService\\VideographyService.csproj|solutionrelative:services\\videographyservice\\controllers\\videocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\models\\photographyadminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\models\\photographyadminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79959773-57DF-463A-A596-1EC3AEC02193}|Services\\VideographyService\\VideographyService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\videographyservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79959773-57DF-463A-A596-1EC3AEC02193}|Services\\VideographyService\\VideographyService.csproj|solutionrelative:services\\videographyservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79959773-57DF-463A-A596-1EC3AEC02193}|Services\\VideographyService\\VideographyService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\videographyservice\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79959773-57DF-463A-A596-1EC3AEC02193}|Services\\VideographyService\\VideographyService.csproj|solutionrelative:services\\videographyservice\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F2D4D97-1E4E-4C70-8F6B-D64E7DA997F6}|Services\\PhotographyService\\PhotographyService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\photographyservice\\controllers\\photocontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F2D4D97-1E4E-4C70-8F6B-D64E7DA997F6}|Services\\PhotographyService\\PhotographyService.csproj|solutionrelative:services\\photographyservice\\controllers\\photocontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F2D4D97-1E4E-4C70-8F6B-D64E7DA997F6}|Services\\PhotographyService\\PhotographyService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\photographyservice\\models\\photomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F2D4D97-1E4E-4C70-8F6B-D64E7DA997F6}|Services\\PhotographyService\\PhotographyService.csproj|solutionrelative:services\\photographyservice\\models\\photomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\models\\photomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\models\\photomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\views\\admin\\projects.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\views\\admin\\projects.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\models\\projectmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\models\\projectmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -49,14 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\models\\photographyadminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\models\\photographyadminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1EA0C25-9A49-9F04-09E6-FB71B8B28BD7}|Services\\ProjectService\\ProjectService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\projectservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1EA0C25-9A49-9F04-09E6-FB71B8B28BD7}|Services\\ProjectService\\ProjectService.csproj|solutionrelative:services\\projectservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 440,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,20 +82,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProjectModel.cs",
-              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\ProjectService\\Models\\ProjectModel.cs",
-              "RelativeDocumentMoniker": "Services\\ProjectService\\Models\\ProjectModel.cs",
-              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\ProjectService\\Models\\ProjectModel.cs",
-              "RelativeToolTip": "Services\\ProjectService\\Models\\ProjectModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAYAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "VideoModel.cs",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Models\\VideoModel.cs",
+              "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Models\\VideoModel.cs",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Models\\VideoModel.cs",
+              "RelativeToolTip": "FrontEnd\\FrontEnd\\Models\\VideoModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T13:24:30.382Z",
+              "WhenOpened": "2025-07-05T18:48:37.714Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "FrontEnd\\FrontEnd\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-05T18:29:49.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Videography.cshtml",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Views\\Admin\\Videography.cshtml",
+              "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Views\\Admin\\Videography.cshtml",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Views\\Admin\\Videography.cshtml",
+              "RelativeToolTip": "FrontEnd\\FrontEnd\\Views\\Admin\\Videography.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAUwDoAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-05T18:01:38.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\VideographyService\\Program.cs",
+              "RelativeDocumentMoniker": "Services\\VideographyService\\Program.cs",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\VideographyService\\Program.cs",
+              "RelativeToolTip": "Services\\VideographyService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T17:33:57.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\VideographyService\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Services\\VideographyService\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\VideographyService\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Services\\VideographyService\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T17:22:55.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VideoController.cs",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\VideographyService\\Controllers\\VideoController.cs",
+              "RelativeDocumentMoniker": "Services\\VideographyService\\Controllers\\VideoController.cs",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\VideographyService\\Controllers\\VideoController.cs",
+              "RelativeToolTip": "Services\\VideographyService\\Controllers\\VideoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T17:21:53.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\wwwroot\\css\\site.css",
@@ -103,33 +172,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Photography.cshtml",
               "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Views\\Admin\\Photography.cshtml",
               "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Views\\Admin\\Photography.cshtml",
               "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Views\\Admin\\Photography.cshtml",
               "RelativeToolTip": "FrontEnd\\FrontEnd\\Views\\Admin\\Photography.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-07-03T19:59:06.023Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "PhotoContoller.cs",
               "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\PhotographyService\\Controllers\\PhotoContoller.cs",
               "RelativeDocumentMoniker": "Services\\PhotographyService\\Controllers\\PhotoContoller.cs",
-              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\PhotographyService\\Controllers\\PhotoContoller.cs*",
-              "RelativeToolTip": "Services\\PhotographyService\\Controllers\\PhotoContoller.cs*",
-              "ViewState": "AgIAABMAAAAAAAAAAAAswBkAAAAaAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\PhotographyService\\Controllers\\PhotoContoller.cs",
+              "RelativeToolTip": "Services\\PhotographyService\\Controllers\\PhotoContoller.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAmwDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T19:47:56.619Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-03T19:47:56.619Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "PhotoModel.cs",
               "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\PhotographyService\\Models\\PhotoModel.cs",
               "RelativeDocumentMoniker": "Services\\PhotographyService\\Models\\PhotoModel.cs",
@@ -137,92 +205,7 @@
               "RelativeToolTip": "Services\\PhotographyService\\Models\\PhotoModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T19:33:25.002Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Projects.cshtml",
-              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Views\\Admin\\Projects.cshtml",
-              "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Views\\Admin\\Projects.cshtml",
-              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Views\\Admin\\Projects.cshtml",
-              "RelativeToolTip": "FrontEnd\\FrontEnd\\Views\\Admin\\Projects.cshtml",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwC8AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-04T11:54:45.887Z"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "59299815-8943-4cb5-91ba-b11340f673a0",
-        "Display": 1,
-        "X": 1470,
-        "Y": 0,
-        "Width": 582,
-        "Height": 1157,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProjectController.cs",
-              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\ProjectService\\Controllers\\ProjectController.cs",
-              "RelativeDocumentMoniker": "Services\\ProjectService\\Controllers\\ProjectController.cs",
-              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\ProjectService\\Controllers\\ProjectController.cs",
-              "RelativeToolTip": "Services\\ProjectService\\Controllers\\ProjectController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAEIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T19:50:43.108Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "PhotographyAdminViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Models\\PhotographyAdminViewModel.cs",
-              "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Models\\PhotographyAdminViewModel.cs",
-              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Models\\PhotographyAdminViewModel.cs",
-              "RelativeToolTip": "FrontEnd\\FrontEnd\\Models\\PhotographyAdminViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T13:23:34.146Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PhotoModel.cs",
-              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Models\\PhotoModel.cs",
-              "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Models\\PhotoModel.cs",
-              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Models\\PhotoModel.cs",
-              "RelativeToolTip": "FrontEnd\\FrontEnd\\Models\\PhotoModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T13:34:03.052Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AuthContoller.cs",
-              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\AdminService\\Controllers\\AuthContoller.cs",
-              "RelativeDocumentMoniker": "Services\\AdminService\\Controllers\\AuthContoller.cs",
-              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\AdminService\\Controllers\\AuthContoller.cs",
-              "RelativeToolTip": "Services\\AdminService\\Controllers\\AuthContoller.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAswG0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T12:02:28.821Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-03T19:33:25.002Z"
             }
           ]
         }
@@ -233,11 +216,11 @@
       "VerticalTabListWidth": 256,
       "FloatingWindowState": {
         "Id": "f9b94dea-0ba2-4078-880d-a2325c151f71",
-        "Display": 1,
+        "Display": 0,
         "X": -6,
         "Y": 0,
         "Width": 762,
-        "Height": 1157,
+        "Height": 882,
         "WindowState": 0
       },
       "DocumentGroups": [
@@ -247,7 +230,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "site.js",
               "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\wwwroot\\js\\site.js",
@@ -259,41 +242,75 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Controllers\\AdminController.cs*",
-              "RelativeToolTip": "FrontEnd\\FrontEnd\\Controllers\\AdminController.cs*",
-              "ViewState": "AgIAAJkAAAAAAAAAAAAUwM4AAAAFAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "FrontEnd\\FrontEnd\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAN8AAAAAAAAAAAAcwPQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-27T17:01:32.59Z",
               "EditorCaption": ""
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "59299815-8943-4cb5-91ba-b11340f673a0",
+        "Display": 0,
+        "X": 958,
+        "Y": 0,
+        "Width": 582,
+        "Height": 869,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ProjectModel.cs",
-              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Models\\ProjectModel.cs",
-              "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Models\\ProjectModel.cs",
-              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Models\\ProjectModel.cs",
-              "RelativeToolTip": "FrontEnd\\FrontEnd\\Models\\ProjectModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "VideoModel.cs",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\VideographyService\\Models\\VideoModel.cs",
+              "RelativeDocumentMoniker": "Services\\VideographyService\\Models\\VideoModel.cs",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\VideographyService\\Models\\VideoModel.cs",
+              "RelativeToolTip": "Services\\VideographyService\\Models\\VideoModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T20:07:23.805Z",
+              "WhenOpened": "2025-07-05T17:54:33.804Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\ProjectService\\Program.cs",
-              "RelativeDocumentMoniker": "Services\\ProjectService\\Program.cs",
-              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\ProjectService\\Program.cs",
-              "RelativeToolTip": "Services\\ProjectService\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "PhotographyAdminViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Models\\PhotographyAdminViewModel.cs",
+              "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Models\\PhotographyAdminViewModel.cs",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Models\\PhotographyAdminViewModel.cs",
+              "RelativeToolTip": "FrontEnd\\FrontEnd\\Models\\PhotographyAdminViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T12:17:06.01Z"
+              "WhenOpened": "2025-07-03T13:23:34.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PhotoModel.cs",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Models\\PhotoModel.cs",
+              "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Models\\PhotoModel.cs",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Models\\PhotoModel.cs",
+              "RelativeToolTip": "FrontEnd\\FrontEnd\\Models\\PhotoModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T13:34:03.052Z"
             }
           ]
         }

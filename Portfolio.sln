@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectService", "Services\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotographyService", "Services\PhotographyService\PhotographyService.csproj", "{7F2D4D97-1E4E-4C70-8F6B-D64E7DA997F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideographyService", "Services\VideographyService\VideographyService.csproj", "{79959773-57DF-463A-A596-1EC3AEC02193}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{7F2D4D97-1E4E-4C70-8F6B-D64E7DA997F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F2D4D97-1E4E-4C70-8F6B-D64E7DA997F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F2D4D97-1E4E-4C70-8F6B-D64E7DA997F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79959773-57DF-463A-A596-1EC3AEC02193}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79959773-57DF-463A-A596-1EC3AEC02193}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79959773-57DF-463A-A596-1EC3AEC02193}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79959773-57DF-463A-A596-1EC3AEC02193}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

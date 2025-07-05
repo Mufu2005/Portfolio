@@ -40,12 +40,30 @@ namespace ProjectService.Controllers
                 return NotFound();
             }
 
-            project.Id = id;
-            project.Title = model.Title;
-            project.Description = model.Description;
-            project.ImageUrl = model.ImageUrl;
-            project.ProjectUrl = model.ProjectUrl;
-            project.CreateAt = model.CreateAt;
+            if(model.Title != null)
+            {
+                project.Title = model.Title;
+            }
+
+            if (model.Description != null)
+            {
+                project.Description = model.Description;
+            }
+
+            if (model.ImageUrl != null)
+            {
+                project.ImageUrl = model.ImageUrl;
+            }
+
+            if (model.ProjectUrl != null)
+            {
+                project.ProjectUrl = model.ProjectUrl;
+            }
+
+            if (model.CreateAt.HasValue)
+            {
+                project.CreateAt = model.CreateAt;
+            }
 
             _context.ProjectTable.Update(project);
             _context.SaveChanges();

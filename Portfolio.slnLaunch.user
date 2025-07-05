@@ -21,6 +21,11 @@
         "Path": "Services\\PhotographyService\\PhotographyService.csproj",
         "Action": "Start",
         "DebugTarget": "http"
+      },
+      {
+        "Path": "Services\\VideographyService\\VideographyService.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
       }
     ]
   }
