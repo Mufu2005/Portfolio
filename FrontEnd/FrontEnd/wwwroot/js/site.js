@@ -200,6 +200,12 @@ function openEditPhotoModal(photoId) {
     document.getElementById("blur-background").classList.add("active");
 }
 
+function openDeletePhotoModal(subsId) {
+    document.getElementById("deleteSubscriberId").value = subsId;
+    document.getElementById("deleteModal").style.display = "block";
+    document.getElementById("blur-background").classList.add("active");
+}
+
 function closeModal(id) {
     document.getElementById(id).style.display = 'none';
     document.getElementById("blur-background").classList.remove("active");

@@ -42,8 +42,12 @@
 					<tr>
 						<td>@project.Id</td>
 						<td>@project.Title</td>
-						<td>@project.Description</td>
-						<td><img src="@project.ImageUrl" alt="@project.Title" width="100" /></td>
+						<td>
+							<div class="scrollable-wrapper">
+							<div class="scrollable-description">@project.Description</div>
+							</div>
+						</td>
+						<td><img src="@(project.ImageUrl?.StartsWith("http") == true ? project.ImageUrl : Url.Content(project.ImageUrl))" alt="@project.Title" width="100" /></td>
 						<td><a href="@project.ProjectUrl" target="_blank">Visit</a></td>
 						<td>@project.CreateAt?.ToString("yyyy-MM-dd")</td>
 						<td>
@@ -94,6 +98,13 @@
 						<input asp-for="Project.ImageUrl" class="form-control" />
 					</div>
 
+					<!-- Date time -->
+					<div class="mb-3">
+						<label asp-for="Project.CreateAt" class="form-label space-mono-regular green"></label>
+						<input asp-for="Project.CreateAt" class="form-control" />
+						<span asp-validation-for="Project.CreateAt" class="text-danger"></span>
+					</div>
+
 					<!-- Submit -->
 					<div class="text-center">
 						<button type="submit" class="btn btn-success">Create</button>
@@ -139,6 +150,13 @@
 					<div class="mb-3">
 						<label class="form-label space-mono-regular green">Project Image</label>
 						<input asp-for="Project.ImageUrl" class="form-control" />
+					</div>
+
+					<!-- Date time -->
+					<div class="mb-3">
+						<label asp-for="Project.CreateAt" class="form-label space-mono-regular green"></label>
+						<input asp-for="Project.CreateAt" class="form-control" />
+						<span asp-validation-for="Project.CreateAt" class="text-danger"></span>
 					</div>
 
 					<!-- Submit -->

@@ -30,6 +30,7 @@
 				<tr>
 					<th>Id</th>
 					<th>Title</th>
+					<th>Thumbnail</th>
 					<th>ImageUrl</th>
 					<th>CreatedAt</th>
 					<th>U-D</th>
@@ -86,6 +87,13 @@
 						<span asp-validation-for="Video.VideoUrl" class="text-danger"></span>
 					</div>
 
+					<!-- Date time -->
+					<div class="mb-3">
+						<label asp-for="Video.CreatedDate" class="form-label space-mono-regular green"></label>
+						<input asp-for="Video.CreatedDate" class="form-control" />
+						<span asp-validation-for="Video.CreatedDate" class="text-danger"></span>
+					</div>
+
 					<!-- Submit -->
 					<div class="text-center">
 						<button type="submit" class="btn btn-success">Create</button>
@@ -125,6 +133,13 @@
 						<label asp-for="Video.VideoUrl" class="form-label space-mono-regular green"></label>
 						<input asp-for="Video.VideoUrl" class="form-control" />
 						<span asp-validation-for="Video.VideoUrl" class="text-danger"></span>
+					</div>
+
+					<!-- Date time -->
+					<div class="mb-3">
+						<label asp-for="Video.CreatedDate" class="form-label space-mono-regular green"></label>
+						<input asp-for="Video.CreatedDate" class="form-control" />
+						<span asp-validation-for="Video.CreatedDate" class="text-danger"></span>
 					</div>
 
 					<!-- Submit -->

@@ -26,6 +26,11 @@
         "Path": "Services\\VideographyService\\VideographyService.csproj",
         "Action": "Start",
         "DebugTarget": "http"
+      },
+      {
+        "Path": "Services\\SubscriptionService\\SubscriptionService.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
       }
     ]
   }

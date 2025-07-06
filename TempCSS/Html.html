@@ -95,6 +95,30 @@
   }
 }
 
+.scrollable-wrapper {
+    position: relative;
+    max-width: 200px;
+    max-height: 60px;
+    overflow: hidden;
+}
+
+.scrollable-description {
+    max-height: 60px;
+    overflow-y: auto;
+    padding-right: 10px; /* space for scroll */
+    white-space: pre-wrap;
+    word-break: break-word;
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+}
+
+/* Hide scrollbar - Chrome, Safari */
+.scrollable-description::-webkit-scrollbar {
+    display: none;
+}
+
   </style>
 </head>
 <body>
@@ -104,9 +128,19 @@
   <div class="intro-section"></div>
   <div class="intro-text" id="introText">WELCOME</div>
   <div class="main-content">
+     <div class="scrollable-wrapper">
+	<div class="scrollable-description">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+		Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, 
+		nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, 
+		interdum mattis neque.
+	</div>
+</div>
     <h1>Welcome to Vice City</h1>
     <p>Here's where your journey begins. Scroll through to discover more...</p>
   </div>
+
+ 
 
   <script>
     document.addEventListener("DOMContentLoaded", () => {

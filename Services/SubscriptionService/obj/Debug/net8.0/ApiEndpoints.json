@@ -1,0 +1,65 @@
+[
+  {
+    "ContainingType": "SubscriptionService.Controllers.SubscriptionController",
+    "Method": "Add",
+    "RelativePath": "api/Subscription/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "SubscriptionService.Models.SubscriptionModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SubscriptionService.Controllers.SubscriptionController",
+    "Method": "Delete",
+    "RelativePath": "api/Subscription/delete/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SubscriptionService.Controllers.SubscriptionController",
+    "Method": "Edit",
+    "RelativePath": "api/Subscription/edit/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "SubscriptionService.Models.SubscriptionModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SubscriptionService.Controllers.SubscriptionController",
+    "Method": "ListAllSubscribers",
+    "RelativePath": "api/Subscription/list",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

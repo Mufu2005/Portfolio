@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotographyService", "Servi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideographyService", "Services\VideographyService\VideographyService.csproj", "{79959773-57DF-463A-A596-1EC3AEC02193}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubscriptionService", "Services\SubscriptionService\SubscriptionService.csproj", "{FEED2552-42DC-4F1A-B5BD-CDB8E033201F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{79959773-57DF-463A-A596-1EC3AEC02193}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79959773-57DF-463A-A596-1EC3AEC02193}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79959773-57DF-463A-A596-1EC3AEC02193}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEED2552-42DC-4F1A-B5BD-CDB8E033201F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEED2552-42DC-4F1A-B5BD-CDB8E033201F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEED2552-42DC-4F1A-B5BD-CDB8E033201F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEED2552-42DC-4F1A-B5BD-CDB8E033201F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

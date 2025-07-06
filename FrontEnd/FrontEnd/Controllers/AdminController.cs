@@ -17,6 +17,8 @@ namespace FrontEnd.Controllers
         private HttpClient _photoClient;
         private string videoBaseUrl = "http://localhost:5180/";
         private HttpClient _videoClient;
+        private string SubscribeBaseUrl = "http://localhost:5089/";
+        private HttpClient _subscribeClient;
 
         public AdminController(IHttpClientFactory factory)
         {
@@ -28,6 +30,8 @@ namespace FrontEnd.Controllers
             _photoClient.BaseAddress = new Uri(photoBaseUrl);
             _videoClient = factory.CreateClient();
             _videoClient.BaseAddress = new Uri(videoBaseUrl);
+            _subscribeClient = factory.CreateClient();
+            _subscribeClient.BaseAddress = new Uri(SubscribeBaseUrl);
         }
 
         public IActionResult Login()
@@ -267,6 +271,61 @@ namespace FrontEnd.Controllers
             }
 
             return RedirectToAction("Videography", "Admin");
+        }
+
+        //Subscription
+
+        [HttpGet]
+        public async Task<IActionResult> Subscription()
+        {
+            var IsLoggedIn = HttpContext.Session.GetString("IsLoggedIn");
+            if (IsLoggedIn == "true")
+            {
+                var subscribers = await _subscribeClient.GetFromJsonAsync<List<SubscriptionModel>>("/api/Subscription/list");
+                var view = new SubscriptionAdminViewModel
+                {
+                    AllSubscribers = subscribers,
+                    Subscribers = new SubscriptionModel()
+                };
+                return View(view);
+            }
+
+            else
+            {
+                return RedirectToAction("Unauthorized", "Admin");
+            }
+
+        }
+
+        public async Task<IActionResult> CreateSubscriber(SubscriptionAdminViewModel model)
+        {
+            SubscriptionModel dto = model.Subscribers;
+            var data = await _subscribeClient.PostAsJsonAsync("api/Subscription/add", dto);
+            return RedirectToAction("Subscription", "Admin");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteSubscriber(int id)
+        {
+            var response = await _subscribeClient.PostAsync($"/api/Subscription/delete/{id}", null);
+            if (!response.IsSuccessStatusCode)
+            {
+                TempData["Error"] = "Could not remove Subscriber.";
+            }
+            return RedirectToAction("Subscription", "Admin");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> EditSubscriber(int id, SubscriptionAdminViewModel model)
+        {
+            SubscriptionModel dto = model.Subscribers;
+            var response = await _subscribeClient.PostAsJsonAsync($"/api/Subscription/edit/{id}", dto);
+            if (!response.IsSuccessStatusCode)
+            {
+                TempData["error"] = "error editing the Subscriber";
+            }
+
+            return RedirectToAction("Subscription", "Admin");
         }
     }
 }
