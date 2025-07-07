@@ -1,0 +1,192 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model IEnumerable<FrontEnd.Models.VideoModel>
+
+@{
+    ViewData["Title"] = "Gallery - Videos";
+}
+
+<section class="container my-5">
+    <a class="space-mono-regular green" asp-action="Index">Return</a>
+    <div class="text-center mb-5">
+        <h1 class="dm-sans text-white text-uppercase">Video Gallery</h1>
+        <p class="space-mono-regular green">Creative visual stories and recordings.</p>
+    </div>
+
+    <div class="row g-4">
+        @foreach (var video in Model)
+        {
+            <div class="col-md-4">
+                <div class="frosted-box border p-3 text-center h-100 d-flex flex-column justify-content-between">
+                    <img src="@video.ThumbnailUrl" alt="@video.Title" class="img-fluid rounded mb-2" />
+                    <h5 class="text-white">@video.Title</h5>
+                    <button class="btn btn-outline-primary mt-3"
+                            onclick="enlargeMedia('@video.VideoUrl', '@video.Title', '@video.CreatedDate?.ToString("yyyy-MM-dd")', 'video')">
+                        Watch
+                    </button>
+                </div>
+            </div>
+        }
+    </div>
+</section>
+
+<!-- Media Modal -->
+<div id="mediaModal" class="modal-overlay d-none">
+    <div class="modal-content-custom">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h4 class="text-white space-mono-bold mb-0" id="mediaTitle"></h4>
+            <button class="btn-close btn-close-white" onclick="closeModal()"></button>
+        </div>
+        <div class="plyr__video-embed" id="mediaContentWrapper" style="display: none;">
+            <video id="modalPlyrVideo" playsinline controls>
+                <source id="plyrSource" src="" type="video/mp4" />
+            </video>
+        </div>
+        <p class="text-white text-end" id="mediaDate"></p>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function enlargeMedia(url, title, date, type) {
+            document.getElementById("mediaTitle").textContent = title;
+            document.getElementById("mediaDate").textContent = `📅 ${date || ''}`;
+            const container = document.getElementById("mediaContent");
+            container.innerHTML = type === 'image'
+                ? `<img src="${url}" class="img-fluid rounded" style="max-height: 70vh;" />`
+                : `<video src="${url}" class="rounded shadow" style="width: 100%; max-height: 80vh; object-fit: contain;" controls autoplay></video>`;
+            document.getElementById("mediaModal").classList.remove("d-none");
+        }
+
+        function closeModal() {
+            document.getElementById("mediaModal").classList.add("d-none");
+            document.getElementById("mediaContent").innerHTML = '';
+            document.getElementById("mediaDate").textContent = '';
+        }
+
+                let player;
+
+        function enlargeMedia(url, title, date, type) {
+            document.getElementById("mediaTitle").textContent = title;
+            document.getElementById("mediaDate").textContent = `📅 ${date || ''}`;
+
+            const wrapper = document.getElementById("mediaContentWrapper");
+            const source = document.getElementById("plyrSource");
+            const video = document.getElementById("modalPlyrVideo");
+
+            if (type === 'video') {
+                source.src = url;
+                video.load();
+
+                if (!player) {
+                    player = new Plyr('#modalPlyrVideo');
+                }
+
+                wrapper.style.display = 'block';
+                document.getElementById("mediaModal").classList.remove("d-none");
+                player.play();
+            }
+        }
+
+        function closeModal() {
+            if (player) {
+                player.pause();
+            }
+            document.getElementById("mediaModal").classList.add("d-none");
+            document.getElementById("mediaDate").textContent = '';
+            document.getElementById("mediaTitle").textContent = '';
+        }
+    </script>
+}
+
+<style>
+    :root {
+        /* Accent Color (Green) */
+        --plyr-color-main: #28a745;
+    }
+
+    .plyr {
+        font-family: 'Space Mono', monospace;
+        font-size: 0.9rem;
+    }
+
+    /* Base Controls */
+    .plyr--full-ui input[type=range] {
+        color: #28a745; /* Timeline bar */
+    }
+
+    .plyr__control {
+        background-color: rgba(255, 255, 255, 0.1); /* frosted feel */
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+        .plyr__control:hover,
+        .plyr__control[aria-pressed="true"] {
+            background-color: #28a745;
+            color: #fff;
+        }
+
+    /* Time/Progress Labels */
+    .plyr__time, .plyr__tooltip {
+        color: white;
+    }
+
+    /* Settings Menu */
+    .plyr__menu__container {
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        border-radius: 10px;
+    }
+
+    .plyr--video {
+        background: rgba(0, 0, 0, 0.6); /* background of video area */
+        border-radius: 1rem;
+    }
+
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2000;
+        backdrop-filter: blur(10px);
+    }
+
+    .modal-content-custom {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 1rem;
+        padding: 2rem;
+        width: 70%;
+        max-width: 900px;
+        max-height: 90vh;
+        overflow-y: auto;
+        box-shadow: 0 0 30px rgba(40, 167, 69, 0.3);
+        animation: fadeInUp 0.3s ease-out;
+    }
+
+    @@keyframes fadeInUp {
+        from
+
+    {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    }
+</style>

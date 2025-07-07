@@ -1,0 +1,92 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@{
+    ViewData["Title"] = "Gallery";
+}
+
+<section class="container my-5">
+    <a class="space-mono-regular green" asp-controller="Home" asp-action="Index">Return</a>
+    
+    <h1 class="dm-sans text-white text-uppercase">Gallery</h1>
+    <div style="margin-bottom:25vh; "></div>
+    <div class=" text-center">
+    <p class="space-mono-regular green mb-4">Choose what you'd like to explore:</p>
+    </div>
+
+    <div class="d-flex justify-content-center gap-4">
+        <a asp-action="Photo" class="btn btn-outline-success btn-lg">📷 Photos</a>
+        <a asp-action="Video" class="btn btn-outline-primary btn-lg">🎬 Videos</a>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        function toggleSection(type) {
+            document.getElementById('photosSection').classList.toggle('d-none', type !== 'photos');
+            document.getElementById('videosSection').classList.toggle('d-none', type !== 'videos');
+        }
+
+        function enlargeMedia(url, title, type) {
+            document.getElementById("mediaTitle").textContent = title;
+            const container = document.getElementById("mediaContent");
+            container.innerHTML = type === 'image'
+                ? `<img src="${url}" class="img-fluid rounded" style="max-height: 70vh;" />`
+                : `<video src="${url}" class="img-fluid rounded" style="max-height: 70vh;" controls autoplay></video>`;
+            document.getElementById("mediaModal").classList.remove("d-none");
+        }
+
+        function closeModal() {
+            document.getElementById("mediaModal").classList.add("d-none");
+            document.getElementById("mediaContent").innerHTML = '';
+        }
+    </script>
+}
+
+<style>
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2000;
+        backdrop-filter: blur(10px);
+    }
+
+    .modal-content-custom {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 1rem;
+        padding: 2rem;
+        width: 70%;
+        max-width: 900px;
+        max-height: 90vh;
+        overflow-y: auto;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        animation: fadeInUp 0.3s ease-out;
+    }
+
+    @@keyframes fadeInUp {
+        from
+
+    {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    }
+</style>
+
