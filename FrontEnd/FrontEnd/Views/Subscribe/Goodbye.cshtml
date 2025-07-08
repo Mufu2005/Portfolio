@@ -1,0 +1,26 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@{
+    ViewData["Title"] = "Goodbye!";
+}
+
+<section class="container my-5">
+    <div class="text-center">
+        <h1 class="dm-sans text-danger mb-3">You've Been Unsubscribed</h1>
+        <p class="space-mono-regular text-white mb-4">
+            We're sad to see you go. You’ve successfully been removed from our update list.
+        </p>
+
+        <div class="mb-4">
+            <i class="bi bi-envelope-slash-fill" style="font-size: 4rem; color: #dc3545;"></i>
+        </div>
+
+        <a asp-controller="Home" asp-action="Index" class="btn btn-outline-light">
+            Return Home
+        </a>
+    </div>
+</section>

@@ -1,0 +1,46 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model FrontEnd.Models.SubscriptionModel
+
+@{
+    ViewData["Title"] = "Unsubscribe";
+}
+
+<section class="container my-5">
+    <a class="space-mono-regular green" asp-controller="Home" asp-action="Index">Return</a>
+
+    <div class="text-center mb-4">
+        <h1 class="dm-sans text-white text-uppercase">Unsubscribe</h1>
+        <p class="space-mono-regular green">We're sorry to see you go. Enter your email and ID(From email) to unsubscribe from updates.</p>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form asp-action="Unsubscribe" method="post" class="frosted-box border p-4 rounded text-white">
+                <div class="mb-3">
+                    <label asp-for="Id" class="form-label">Subscription ID</label>
+                    <input asp-for="Id" class="form-control" />
+                    <span asp-validation-for="Id" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Email" class="form-label">Email</label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-danger w-100">Unsubscribe</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

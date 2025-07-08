@@ -54,7 +54,7 @@ namespace SubscriptionService.Controllers
         }
 
         [HttpPost("delete/{id:int}")]
-        public IActionResult Delete(int id)
+        public IActionResult Delete(int id, SubscriptionModel model)
         {
             var subscribers = _context.SubscriptionTable.Find(id);
             if (subscribers == null)
@@ -62,7 +62,18 @@ namespace SubscriptionService.Controllers
                 return NotFound();
             }
 
-            _context.SubscriptionTable.Remove(subscribers);
+            if (model.Id == subscribers.Id && model.Email == subscribers.Email)
+            {
+                _context.SubscriptionTable.Remove(subscribers);
+            }
+            else if(model.Id == subscribers.Id && model.Email == null)
+            {
+                _context.SubscriptionTable.Remove(subscribers);
+            }
+
+
+
+            
             _context.SaveChanges();
             return Ok();
         }
