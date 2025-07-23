@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\FrontEnd.csproj": {}
+    "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FireBaseMediaService\\FireBaseMediaService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\FrontEnd.csproj": {
+    "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FireBaseMediaService\\FireBaseMediaService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\FrontEnd.csproj",
-        "projectName": "FrontEnd",
-        "projectPath": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\FrontEnd.csproj",
+        "projectUniqueName": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FireBaseMediaService\\FireBaseMediaService.csproj",
+        "projectName": "FireBaseMediaService",
+        "projectPath": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FireBaseMediaService\\FireBaseMediaService.csproj",
         "packagesPath": "C:\\Users\\mufum\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\obj\\",
+        "outputPath": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FireBaseMediaService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -52,7 +52,11 @@
           "dependencies": {
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
-              "version": "[1.21.0, )"
+              "version": "[1.22.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
             }
           },
           "imports": [

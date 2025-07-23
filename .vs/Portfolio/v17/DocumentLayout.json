@@ -125,6 +125,98 @@
           "SelectedChildIndex": 5,
           "Children": [
             {
+<<<<<<< Updated upstream
+=======
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MediaModel.cs",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FireBaseMediaService\\Model\\MediaModel.cs",
+              "RelativeDocumentMoniker": "Services\\FireBaseMediaService\\Model\\MediaModel.cs",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FireBaseMediaService\\Model\\MediaModel.cs",
+              "RelativeToolTip": "Services\\FireBaseMediaService\\Model\\MediaModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T22:42:05.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FireBaseMediaService\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Services\\FireBaseMediaService\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FireBaseMediaService\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Services\\FireBaseMediaService\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAowA8AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T22:37:07.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FireBaseMediaService\\appsettings.json",
+              "RelativeDocumentMoniker": "Services\\FireBaseMediaService\\appsettings.json",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FireBaseMediaService\\appsettings.json",
+              "RelativeToolTip": "Services\\FireBaseMediaService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-11T22:36:26.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FireBaseMediaService\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Services\\FireBaseMediaService\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FireBaseMediaService\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Services\\FireBaseMediaService\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T22:31:51.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FireBaseMediaService\\Program.cs",
+              "RelativeDocumentMoniker": "Services\\FireBaseMediaService\\Program.cs",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FireBaseMediaService\\Program.cs",
+              "RelativeToolTip": "Services\\FireBaseMediaService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T22:29:22.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\PhotographyService\\Program.cs",
+              "RelativeDocumentMoniker": "Services\\PhotographyService\\Program.cs",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\PhotographyService\\Program.cs",
+              "RelativeToolTip": "Services\\PhotographyService\\Program.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAcwBQAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T22:29:09.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PhotoContoller.cs",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\PhotographyService\\Controllers\\PhotoContoller.cs",
+              "RelativeDocumentMoniker": "Services\\PhotographyService\\Controllers\\PhotoContoller.cs",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\PhotographyService\\Controllers\\PhotoContoller.cs",
+              "RelativeToolTip": "Services\\PhotographyService\\Controllers\\PhotoContoller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T22:22:10.837Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+>>>>>>> Stashed changes
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
