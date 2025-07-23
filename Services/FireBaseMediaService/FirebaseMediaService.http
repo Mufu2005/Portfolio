@@ -1,0 +1,6 @@
+@FirebaseMediaService_HostAddress = http://localhost:5201
+
+GET {{FirebaseMediaService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

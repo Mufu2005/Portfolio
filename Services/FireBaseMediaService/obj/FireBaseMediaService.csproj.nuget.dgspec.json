@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FireBaseMediaService\\FireBaseMediaService.csproj": {}
+    "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FirebaseMediaService\\FirebaseMediaService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FireBaseMediaService\\FireBaseMediaService.csproj": {
+    "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FirebaseMediaService\\FirebaseMediaService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FireBaseMediaService\\FireBaseMediaService.csproj",
-        "projectName": "FireBaseMediaService",
-        "projectPath": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FireBaseMediaService\\FireBaseMediaService.csproj",
+        "projectUniqueName": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FirebaseMediaService\\FirebaseMediaService.csproj",
+        "projectName": "FirebaseMediaService",
+        "projectPath": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FirebaseMediaService\\FirebaseMediaService.csproj",
         "packagesPath": "C:\\Users\\mufum\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FireBaseMediaService\\obj\\",
+        "outputPath": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FirebaseMediaService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -52,7 +52,7 @@
           "dependencies": {
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
-              "version": "[1.22.1, )"
+              "version": "[1.22.1-Preview.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

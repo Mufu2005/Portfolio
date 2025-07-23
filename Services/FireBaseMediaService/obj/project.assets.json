@@ -26,7 +26,7 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.22.1": {
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.22.1-Preview.1": {
         "type": "package",
         "build": {
           "build/Microsoft.VisualStudio.Azure.Containers.Tools.Targets.props": {},
@@ -345,10 +345,10 @@
         "microsoft.openapi.nuspec"
       ]
     },
-    "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.22.1": {
-      "sha512": "EfYANhAWqmWKoLwN6bxoiPZSOfJSO9lzX+UrU6GVhLhPub1Hd+5f0zL0/tggIA6mRz6Ebw2xCNcIsM4k+7NPng==",
+    "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.22.1-Preview.1": {
+      "sha512": "cX5j5jEIx4si2ixyU5h1pHvVKhgK/RyL6UQrKYKv61ULJuRk/h8LOM2hnVW8JPAKlnmvWilMtEOcUTcTV2n+kg==",
       "type": "package",
-      "path": "microsoft.visualstudio.azure.containers.tools.targets/1.22.1",
+      "path": "microsoft.visualstudio.azure.containers.tools.targets/1.22.1-preview.1",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -377,7 +377,7 @@
         "build/ToolsTarget.props",
         "build/ToolsTarget.targets",
         "icon.png",
-        "microsoft.visualstudio.azure.containers.tools.targets.1.22.1.nupkg.sha512",
+        "microsoft.visualstudio.azure.containers.tools.targets.1.22.1-preview.1.nupkg.sha512",
         "microsoft.visualstudio.azure.containers.tools.targets.nuspec",
         "tools/Microsoft.VisualStudio.Containers.Tools.Common.dll",
         "tools/Microsoft.VisualStudio.Containers.Tools.Shared.dll",
@@ -530,7 +530,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.22.1",
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.22.1-Preview.1",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
   },
@@ -541,11 +541,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FireBaseMediaService\\FireBaseMediaService.csproj",
-      "projectName": "FireBaseMediaService",
-      "projectPath": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FireBaseMediaService\\FireBaseMediaService.csproj",
+      "projectUniqueName": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FirebaseMediaService\\FirebaseMediaService.csproj",
+      "projectName": "FirebaseMediaService",
+      "projectPath": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FirebaseMediaService\\FirebaseMediaService.csproj",
       "packagesPath": "C:\\Users\\mufum\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FireBaseMediaService\\obj\\",
+      "outputPath": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FirebaseMediaService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -586,7 +586,7 @@
         "dependencies": {
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
             "target": "Package",
-            "version": "[1.22.1, )"
+            "version": "[1.22.1-Preview.1, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

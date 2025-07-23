@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideographyService", "Servi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubscriptionService", "Services\SubscriptionService\SubscriptionService.csproj", "{FEED2552-42DC-4F1A-B5BD-CDB8E033201F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirebaseMediaService", "Services\FirebaseMediaService\FirebaseMediaService.csproj", "{4644B218-3929-4C39-8BC3-C2DCA620CB2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{FEED2552-42DC-4F1A-B5BD-CDB8E033201F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEED2552-42DC-4F1A-B5BD-CDB8E033201F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEED2552-42DC-4F1A-B5BD-CDB8E033201F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4644B218-3929-4C39-8BC3-C2DCA620CB2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4644B218-3929-4C39-8BC3-C2DCA620CB2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4644B218-3929-4C39-8BC3-C2DCA620CB2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4644B218-3929-4C39-8BC3-C2DCA620CB2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
