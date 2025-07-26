@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4644B218-3929-4C39-8BC3-C2DCA620CB2C}|Services\\FirebaseMediaService\\FirebaseMediaService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\firebasemediaservice\\controllers\\mediacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4644B218-3929-4C39-8BC3-C2DCA620CB2C}|Services\\FirebaseMediaService\\FirebaseMediaService.csproj|solutionrelative:services\\firebasemediaservice\\controllers\\mediacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4644B218-3929-4C39-8BC3-C2DCA620CB2C}|Services\\FirebaseMediaService\\FirebaseMediaService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\firebasemediaservice\\models\\mediamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4644B218-3929-4C39-8BC3-C2DCA620CB2C}|Services\\FirebaseMediaService\\FirebaseMediaService.csproj|solutionrelative:services\\firebasemediaservice\\models\\mediamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4644B218-3929-4C39-8BC3-C2DCA620CB2C}|Services\\FirebaseMediaService\\FirebaseMediaService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\firebasemediaservice\\services\\firebasestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4644B218-3929-4C39-8BC3-C2DCA620CB2C}|Services\\FirebaseMediaService\\FirebaseMediaService.csproj|solutionrelative:services\\firebasemediaservice\\services\\firebasestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7F2D4D97-1E4E-4C70-8F6B-D64E7DA997F6}|Services\\PhotographyService\\PhotographyService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\photographyservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F2D4D97-1E4E-4C70-8F6B-D64E7DA997F6}|Services\\PhotographyService\\PhotographyService.csproj|solutionrelative:services\\photographyservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,10 +34,6 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
@@ -34,7 +42,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FirebaseStorageService.cs",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FirebaseMediaService\\Services\\FirebaseStorageService.cs",
+              "RelativeDocumentMoniker": "Services\\FirebaseMediaService\\Services\\FirebaseStorageService.cs",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FirebaseMediaService\\Services\\FirebaseStorageService.cs*",
+              "RelativeToolTip": "Services\\FirebaseMediaService\\Services\\FirebaseStorageService.cs*",
+              "ViewState": "AgIAABgAAAAAAAAAAAAkwDEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T21:43:11.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MediaController.cs",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FirebaseMediaService\\Controllers\\MediaController.cs",
+              "RelativeDocumentMoniker": "Services\\FirebaseMediaService\\Controllers\\MediaController.cs",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FirebaseMediaService\\Controllers\\MediaController.cs*",
+              "RelativeToolTip": "Services\\FirebaseMediaService\\Controllers\\MediaController.cs*",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAmwDMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T22:08:34.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MediaModel.cs",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FirebaseMediaService\\Models\\MediaModel.cs",
+              "RelativeDocumentMoniker": "Services\\FirebaseMediaService\\Models\\MediaModel.cs",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FirebaseMediaService\\Models\\MediaModel.cs",
+              "RelativeToolTip": "Services\\FirebaseMediaService\\Models\\MediaModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T22:08:24.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\PhotographyService\\Program.cs",
               "RelativeDocumentMoniker": "Services\\PhotographyService\\Program.cs",
@@ -47,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "PhotoContoller.cs",
               "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\PhotographyService\\Controllers\\PhotoContoller.cs",
               "RelativeDocumentMoniker": "Services\\PhotographyService\\Controllers\\PhotoContoller.cs",
@@ -55,7 +102,8 @@
               "RelativeToolTip": "Services\\PhotographyService\\Controllers\\PhotoContoller.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T22:22:10.837Z"
+              "WhenOpened": "2025-07-11T22:22:10.837Z",
+              "EditorCaption": ""
             }
           ]
         }
