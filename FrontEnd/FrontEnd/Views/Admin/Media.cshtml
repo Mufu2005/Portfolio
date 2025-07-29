@@ -1,0 +1,159 @@
+﻿@*
+	For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@{
+	ViewData["Title"] = "Media - Admin";
+}
+
+@model FrontEnd.Models.UploadMediaAdminViewModel
+
+<section class="container my-5">
+	<div id="blur-background" class="blur-bg"></div>
+	<div class="background-anim-container">
+		<!-- Shapes will be generated dynamically via JS -->
+	</div>
+	<a class="space-mono-regular green" asp-controller="Admin" asp-action="Index">Return</a>
+	<h1 class="text-center mb-4 dm-sans text-white">MEDIA CRUD</h1>
+
+	<!-- Create Button -->
+	<div class="text-end mb-3">
+		<button class="btn btn-success" onclick="openModal('createModal')">Add new Media</button>
+	</div>
+
+	<!-- Photos Table -->
+	<div class="scrollable-table frosted-box border p-3" data-lenis-prevent>
+		<table class="table mb-0">
+			<thead class="table-dark space-mono-regular green text-center table-borderless">
+				<tr>
+					<th>Id</th>
+					<th>Title</th>
+					<th>Url</th>
+					<th>Folder</th>
+					<th>U-D</th>
+				</tr>
+			</thead>
+			<tbody class="text-center text-white">
+				@foreach (var photo in Model.AllMedia)
+				{
+					<tr>
+						<td>@photo.Id</td>
+						<td>@photo.Title</td>
+						<td><img src="@photo.Url" alt="@photo.Title" width="100" /></td>
+						<td>@photo.Folder</td>
+						<td>
+							<button class="btn btn-primary btn-sm" onclick="openEditMediaModal(@photo.Id)">Edit</button>
+							<button class="btn btn-danger btn-sm" onclick="openDeleteMediaModal(@photo.Id)">Delete</button>
+						</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+	</div>
+</section>
+
+<!-- Modals -->
+<div id="createModal" class="modal" tabindex="-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title dm-sans text-white">Add Media</h5>
+				<button type="button" class="btn-close" onclick="closeModal('createModal')"></button>
+			</div>
+			<div class="modal-body">
+				<form asp-action="UploadMedia" method="post" enctype="multipart/form-data">
+					<!-- Title -->
+					<div class="mb-3">
+						<label asp-for="Upload.Title" class="form-label space-mono-regular green"></label>
+						<input asp-for="Upload.Title" class="form-control" />
+						<span asp-validation-for="Upload.Title" class="text-danger"></span>
+					</div>
+
+					<!-- File -->
+					<div class="mb-3">
+						<label asp-for="Upload.File" class="form-label space-mono-regular green"></label>
+						<input asp-for="Upload.File" class="form-control" />
+						<span asp-validation-for="Upload.File" class="text-danger"></span>
+					</div>
+
+					<!-- Folder -->
+					<div class="mb-3">
+						<label asp-for="Upload.Folder" class="form-label space-mono-regular green"></label>
+						<input asp-for="Upload.Folder" class="form-control" />
+						<span asp-validation-for="Upload.Folder" class="text-danger"></span>
+					</div>
+
+					<!-- Submit -->
+					<div class="text-center">
+						<button type="submit" class="btn btn-success">Upload</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="EditModal" class="modal" tabindex="-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title dm-sans text-white">Edit Media</h5>
+				<button type="button" class="btn-close" onclick="closeModal('EditModal')"></button>
+			</div>
+			<div class="modal-body">
+				<form asp-action="EditMedia" asp-controller="Admin" method="post" enctype="multipart/form-data">
+					<input type="hidden" id="EditMediaId" name="id" />
+					<!-- Title -->
+					<div class="mb-3">
+						<label asp-for="Upload.Title" class="form-label space-mono-regular green"></label>
+						<input asp-for="Upload.Title" class="form-control" />
+						<span asp-validation-for="Upload.Title" class="text-danger"></span>
+					</div>
+
+					<!-- Folder -->
+					<div class="mb-3">
+						<label asp-for="Upload.Folder" class="form-label space-mono-regular green"></label>
+						<input asp-for="Upload.Folder" class="form-control" />
+						<span asp-validation-for="Upload.Folder" class="text-danger"></span>
+					</div>
+
+					<!-- File-->
+					<div class="mb-3">
+						<label asp-for="Upload.File" class="form-label space-mono-regular green"></label>
+						<input asp-for="Upload.File" class="form-control" />
+						<span asp-validation-for="Upload.File" class="text-danger"></span>
+					</div>
+
+					<!-- Submit -->
+					<div class="text-center">
+						<button type="submit" class="btn btn-success">Update</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="deleteModal" class="modal" tabindex="-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form id="deleteForm" asp-action="DeleteMedia" method="post">
+				<div class="modal-header">
+					<h5 class="modal-title dm-sans text-white">Delete Photo</h5>
+					<button type="button" class="btn-close" onclick="closeModal('deleteModal')"></button>
+				</div>
+				<div class="modal-body">
+					<input type="hidden" id="deleteMediaId" name="id" />
+					<p class="space-mono-regular green">Are you sure you want to delete this File?</p>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-danger">Delete</button>
+					<button type="button" class="btn btn-secondary" onclick="closeModal('deleteModal')">Cancel</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+

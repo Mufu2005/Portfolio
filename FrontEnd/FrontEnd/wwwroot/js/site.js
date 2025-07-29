@@ -206,6 +206,19 @@ function openDeletePhotoModal(subsId) {
     document.getElementById("blur-background").classList.add("active");
 }
 
+function openEditMediaModal(photoId) {
+    document.getElementById("EditMediaId").value = photoId;
+    document.getElementById("EditModal").style.display = "block";
+    document.getElementById("blur-background").classList.add("active");
+}
+
+function openDeleteMediaModal(subsId) {
+    document.getElementById("deleteMediaId").value = subsId;
+    document.getElementById("deleteModal").style.display = "block";
+    document.getElementById("blur-background").classList.add("active");
+}
+
+
 function closeModal(id) {
     document.getElementById(id).style.display = 'none';
     document.getElementById("blur-background").classList.remove("active");

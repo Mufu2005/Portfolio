@@ -1,4 +1,7 @@
 
+using FirebaseMediaService.Data;
+using Microsoft.EntityFrameworkCore;
+
 namespace FirebaseMediaService
 {
     public class Program
@@ -13,6 +16,9 @@ namespace FirebaseMediaService
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+            builder.Services.AddDbContext<ApplicationDbContext>(options =>
+            options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
             var app = builder.Build();
 

@@ -7,20 +7,52 @@
       "RelativeMoniker": "D:0:0:{4644B218-3929-4C39-8BC3-C2DCA620CB2C}|Services\\FirebaseMediaService\\FirebaseMediaService.csproj|solutionrelative:services\\firebasemediaservice\\controllers\\mediacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\views\\admin\\media.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\views\\admin\\media.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\models\\uploadmediamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\models\\uploadmediamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\views\\admin\\photography.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\views\\admin\\photography.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\models\\uploadmediaadminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\models\\uploadmediaadminviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\models\\mediadbmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\models\\mediadbmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4644B218-3929-4C39-8BC3-C2DCA620CB2C}|Services\\FirebaseMediaService\\FirebaseMediaService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\firebasemediaservice\\models\\mediadbmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4644B218-3929-4C39-8BC3-C2DCA620CB2C}|Services\\FirebaseMediaService\\FirebaseMediaService.csproj|solutionrelative:services\\firebasemediaservice\\models\\mediadbmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4644B218-3929-4C39-8BC3-C2DCA620CB2C}|Services\\FirebaseMediaService\\FirebaseMediaService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\firebasemediaservice\\models\\mediamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4644B218-3929-4C39-8BC3-C2DCA620CB2C}|Services\\FirebaseMediaService\\FirebaseMediaService.csproj|solutionrelative:services\\firebasemediaservice\\models\\mediamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4644B218-3929-4C39-8BC3-C2DCA620CB2C}|Services\\FirebaseMediaService\\FirebaseMediaService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\firebasemediaservice\\services\\firebasestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4644B218-3929-4C39-8BC3-C2DCA620CB2C}|Services\\FirebaseMediaService\\FirebaseMediaService.csproj|solutionrelative:services\\firebasemediaservice\\services\\firebasestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F2D4D97-1E4E-4C70-8F6B-D64E7DA997F6}|Services\\PhotographyService\\PhotographyService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\photographyservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F2D4D97-1E4E-4C70-8F6B-D64E7DA997F6}|Services\\PhotographyService\\PhotographyService.csproj|solutionrelative:services\\photographyservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F2D4D97-1E4E-4C70-8F6B-D64E7DA997F6}|Services\\PhotographyService\\PhotographyService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\photographyservice\\controllers\\photocontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F2D4D97-1E4E-4C70-8F6B-D64E7DA997F6}|Services\\PhotographyService\\PhotographyService.csproj|solutionrelative:services\\photographyservice\\controllers\\photocontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 440,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,15 +74,153 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "FrontEnd\\FrontEnd\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAIIBAAAAAAAAAADwv5YBAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T21:20:31.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "FrontEnd\\FrontEnd\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-29T21:18:38.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Media.cshtml",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Views\\Admin\\Media.cshtml",
+              "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Views\\Admin\\Media.cshtml",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Views\\Admin\\Media.cshtml",
+              "RelativeToolTip": "FrontEnd\\FrontEnd\\Views\\Admin\\Media.cshtml",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAAACcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-29T20:58:05.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MediaDbModel.cs",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Models\\MediaDbModel.cs",
+              "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Models\\MediaDbModel.cs",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Models\\MediaDbModel.cs",
+              "RelativeToolTip": "FrontEnd\\FrontEnd\\Models\\MediaDbModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T20:48:18.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UploadMediaAdminViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Models\\UploadMediaAdminViewModel.cs",
+              "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Models\\UploadMediaAdminViewModel.cs",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Models\\UploadMediaAdminViewModel.cs",
+              "RelativeToolTip": "FrontEnd\\FrontEnd\\Models\\UploadMediaAdminViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T20:36:30.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "FirebaseStorageService.cs",
               "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FirebaseMediaService\\Services\\FirebaseStorageService.cs",
               "RelativeDocumentMoniker": "Services\\FirebaseMediaService\\Services\\FirebaseStorageService.cs",
-              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FirebaseMediaService\\Services\\FirebaseStorageService.cs*",
-              "RelativeToolTip": "Services\\FirebaseMediaService\\Services\\FirebaseStorageService.cs*",
-              "ViewState": "AgIAABgAAAAAAAAAAAAkwDEAAAAFAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FirebaseMediaService\\Services\\FirebaseStorageService.cs",
+              "RelativeToolTip": "Services\\FirebaseMediaService\\Services\\FirebaseStorageService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAIwCcAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-26T21:43:11.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MediaModel.cs",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FirebaseMediaService\\Models\\MediaModel.cs",
+              "RelativeDocumentMoniker": "Services\\FirebaseMediaService\\Models\\MediaModel.cs",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FirebaseMediaService\\Models\\MediaModel.cs",
+              "RelativeToolTip": "Services\\FirebaseMediaService\\Models\\MediaModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T22:08:24.65Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "b9b00039-774c-4790-b39f-60c5b8a626fa",
+        "Display": 0,
+        "X": 715,
+        "Y": 404,
+        "Width": 1496,
+        "Height": 607,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "FrontEnd\\FrontEnd\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAL8AAAAAAAAAAAAowNEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-29T22:44:09.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Photography.cshtml",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Views\\Admin\\Photography.cshtml",
+              "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Views\\Admin\\Photography.cshtml",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Views\\Admin\\Photography.cshtml",
+              "RelativeToolTip": "FrontEnd\\FrontEnd\\Views\\Admin\\Photography.cshtml",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAmwIQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-29T20:58:47.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MediaDbModel.cs",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FirebaseMediaService\\Models\\MediaDbModel.cs",
+              "RelativeDocumentMoniker": "Services\\FirebaseMediaService\\Models\\MediaDbModel.cs",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FirebaseMediaService\\Models\\MediaDbModel.cs",
+              "RelativeToolTip": "Services\\FirebaseMediaService\\Models\\MediaDbModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T13:26:27.148Z",
               "EditorCaption": ""
             },
             {
@@ -61,48 +231,35 @@
               "RelativeDocumentMoniker": "Services\\FirebaseMediaService\\Controllers\\MediaController.cs",
               "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FirebaseMediaService\\Controllers\\MediaController.cs*",
               "RelativeToolTip": "Services\\FirebaseMediaService\\Controllers\\MediaController.cs*",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAmwDMAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAqwEgAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-24T22:08:34.377Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MediaModel.cs",
-              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FirebaseMediaService\\Models\\MediaModel.cs",
-              "RelativeDocumentMoniker": "Services\\FirebaseMediaService\\Models\\MediaModel.cs",
-              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\FirebaseMediaService\\Models\\MediaModel.cs",
-              "RelativeToolTip": "Services\\FirebaseMediaService\\Models\\MediaModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "UploadMediaModel.cs",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Models\\UploadMediaModel.cs",
+              "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Models\\UploadMediaModel.cs",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Models\\UploadMediaModel.cs",
+              "RelativeToolTip": "FrontEnd\\FrontEnd\\Models\\UploadMediaModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T22:08:24.65Z",
+              "WhenOpened": "2025-07-29T20:32:34.799Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\PhotographyService\\Program.cs",
-              "RelativeDocumentMoniker": "Services\\PhotographyService\\Program.cs",
-              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\PhotographyService\\Program.cs",
-              "RelativeToolTip": "Services\\PhotographyService\\Program.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAcwCEAAAAjAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "ProjectController.cs",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Controllers\\ProjectController.cs",
+              "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Controllers\\ProjectController.cs",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Controllers\\ProjectController.cs",
+              "RelativeToolTip": "FrontEnd\\FrontEnd\\Controllers\\ProjectController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T22:29:09.334Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PhotoContoller.cs",
-              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\PhotographyService\\Controllers\\PhotoContoller.cs",
-              "RelativeDocumentMoniker": "Services\\PhotographyService\\Controllers\\PhotoContoller.cs",
-              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\PhotographyService\\Controllers\\PhotoContoller.cs",
-              "RelativeToolTip": "Services\\PhotographyService\\Controllers\\PhotoContoller.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T22:22:10.837Z",
+              "WhenOpened": "2025-07-29T20:28:09.373Z",
               "EditorCaption": ""
             }
           ]

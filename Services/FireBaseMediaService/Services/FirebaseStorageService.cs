@@ -1,4 +1,5 @@
 ﻿using FirebaseAdmin;
+using FirebaseMediaService.Models;
 using Google.Apis.Auth.OAuth2;
 using Google.Cloud.Storage.V1;
 
@@ -23,9 +24,10 @@ namespace FirebaseMediaService.Services
             _storageClient = StorageClient.Create(credential);
         }
 
-        public async Task<string> UploadFileAsync(IFormFile file, string folderName)
+        public async Task<MediaDbModel> UploadFileAsync(IFormFile file, string folderName)
         {
-            var objectName = $"{folderName}/{Guid.NewGuid()}_{file.FileName}";
+            string fileName = $"{Guid.NewGuid()}_{file.FileName}";
+            var objectName = $"{folderName}/{fileName}";
 
             using var stream = file.OpenReadStream();
             await _storageClient.UploadObjectAsync(_bucketName, objectName, null, stream, new UploadObjectOptions
@@ -33,19 +35,20 @@ namespace FirebaseMediaService.Services
                 PredefinedAcl = PredefinedObjectAcl.PublicRead
             });
 
-            return $"https://storage.googleapis.com/{_bucketName}/{objectName}";
+            var model = new MediaDbModel
+            {
+                Title = fileName,
+                Url = $"https://storage.googleapis.com/{_bucketName}/{objectName}",
+                Folder = folderName
+            };
+
+            return model;
         }
 
-        public async Task ViewFileAsync(string fileName, string folderName)
+        public async Task DeleteFileAsync(string fileName, string folderName)
         {
             var objectName = $"{folderName}/{fileName}";
-            var obj = await _storageClient.GetObjectAsync(_bucketName, objectName);
-            if (obj == null)
-            {
-                throw new FileNotFoundException($"File {fileName} not found in folder {folderName}.");
-            }
-            // You can return the object or its metadata as needed
-            Console.WriteLine($"File {fileName} found in folder {folderName} with size {obj.Size} bytes.");
+            await _storageClient.DeleteObjectAsync(_bucketName, objectName);
         }
     }
 }

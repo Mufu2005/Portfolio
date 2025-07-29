@@ -6,6 +6,8 @@ using Google.Apis.Auth.OAuth2;
 using Google.Cloud.Storage.V1;
 using FirebaseMediaService.Services;
 using FirebaseMediaService.Models;
+using FirebaseMediaService.Data;
+using System.Threading.Tasks;
 
 namespace FirebaseMediaService.Controllers
 {
@@ -14,10 +16,19 @@ namespace FirebaseMediaService.Controllers
     public class MediaController : Controller
     {
         private readonly FirebaseStorageService _firebaseStorageService;
+        private readonly ApplicationDbContext _context;
 
-        public MediaController()
+        public MediaController(ApplicationDbContext context)
         {
+            _context = context;
             _firebaseStorageService = new FirebaseStorageService();
+        }
+
+        [HttpGet("list")]
+        public IActionResult List()
+        {
+            var mediaList = _context.MediaTable.ToList();
+            return Ok(mediaList);
         }
 
         [HttpPost("upload")]
@@ -28,26 +39,73 @@ namespace FirebaseMediaService.Controllers
                 return BadRequest("No file uploaded.");
             }
 
-            var url = await _firebaseStorageService.UploadFileAsync(model.File, model.Folder);
-            return Ok(new { Url = url });
+            var parameters = await _firebaseStorageService.UploadFileAsync(model.File, model.Folder);
+
+            var dto = new MediaDbModel
+            {
+                Title = parameters.Title,
+                Url = parameters.Url,
+                Folder = parameters.Folder
+            };
+
+            _context.MediaTable.Add(dto);
+            _context.SaveChanges();
+
+            return Ok();
         }
 
-        [HttpGet("view")]
-        public async Task<IActionResult> View([FromQuery] string fileName, [FromQuery] string folderName)
+        [HttpPost("delete/{id:int}")]
+        public async Task<IActionResult> Delete(int id)
         {
-            if (string.IsNullOrEmpty(fileName) || string.IsNullOrEmpty(folderName))
+            MediaDbModel model = _context.MediaTable.Find(id);
+            if (model == null)
             {
-                return BadRequest("File name and folder name are required.");
+                return NotFound("Media not found.");
             }
+
             try
             {
-                await _firebaseStorageService.ViewFileAsync(fileName, folderName);
-                return Ok($"File {fileName} found in folder {folderName}.");
+                await _firebaseStorageService.DeleteFileAsync(model.Title, model.Folder);
             }
-            catch (FileNotFoundException ex)
+            catch (Exception ex)
             {
-                return NotFound(ex.Message);
+                // Log the exception (ex)
+                return StatusCode(500, $"Error deleting file: {ex.Message}");
             }
+
+            _context.MediaTable.Remove(model);
+            _context.SaveChanges();
+            return Ok("Media deleted successfully.");
         }
+
+        [HttpPost("edit/{id:int}")]
+        public async Task<IActionResult> Edit(int id, [FromForm] MediaModel model)
+        {
+            var existingModel = _context.MediaTable.Find(id);
+            if (existingModel == null)
+            {
+                return NotFound("Media not found.");
+            }
+            if (!string.IsNullOrEmpty(model.Title))
+            {
+                existingModel.Title = model.Title;
+            }
+            if (!(model.File == null || model.File.Length == 0))
+            {
+                await _firebaseStorageService.DeleteFileAsync(existingModel.Title, existingModel.Folder);
+                var parameters = await _firebaseStorageService.UploadFileAsync(model.File, model.Folder);
+                existingModel.Url = parameters.Url;
+                existingModel.Title = parameters.Title;
+                existingModel.Folder = parameters.Folder;
+            }
+
+
+            _context.MediaTable.Update(existingModel);
+            _context.SaveChanges();
+            return Ok(existingModel);
+        }
+
+
+
     }
 }

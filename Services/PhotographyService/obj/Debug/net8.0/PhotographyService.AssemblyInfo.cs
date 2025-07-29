@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PhotographyService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ffe936728d39a25b15c96b9639679923ea403ab6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8fb46a7475fb5562f1b3ed2ce4b5ad528f2b30f")]
 [assembly: System.Reflection.AssemblyProductAttribute("PhotographyService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PhotographyService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

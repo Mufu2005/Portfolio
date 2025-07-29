@@ -1,6 +1,6 @@
 [
   {
-    "Name": "New Profile",
+    "Name": "Launch",
     "Projects": [
       {
         "Path": "FrontEnd\\FrontEnd\\FrontEnd.csproj",
@@ -29,6 +29,31 @@
       },
       {
         "Path": "Services\\SubscriptionService\\SubscriptionService.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
+      },
+      {
+        "Path": "Services\\FirebaseMediaService\\FirebaseMediaService.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
+      }
+    ]
+  },
+  {
+    "Name": "FirebaseLaunch",
+    "Projects": [
+      {
+        "Path": "FrontEnd\\FrontEnd\\FrontEnd.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
+      },
+      {
+        "Path": "Services\\FirebaseMediaService\\FirebaseMediaService.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
+      },
+      {
+        "Path": "Services\\AdminService\\AdminService.csproj",
         "Action": "Start",
         "DebugTarget": "http"
       }

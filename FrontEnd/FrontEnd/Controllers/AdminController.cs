@@ -19,6 +19,8 @@ namespace FrontEnd.Controllers
         private HttpClient _videoClient;
         private string SubscribeBaseUrl = "http://localhost:5089/";
         private HttpClient _subscribeClient;
+        private string baseUrl = "http://localhost:5201/";
+        private HttpClient _firebaseClient;
 
         public AdminController(IHttpClientFactory factory)
         {
@@ -32,6 +34,8 @@ namespace FrontEnd.Controllers
             _videoClient.BaseAddress = new Uri(videoBaseUrl);
             _subscribeClient = factory.CreateClient();
             _subscribeClient.BaseAddress = new Uri(SubscribeBaseUrl);
+            _firebaseClient = factory.CreateClient();
+            _firebaseClient.BaseAddress = new Uri(baseUrl);
         }
 
         public IActionResult Login()
@@ -326,6 +330,81 @@ namespace FrontEnd.Controllers
             }
 
             return RedirectToAction("Subscription", "Admin");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Media()
+        {
+            var IsLoggedIn = HttpContext.Session.GetString("IsLoggedIn");
+            if (IsLoggedIn == "true")
+            {
+                var mediaList = await _firebaseClient.GetFromJsonAsync<List<MediaDbModel>>("api/Media/list");
+                var view = new UploadMediaAdminViewModel
+                {
+                    AllMedia = mediaList,
+                    Upload = new UploadMediaModel()
+                };
+                return View(view);
+            }
+
+            else
+            {
+                return RedirectToAction("Unauthorized", "Admin");
+            }
+
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> UploadMedia(UploadMediaAdminViewModel model)
+        {
+            var form = new MultipartFormDataContent();
+
+            if (model.Upload.File != null)
+            {
+                var fileContent = new StreamContent(model.Upload.File.OpenReadStream());
+                fileContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue(model.Upload.File.ContentType);
+                form.Add(fileContent, "File", model.Upload.File.FileName);
+            }
+
+            if (!string.IsNullOrEmpty(model.Upload.Title))
+                form.Add(new StringContent(model.Upload.Title), "Title");
+
+            if (!string.IsNullOrEmpty(model.Upload.Folder))
+                form.Add(new StringContent(model.Upload.Folder), "Folder");
+
+            var response = await _firebaseClient.PostAsync("api/Media/upload", form);
+
+            return RedirectToAction("Media", "Admin");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteMedia(int id)
+        {
+            var response = await _firebaseClient.PostAsync($"api/Media/delete/{id}",null);
+            return RedirectToAction("Media", "Admin");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> EditMedia(UploadMediaAdminViewModel model, int id)
+        {
+            var form = new MultipartFormDataContent();
+
+            if (model.Upload.File != null)
+            {
+                var fileContent = new StreamContent(model.Upload.File.OpenReadStream());
+                fileContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue(model.Upload.File.ContentType);
+                form.Add(fileContent, "File", model.Upload.File.FileName);
+            }
+
+            if (!string.IsNullOrEmpty(model.Upload.Title))
+                form.Add(new StringContent(model.Upload.Title), "Title");
+
+            if (!string.IsNullOrEmpty(model.Upload.Folder))
+                form.Add(new StringContent(model.Upload.Folder), "Folder");
+
+            var response = await _firebaseClient.PostAsync($"api/Media/edit/{id}", form);
+
+            return RedirectToAction("Media", "Admin");
         }
     }
 }
