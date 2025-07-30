@@ -123,8 +123,10 @@ namespace FrontEnd.Controllers
             if (IsLoggedIn == "true")
             {
                 var projects = await _projectClient.GetFromJsonAsync<List<ProjectModel>>("api/Project/list");
+                var Media = await RetrieveMediaDb();
                 var view = new ProjectAdminViewModel
                 {
+                    MediaList = Media,
                     AllProjects = projects,
                     Project = new ProjectModel()
                 };
@@ -177,8 +179,10 @@ namespace FrontEnd.Controllers
             if (IsLoggedIn == "true")
             {
                 var photo = await _photoClient.GetFromJsonAsync<List<PhotoModel>>("/api/PhotoContoller/list");
+                var Media = await RetrieveMediaDb();
                 var view = new PhotographyAdminViewModel
                 {
+                    MediaList = Media,
                     AllPhotos = photo,
                     Photo = new PhotoModel()
                 };
@@ -231,8 +235,10 @@ namespace FrontEnd.Controllers
             if (IsLoggedIn == "true")
             {
                 var video = await _videoClient.GetFromJsonAsync<List<VideoModel>>("/api/Video/list");
+                var Media = await RetrieveMediaDb();
                 var view = new VideographyAdminViewModel
                 {
+                    MediaList = Media,
                     AllVideo = video,
                     Video = new VideoModel()
                 };
@@ -405,6 +411,13 @@ namespace FrontEnd.Controllers
             var response = await _firebaseClient.PostAsync($"api/Media/edit/{id}", form);
 
             return RedirectToAction("Media", "Admin");
+        }
+
+        [HttpGet]
+        public async Task<List<MediaDbModel>> RetrieveMediaDb()
+        {
+            var list = await _firebaseClient.GetFromJsonAsync<List<MediaDbModel>>("api/Media/list");
+            return list;
         }
     }
 }

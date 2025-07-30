@@ -4,5 +4,6 @@
     {
         public VideoModel Video { get; set; }
         public List<VideoModel> AllVideo { get; set; }
+        public List<MediaDbModel> MediaList { get; set; }
     }
 }

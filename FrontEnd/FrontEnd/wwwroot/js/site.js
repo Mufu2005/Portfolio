@@ -176,8 +176,8 @@ function openModal(id) {
     document.getElementById("blur-background").classList.add("active");
 }
 
-function openDeleteModal(projectId) {
-    document.getElementById("deleteProjectId").value = projectId;
+function openDeleteSubscriberModal(projectId) {
+    document.getElementById("deleteSubscriberId").value = projectId;
     document.getElementById("deleteModal").style.display = "block";
     document.getElementById("blur-background").classList.add("active");
 }
@@ -188,11 +188,7 @@ function openEditModal(projectId) {
     document.getElementById("blur-background").classList.add("active");
 }
 
-function openDeletePhotoModal(photoId) {
-    document.getElementById("deletePhotoId").value = photoId;
-    document.getElementById("deleteModal").style.display = "block";
-    document.getElementById("blur-background").classList.add("active");
-}
+
 
 function openEditPhotoModal(photoId) {
     document.getElementById("EditPhotoId").value = photoId;
@@ -201,7 +197,7 @@ function openEditPhotoModal(photoId) {
 }
 
 function openDeletePhotoModal(subsId) {
-    document.getElementById("deleteSubscriberId").value = subsId;
+    document.getElementById("deletePhotoId").value = subsId;
     document.getElementById("deleteModal").style.display = "block";
     document.getElementById("blur-background").classList.add("active");
 }
@@ -242,3 +238,4 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf);
+

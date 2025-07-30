@@ -27,11 +27,6 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
-      },
-      {
-        "Name": "model",
-        "Type": "SubscriptionService.Models.SubscriptionModel",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": []

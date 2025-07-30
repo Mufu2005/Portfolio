@@ -74,17 +74,35 @@
 					</div>
 
 					<!-- Video thumbnail URL -->
-					<div class="mb-3">
+					<div class="mb-3 position-relative">
 						<label asp-for="Video.ThumbnailUrl" class="form-label space-mono-regular green"></label>
-						<input asp-for="Video.ThumbnailUrl" class="form-control" />
-						<span asp-validation-for="Video.ThumbnailUrl" class="text-danger"></span>
+						<input id="thumbnailInput" asp-for="Video.ThumbnailUrl" class="form-control" />
+						<div id="thumbnailDropdown" class="dropdown-menu w-100" style="max-height: 200px; overflow-y: auto;" data-lenis-prevent>
+							@foreach (var media in Model.MediaList)
+							{
+								<a class="dropdown-item d-flex align-items-center" href="#" onclick="selectImage('thumbnailInput', 'thumbnailPreview', '@media.Url')">
+									<img src="@media.Url" alt="@media.Title" class="me-2 rounded" style="width: 40px; height: 40px; object-fit: cover;" />
+									<span>@media.Title</span>
+								</a>
+							}
+						</div>
+						<img id="thumbnailPreview" class="mt-2 rounded shadow" style="max-width: 200px; display: none;" />
 					</div>
 
 					<!-- Photo URL -->
-					<div class="mb-3">
+					<div class="mb-3 position-relative">
 						<label asp-for="Video.VideoUrl" class="form-label space-mono-regular green"></label>
-						<input asp-for="Video.VideoUrl" class="form-control" />
-						<span asp-validation-for="Video.VideoUrl" class="text-danger"></span>
+						<input id="videoUrlInput" asp-for="Video.VideoUrl" class="form-control" />
+						<div id="videoDropdown" class="dropdown-menu w-100" style="max-height: 200px; overflow-y: auto;" data-lenis-prevent>
+							@foreach (var media in Model.MediaList)
+							{
+								<a class="dropdown-item d-flex align-items-center" href="#" onclick="selectImage('videoUrlInput', 'videoPreview', '@media.Url')">
+									<img src="@media.Url" alt="@media.Title" class="me-2 rounded" style="width: 40px; height: 40px; object-fit: cover;" />
+									<span>@media.Title</span>
+								</a>
+							}
+						</div>
+						<img id="videoPreview" class="mt-2 rounded shadow" style="max-width: 200px; display: none;" />
 					</div>
 
 					<!-- Date time -->
@@ -172,3 +190,30 @@
 		</div>
 	</div>
 </div>
+
+<script>
+function setupDropdown(inputId, dropdownId, previewId) {
+	const input = document.getElementById(inputId);
+	const dropdown = document.getElementById(dropdownId);
+	const preview = document.getElementById(previewId);
+
+	input.addEventListener("focus", () => {
+		dropdown.classList.add("show");
+	});
+
+	input.addEventListener("blur", () => {
+		setTimeout(() => dropdown.classList.remove("show"), 200);
+	});
+
+	window['selectImage'] = function(inputId, previewId, url) {
+		document.getElementById(inputId).value = url;
+		const preview = document.getElementById(previewId);
+		preview.src = url;
+		preview.style.display = "block";
+		document.getElementById(dropdownId).classList.remove("show");
+	}
+}
+
+setupDropdown("thumbnailInput", "thumbnailDropdown", "thumbnailPreview");
+setupDropdown("videoUrlInput", "videoDropdown", "videoPreview");
+</script>

@@ -54,9 +54,10 @@ namespace SubscriptionService.Controllers
         }
 
         [HttpPost("delete/{id:int}")]
-        public IActionResult Delete(int id, SubscriptionModel model)
+        public IActionResult Delete(int id)
         {
             var subscribers = _context.SubscriptionTable.Find(id);
+            SubscriptionModel model = subscribers;
             if (subscribers == null)
             {
                 return NotFound();

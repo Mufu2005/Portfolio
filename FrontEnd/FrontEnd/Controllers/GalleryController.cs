@@ -10,7 +10,7 @@ namespace FrontEnd.Controllers
         private readonly HttpClient _photoClient;
         private string videoBaseUrl = "http://localhost:5180/";
         private readonly HttpClient _videoClient;
-
+       
         public GalleryController(IHttpClientFactory factory)
         {
             _photoClient = factory.CreateClient();
