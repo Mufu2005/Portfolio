@@ -28,6 +28,7 @@ namespace ProjectService.Controllers
         {
             _context.ProjectTable.Add(model);
             _context.SaveChanges();
+
             return Ok();
         }
 

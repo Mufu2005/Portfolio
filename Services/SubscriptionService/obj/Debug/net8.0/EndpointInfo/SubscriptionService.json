@@ -112,10 +112,64 @@
           }
         }
       }
+    },
+    "/api/Subscription/MailContent": {
+      "post": {
+        "tags": [
+          "Subscription"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmailContentModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmailContentModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmailContentModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
+      "EmailContentModel": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "isProject": {
+            "type": "boolean"
+          },
+          "isPhoto": {
+            "type": "boolean"
+          },
+          "isVideo": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
       "SubscriptionModel": {
         "required": [
           "email"

@@ -61,5 +61,21 @@
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SubscriptionService.Controllers.SubscriptionController",
+    "Method": "GetMailContent",
+    "RelativePath": "api/Subscription/MailContent",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "SubscriptionService.Models.EmailContentModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using SubscriptionService.Data;
 using SubscriptionService.Models;
+using SubscriptionService.Services;
 
 namespace SubscriptionService.Controllers
 {
@@ -9,9 +10,11 @@ namespace SubscriptionService.Controllers
     public class SubscriptionController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
+        private readonly EmailService _emailService;
         public SubscriptionController(ApplicationDbContext context)
         {
             this._context = context;
+            _emailService = new EmailService();
         }
 
         [HttpGet("list")]
@@ -67,16 +70,21 @@ namespace SubscriptionService.Controllers
             {
                 _context.SubscriptionTable.Remove(subscribers);
             }
-            else if(model.Id == subscribers.Id && model.Email == null)
+            else if (model.Id == subscribers.Id && model.Email == null)
             {
                 _context.SubscriptionTable.Remove(subscribers);
             }
 
-
-
-            
             _context.SaveChanges();
             return Ok();
+        }
+
+        [HttpPost("MailContent")]
+        public IActionResult GetMailContent(EmailContentModel model)
+        {
+            var subs= _context.SubscriptionTable.ToList();
+            _emailService.CreateMessage(model,subs);
+            return Ok(model);
         }
     }
 }

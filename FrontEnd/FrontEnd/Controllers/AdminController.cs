@@ -145,6 +145,15 @@ namespace FrontEnd.Controllers
         {
             ProjectModel dto = model.Project;
             var data = await _projectClient.PostAsJsonAsync("api/Project/create", dto);
+            var mailModel = new EmailContentModel
+            {
+                Title = dto.Title,
+                Description = dto.Description,
+                IsProject = true,
+                IsPhoto = false,
+                IsVideo = false
+            };
+            await _subscribeClient.PostAsJsonAsync("api/Subscription/MailContent", mailModel);
             return RedirectToAction("Projects", "Admin");
         }
 
