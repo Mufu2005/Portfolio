@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1EA0C25-9A49-9F04-09E6-FB71B8B28BD7}|Services\\ProjectService\\ProjectService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\projectservice\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1EA0C25-9A49-9F04-09E6-FB71B8B28BD7}|Services\\ProjectService\\ProjectService.csproj|solutionrelative:services\\projectservice\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEED2552-42DC-4F1A-B5BD-CDB8E033201F}|Services\\SubscriptionService\\SubscriptionService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\subscriptionservice\\controllers\\subscriptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEED2552-42DC-4F1A-B5BD-CDB8E033201F}|Services\\SubscriptionService\\SubscriptionService.csproj|solutionrelative:services\\subscriptionservice\\controllers\\subscriptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FEED2552-42DC-4F1A-B5BD-CDB8E033201F}|Services\\SubscriptionService\\SubscriptionService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\subscriptionservice\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FEED2552-42DC-4F1A-B5BD-CDB8E033201F}|Services\\SubscriptionService\\SubscriptionService.csproj|solutionrelative:services\\subscriptionservice\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEED2552-42DC-4F1A-B5BD-CDB8E033201F}|Services\\SubscriptionService\\SubscriptionService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\subscriptionservice\\models\\emailcontentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEED2552-42DC-4F1A-B5BD-CDB8E033201F}|Services\\SubscriptionService\\SubscriptionService.csproj|solutionrelative:services\\subscriptionservice\\models\\emailcontentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\models\\emailcontentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\models\\emailcontentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FEED2552-42DC-4F1A-B5BD-CDB8E033201F}|Services\\SubscriptionService\\SubscriptionService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\subscriptionservice\\controllers\\subscriptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEED2552-42DC-4F1A-B5BD-CDB8E033201F}|Services\\SubscriptionService\\SubscriptionService.csproj|solutionrelative:services\\subscriptionservice\\controllers\\subscriptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FEED2552-42DC-4F1A-B5BD-CDB8E033201F}|Services\\SubscriptionService\\SubscriptionService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\subscriptionservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -33,6 +21,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\views\\admin\\subscription.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\views\\admin\\subscription.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1EA0C25-9A49-9F04-09E6-FB71B8B28BD7}|Services\\ProjectService\\ProjectService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\projectservice\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1EA0C25-9A49-9F04-09E6-FB71B8B28BD7}|Services\\ProjectService\\ProjectService.csproj|solutionrelative:services\\projectservice\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEED2552-42DC-4F1A-B5BD-CDB8E033201F}|Services\\SubscriptionService\\SubscriptionService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\subscriptionservice\\models\\emailcontentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEED2552-42DC-4F1A-B5BD-CDB8E033201F}|Services\\SubscriptionService\\SubscriptionService.csproj|solutionrelative:services\\subscriptionservice\\models\\emailcontentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEED2552-42DC-4F1A-B5BD-CDB8E033201F}|Services\\SubscriptionService\\SubscriptionService.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\services\\subscriptionservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEED2552-42DC-4F1A-B5BD-CDB8E033201F}|Services\\SubscriptionService\\SubscriptionService.csproj|solutionrelative:services\\subscriptionservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|c:\\users\\mufum\\onedrive\\desktop\\portfolio\\frontend\\frontend\\models\\emailcontentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D897CA9A-1D31-CEDD-21E9-D96803509045}|FrontEnd\\FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\frontend\\models\\emailcontentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 440,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,7 +58,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\SubscriptionService\\Program.cs",
+              "RelativeDocumentMoniker": "Services\\SubscriptionService\\Program.cs",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\SubscriptionService\\Program.cs",
+              "RelativeToolTip": "Services\\SubscriptionService\\Program.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAcwBsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T19:05:57.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "EmailContentModel.cs",
               "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\SubscriptionService\\Models\\EmailContentModel.cs",
               "RelativeDocumentMoniker": "Services\\SubscriptionService\\Models\\EmailContentModel.cs",
@@ -67,38 +84,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "ProjectController.cs",
               "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\ProjectService\\Controllers\\ProjectController.cs",
               "RelativeDocumentMoniker": "Services\\ProjectService\\Controllers\\ProjectController.cs",
               "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\ProjectService\\Controllers\\ProjectController.cs",
               "RelativeToolTip": "Services\\ProjectService\\Controllers\\ProjectController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAswBQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-31T20:24:27.885Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\SubscriptionService\\appsettings.json",
               "RelativeDocumentMoniker": "Services\\SubscriptionService\\appsettings.json",
               "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\SubscriptionService\\appsettings.json",
               "RelativeToolTip": "Services\\SubscriptionService\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-31T20:14:25.629Z"
+              "WhenOpened": "2025-07-31T20:14:25.629Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "Subscription.cshtml",
               "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Views\\Admin\\Subscription.cshtml",
               "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Views\\Admin\\Subscription.cshtml",
               "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Views\\Admin\\Subscription.cshtml",
               "RelativeToolTip": "FrontEnd\\FrontEnd\\Views\\Admin\\Subscription.cshtml",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAMwDMAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAApwDMAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-07-30T20:58:18.088Z",
               "EditorCaption": ""
@@ -111,7 +129,7 @@
               "RelativeDocumentMoniker": "Services\\SubscriptionService\\Controllers\\SubscriptionController.cs",
               "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\SubscriptionService\\Controllers\\SubscriptionController.cs",
               "RelativeToolTip": "Services\\SubscriptionService\\Controllers\\SubscriptionController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAiwFMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-02T19:55:59.577Z",
               "EditorCaption": ""
@@ -127,45 +145,45 @@
         "Id": "4db163ea-d1ac-4841-8052-4510101b8f88",
         "Display": 0,
         "X": 514,
-        "Y": 211,
-        "Width": 727,
+        "Y": 210,
+        "Width": 726,
         "Height": 650,
         "WindowState": 0
       },
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "EmailService.cs",
               "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\SubscriptionService\\Services\\EmailService.cs",
               "RelativeDocumentMoniker": "Services\\SubscriptionService\\Services\\EmailService.cs",
-              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\SubscriptionService\\Services\\EmailService.cs",
-              "RelativeToolTip": "Services\\SubscriptionService\\Services\\EmailService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAgwB8AAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\Services\\SubscriptionService\\Services\\EmailService.cs*",
+              "RelativeToolTip": "Services\\SubscriptionService\\Services\\EmailService.cs*",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAowEMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-31T19:56:44.044Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Controllers\\AdminController.cs",
               "ToolTip": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Controllers\\AdminController.cs",
               "RelativeToolTip": "FrontEnd\\FrontEnd\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAA/wHwAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAOEAAAAAAAAAAAAAABUBAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-29T21:20:31.044Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "EmailContentModel.cs",
               "DocumentMoniker": "C:\\Users\\mufum\\OneDrive\\Desktop\\Portfolio\\FrontEnd\\FrontEnd\\Models\\EmailContentModel.cs",
               "RelativeDocumentMoniker": "FrontEnd\\FrontEnd\\Models\\EmailContentModel.cs",
@@ -173,8 +191,7 @@
               "RelativeToolTip": "FrontEnd\\FrontEnd\\Models\\EmailContentModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-02T19:31:25.681Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-02T19:31:25.681Z"
             }
           ]
         }

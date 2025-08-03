@@ -1,5 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 using MailKit.Net.Smtp;
+using Microsoft.AspNetCore.SignalR;
 using MimeKit;
 using SubscriptionService.Models;
 
@@ -12,10 +13,6 @@ namespace SubscriptionService.Services
         public EmailService(IConfiguration config)
         {
             _config = config;
-        }
-
-        public EmailService()
-        {
         }
 
         public async Task SendEmailAsync(string to, string subject, string htmlMessage)
@@ -35,31 +32,53 @@ namespace SubscriptionService.Services
             await smtp.DisconnectAsync(true);
         }
 
-        public async void CreateMessage(EmailContentModel EmailModel, List<SubscriptionModel> subs)
+        public async Task CreateMessage(EmailContentModel EmailModel, List<SubscriptionModel> subs)
         {
-            string temp;
-            if (EmailModel.IsProject == true)
-            {
-                temp = $"New Project: {EmailModel.Title}";
-                EmailModel.Title = temp;
-            }
-            else if (EmailModel.IsPhoto == true)
-            {
-                temp = $"New Photo: {EmailModel.Title}";
-                EmailModel.Title = temp;
-            }
-            else if (EmailModel.IsVideo == true)
-            {
-                temp = $"New Video: {EmailModel.Title}";
-                EmailModel.Title = temp;
-            }
-
-            string message = $"<h2>{EmailModel.Title}</h2><p>{EmailModel.Description}</p>";
+            if (EmailModel.IsProject)
+                EmailModel.Title = $"New Project: {EmailModel.Title}";
+            else if (EmailModel.IsPhoto)
+                EmailModel.Title = $"New Photo: {EmailModel.Title}";
+            else if (EmailModel.IsVideo)
+                EmailModel.Title = $"New Video: {EmailModel.Title}";
 
             foreach (var sub in subs)
             {
-                await SendEmailAsync(sub.Email, EmailModel.Title, message);
+                if(sub.name == null)
+                {
+                    sub.name = sub.Email;
+                }
+                string personalizedMessage = $@"
+            <div style='font-family:Segoe UI, Roboto, sans-serif; color:#333; line-height:1.6; padding:20px;'>
+                <p style='font-size:14px; color:#666;'>Hello <strong>{sub.name}</strong> (User ID: <em>{sub.Id}</em>),</p>
+
+                <h2 style='color:#2C3E50; border-bottom:2px solid #eee; padding-bottom:5px;'>{EmailModel.Title}</h2>
+
+                <p style='font-size:16px;'>
+                    <strong>Description:</strong><br />
+                    <em>{EmailModel.Description}</em>
+                </p>
+
+                <p style='margin-top:30px; font-size:14px; color:#555; text-align:center;'>
+    If you wish to unsubscribe from future updates, you may do so by clicking the button below:
+</p>
+
+<div style='text-align:center; margin-top:15px;'>
+    <a href='https://yourdomain.com/project/'
+       style='padding:10px 24px; background-color:#ffffff; color:#2980B9; border:1px solid #2980B9;
+              border-radius:4px; text-decoration:none; font-size:14px; font-weight:500; display:inline-block;'>
+        Unsubscribe
+    </a>
+</div>
+                <hr style='margin:30px 0; border:none; border-top:1px solid #ccc;' />
+
+                <p style='font-size:12px; color:#999;'>
+                    &copy; {DateTime.Now.Year} Mufu's Portfolio.. All rights reserved.
+                </p>
+            </div>";
+
+                await SendEmailAsync(sub.Email, EmailModel.Title, personalizedMessage);
             }
         }
+
     }
 }

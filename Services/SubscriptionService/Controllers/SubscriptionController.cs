@@ -11,10 +11,10 @@ namespace SubscriptionService.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly EmailService _emailService;
-        public SubscriptionController(ApplicationDbContext context)
+        public SubscriptionController(ApplicationDbContext context, EmailService emailService)
         {
             this._context = context;
-            _emailService = new EmailService();
+            _emailService = emailService;
         }
 
         [HttpGet("list")]

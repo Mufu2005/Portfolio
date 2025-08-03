@@ -20,7 +20,7 @@
 	 <div class="text-end">
 	 <a class="space-mono-regular green" asp-controller="Admin" asp-action="Login">Admin?</a>
 	</div>
-	 <div>
+	 <div class="fade-in">
 		<h1 class="Ntext space-mono-regular green">ソフトウェアエンジニア</h1>
 	</div>
  </div>
@@ -31,7 +31,7 @@
 
 	<div class="row align-items-center">
 		<!-- Text Column -->
-		<div class="col-md-6 px-4">
+		<div class="col-md-6 px-4 fade-in" data-lenis-prevent>
 			<p class="text-white space-mono-regular frosted-box">
 				👋 I'm <span class="space-mono-regular green"><strong>Mufaddal Bhaijiwala</strong></span> — a passionate software engineer, eternal learner, and proud architect of ideas turned into code.
 				<br /><br />
@@ -69,7 +69,7 @@
 		</div>
 
 		<!-- Image Column -->
-		<div class="col-md-6 text-center px-4">
+		<div class="col-md-6 text-center px-4 fade-in">
 			<img src="@Url.Content("~/Assets/Me.jpg")"
 				 alt="Image not found"
 				 class="img-fluid rounded frosted-box"
@@ -83,7 +83,7 @@
 	<div class="row justify-content-center">
 
 		<!-- Project Card 1 -->
-		<div class="col-md-5 m-3 p-0 glass-card">
+		<div class="col-md-5 m-3 p-0 glass-card fade-in">
 			<div class="p-4">
 				<h4 class="space-mono-regular green">Flight Management System ✈️</h4>
 				<p class="text-white-50 space-mono-regular">
@@ -98,7 +98,7 @@
 		</div>
 
 		<!-- Project Card 2 -->
-		<div class="col-md-5 m-3 p-0 glass-card">
+		<div class="col-md-5 m-3 p-0 glass-card fade-in">
 			<div class="p-4">
 				<h4 class="space-mono-regular green">Battle Bot 🤖</h4>
 				<p class="text-white-50 space-mono-regular">
@@ -115,7 +115,7 @@
 	</div>
 </section>
 
-<section class="container text-center my-5 connect-section invisible">
+<section class="container text-center my-5 connect-section invisible fade-in">
 	<h2 class="mb-4 space-mono-regular green">📫 Let’s Connect</h2>
 	<div class="d-flex justify-content-center flex-wrap gap-3">
 		<a href="https://github.com/Mufu2005" target="_blank" class="connect-button">
@@ -137,27 +137,86 @@
 	<h2 class="text-center mb-4 space-mono-regular green">🧭 Time line</h2>
 	<div class="timeline">
 
+		<!-- Matric -->
 		<div class="timeline-item left">
 			<div class="timeline-content">
-				<h4><span class="space-mono-regular green">2020</span> – Started University</h4>
-				<p class="space-mono-regular">Began my Computer Science degree at XYZ University.</p>
+				<h4><span class="space-mono-regular green">2021</span> – Matriculation</h4>
+				<p class="space-mono-regular">Graduated from Clifton Grammar School.</p>
 			</div>
 		</div>
 
+		<!-- Intermediate -->
 		<div class="timeline-item right">
 			<div class="timeline-content">
-				<h4><span class="space-mono-regular green">2020</span> – Built First Full Stack App</h4>
-				<p class="space-mono-regular">Created a flight management system using .NET, MySQL, and Docker.</p>
+				<h4><span class="space-mono-regular green">2023</span> – Intermediate</h4>
+				<p class="space-mono-regular">Completed FSc (Pre-Engineering) from DHACSS Degree College.</p>
 			</div>
 		</div>
 
+		<!-- Started University -->
 		<div class="timeline-item left">
 			<div class="timeline-content">
-				<h4><span class="space-mono-regular green">2020</span> – OS Project & Research</h4>
+				<h4><span class="space-mono-regular green">2023</span> – Started University</h4>
+				<p class="space-mono-regular">Began my Bachelor's in Software Engineering at SZABIST.</p>
+			</div>
+		</div>
+
+		<!-- ML Course -->
+		<div class="timeline-item left">
+			<div class="timeline-content">
+				<h4><span class="space-mono-regular green">2024</span> – Machine Learning Specialization</h4>
+				<p class="space-mono-regular">Completed <em>Calculus for Machine Learning and Data Science</em> by DeepLearning.AI.</p>
+			</div>
+		</div>
+
+		<!-- OS Project & Research -->
+		<div class="timeline-item left">
+			<div class="timeline-content">
+				<h4><span class="space-mono-regular green">2025</span> – OS Project & Research</h4>
 				<p class="space-mono-regular">Worked on building a custom OS using KVM, Docker, and Unikraft.</p>
 			</div>
 		</div>
 
+		<!-- First Full Stack App -->
+		<div class="timeline-item right">
+			<div class="timeline-content">
+				<h4><span class="space-mono-regular green">2025</span> – Built First Full Stack App</h4>
+				<p class="space-mono-regular">Created a flight management system using .NET, MySQL, and Docker.</p>
+			</div>
+		</div>
+
+		<!-- Current Status -->
+		<div class="timeline-item right">
+			<div class="timeline-content">
+				<h4><span class="space-mono-regular green">2025</span> – 4th Semester at SZABIST</h4>
+				<p class="space-mono-regular">Currently pursuing 4th semester of Software Engineering with a CGPA of 3.38.</p>
+			</div>
+		</div>
+
+		
+
 	</div>
 </section>
 
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		const faders = document.querySelectorAll('.fade-in');
+
+		const appearOptions = {
+			threshold: 0.1,
+			rootMargin: "0px 0px -50px 0px"
+		};
+
+		const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
+			entries.forEach(entry => {
+				if (!entry.isIntersecting) return;
+				entry.target.classList.add('visible');
+				appearOnScroll.unobserve(entry.target);
+			});
+		}, appearOptions);
+
+		faders.forEach(fader => {
+			appearOnScroll.observe(fader);
+		});
+	});
+</script>

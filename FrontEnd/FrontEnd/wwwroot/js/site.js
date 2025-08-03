@@ -176,6 +176,12 @@ function openModal(id) {
     document.getElementById("blur-background").classList.add("active");
 }
 
+function openDeleteProjectModal(projectId) {
+    document.getElementById("deleteProjectId").value = projectId;
+    document.getElementById("deleteModal").style.display = "block";
+    document.getElementById("blur-background").classList.add("active");
+}
+
 function openDeleteSubscriberModal(projectId) {
     document.getElementById("deleteSubscriberId").value = projectId;
     document.getElementById("deleteModal").style.display = "block";

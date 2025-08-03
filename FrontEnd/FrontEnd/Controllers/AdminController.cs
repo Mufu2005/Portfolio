@@ -209,6 +209,14 @@ namespace FrontEnd.Controllers
         {
             PhotoModel dto = model.Photo;
             var data = await _photoClient.PostAsJsonAsync("api/PhotoContoller/create", dto);
+            var mailModel = new EmailContentModel
+            {
+                Title = dto.Title,
+                IsProject = true,
+                IsPhoto = false,
+                IsVideo = false
+            };
+            await _subscribeClient.PostAsJsonAsync("api/Subscription/MailContent", mailModel);
             return RedirectToAction("Photography", "Admin");
         }
 
@@ -265,6 +273,14 @@ namespace FrontEnd.Controllers
         {
             VideoModel dto = model.Video;
             var data = await _videoClient.PostAsJsonAsync("api/Video/create", dto);
+            var mailModel = new EmailContentModel
+            {
+                Title = dto.Title,
+                IsProject = true,
+                IsPhoto = false,
+                IsVideo = false
+            };
+            await _subscribeClient.PostAsJsonAsync("api/Subscription/MailContent", mailModel);
             return RedirectToAction("Videography", "Admin");
         }
 
