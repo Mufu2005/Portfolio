@@ -28,8 +28,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/mufum/OneDrive/Desktop/Portfolio/FrontEnd/FrontEnd/Views/Admin/Media.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWVkaWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mufum/OneDrive/Desktop/Portfolio/FrontEnd/FrontEnd/Views/Admin/Photography.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUGhvdG9ncmFwaHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mufum/OneDrive/Desktop/Portfolio/FrontEnd/FrontEnd/Views/Admin/Projects.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvamVjdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mufum/OneDrive/Desktop/Portfolio/FrontEnd/FrontEnd/Views/Admin/Subscription.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU3Vic2NyaXB0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mufum/OneDrive/Desktop/Portfolio/FrontEnd/FrontEnd/Views/Admin/UnAuthorized.cshtml]
@@ -40,6 +52,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/mufum/OneDrive/Desktop/Portfolio/FrontEnd/FrontEnd/Views/Admin/Videography.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVmlkZW9ncmFwaHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mufum/OneDrive/Desktop/Portfolio/FrontEnd/FrontEnd/Views/Gallery/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FsbGVyeVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mufum/OneDrive/Desktop/Portfolio/FrontEnd/FrontEnd/Views/Gallery/Photo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FsbGVyeVxQaG90by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mufum/OneDrive/Desktop/Portfolio/FrontEnd/FrontEnd/Views/Gallery/Video.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FsbGVyeVxWaWRlby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mufum/OneDrive/Desktop/Portfolio/FrontEnd/FrontEnd/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -48,12 +76,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/mufum/OneDrive/Desktop/Portfolio/FrontEnd/FrontEnd/Views/Project/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mufum/OneDrive/Desktop/Portfolio/FrontEnd/FrontEnd/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mufum/OneDrive/Desktop/Portfolio/FrontEnd/FrontEnd/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mufum/OneDrive/Desktop/Portfolio/FrontEnd/FrontEnd/Views/Subscribe/Goodbye.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3Vic2NyaWJlXEdvb2RieWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mufum/OneDrive/Desktop/Portfolio/FrontEnd/FrontEnd/Views/Subscribe/Signup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3Vic2NyaWJlXFNpZ251cC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mufum/OneDrive/Desktop/Portfolio/FrontEnd/FrontEnd/Views/Subscribe/Thankyou.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3Vic2NyaWJlXFRoYW5reW91LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mufum/OneDrive/Desktop/Portfolio/FrontEnd/FrontEnd/Views/Subscribe/Unsubscribe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3Vic2NyaWJlXFVuc3Vic2NyaWJlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mufum/OneDrive/Desktop/Portfolio/FrontEnd/FrontEnd/Views/_ViewImports.cshtml]

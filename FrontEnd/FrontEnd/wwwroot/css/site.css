@@ -606,3 +606,138 @@ html {
     opacity: 0;
     visibility: hidden;
 }
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-text {
+        font-size: 2rem;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .main-content {
+        background: none;
+        padding: 2rem 1rem;
+    }
+
+    .Ntext {
+        font-size: 2rem;
+        text-align: center;
+        word-break: break-word;
+        background: none;
+        color: #00FFCC;
+    }
+
+    .frosted-box {
+        padding: 1rem !important;
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .glass-card {
+        margin: 1rem auto !important;
+    }
+
+    .timeline-item.left,
+    .timeline-item.right {
+        float: none !important;
+        width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        text-align: center;
+    }
+
+    .timeline-content {
+        margin: 1rem auto;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .col-md-6.text-center.px-4.fade-in.d-none.d-md-block {
+        display: none !important;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: black;
+    background-size: cover;
+}
+
+.fullscreen-center {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.space-mono-regular {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+.space-mono-bold {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.space-mono-regular.green {
+    color: #00FFCC;
+}
+
+.space-mono-regular-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.dm-sans-bold {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    font-size: clamp(2rem, 20vw, 15rem);
+    line-height: 1;
+    margin: 0;
+}
+
+.dm-sans {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
