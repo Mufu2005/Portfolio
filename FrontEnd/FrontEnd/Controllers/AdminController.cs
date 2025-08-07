@@ -9,17 +9,30 @@ namespace FrontEnd.Controllers
 {
     public class AdminController : Controller
     {
-        private string authBaseUrl = "http://localhost:5123/";
+        //private string authBaseUrl = "http://localhost:5123/";
+        //private HttpClient _authClient;
+        //private String projectBaseUrl = "http://localhost:5053/";
+        //private HttpClient _projectClient;
+        //private string photoBaseUrl = "http://localhost:5102/";
+        //private HttpClient _photoClient;
+        //private string videoBaseUrl = "http://localhost:5180/";
+        //private HttpClient _videoClient;
+        //private string SubscribeBaseUrl = "http://localhost:5089/";
+        //private HttpClient _subscribeClient;
+        //private string baseUrl = "http://localhost:5201/";
+        //private HttpClient _firebaseClient;
+
+        private string authBaseUrl = "http://adminservice:8080/";
         private HttpClient _authClient;
-        private String projectBaseUrl = "http://localhost:5053/";
+        private String projectBaseUrl = "http://projectservice:8080/";
         private HttpClient _projectClient;
-        private string photoBaseUrl = "http://localhost:5102/";
+        private string photoBaseUrl = "http://photographyservice:8080/";
         private HttpClient _photoClient;
-        private string videoBaseUrl = "http://localhost:5180/";
+        private string videoBaseUrl = "http://videographyservice:8080/";
         private HttpClient _videoClient;
-        private string SubscribeBaseUrl = "http://localhost:5089/";
+        private string SubscribeBaseUrl = "http://subscriptionservice:8080/";
         private HttpClient _subscribeClient;
-        private string baseUrl = "http://localhost:5201/";
+        private string baseUrl = "http://firebasemediaservice:8080/";
         private HttpClient _firebaseClient;
 
         public AdminController(IHttpClientFactory factory)

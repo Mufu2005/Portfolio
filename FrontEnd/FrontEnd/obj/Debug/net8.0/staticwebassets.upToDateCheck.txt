@@ -1,5 +1,13 @@
+wwwroot\Assets\apple-touch-icon.png
+wwwroot\Assets\favicon-96x96.png
+wwwroot\Assets\favicon.ico
+wwwroot\Assets\favicon.svg
 wwwroot\Assets\home page.jpg
 wwwroot\Assets\Me.jpg
+wwwroot\Assets\site.webmanifest
+wwwroot\Assets\web-app-manifest-192x192.png
+wwwroot\Assets\web-app-manifest-512x512.png
+wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
@@ -59,4 +67,3 @@ wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\css\site.css

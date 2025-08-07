@@ -124,4 +124,5 @@ C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\FirebaseMediaService\obj\Debu
 C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\FirebaseMediaService\obj\Debug\net8.0\FirebaseMediaService.pdb
 C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\FirebaseMediaService\obj\Debug\net8.0\FirebaseMediaService.genruntimeconfig.cache
 C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\FirebaseMediaService\obj\Debug\net8.0\ref\FirebaseMediaService.dll
+C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\FirebaseMediaService\bin\Debug\net8.0\appsettings.Production.json
 C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\FirebaseMediaService\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

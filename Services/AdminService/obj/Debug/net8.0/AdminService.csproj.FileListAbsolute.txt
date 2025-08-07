@@ -111,4 +111,4 @@ C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\AdminService\obj\Debug\net8.0
 C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\AdminService\obj\Debug\net8.0\AdminService.pdb
 C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\AdminService\obj\Debug\net8.0\AdminService.genruntimeconfig.cache
 C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\AdminService\obj\Debug\net8.0\ref\AdminService.dll
-C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\AdminService\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\AdminService\bin\Debug\net8.0\appsettings.Production.json

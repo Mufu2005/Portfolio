@@ -1,0 +1,66 @@
+# docker-compose.yml
+version: '3.4'
+
+services:
+  frontend:
+    build:
+      context: ./FrontEnd/FrontEnd
+    ports:
+      - "5021:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+    depends_on:
+      - adminservice
+      - projectservice
+      - subscriptionservice
+      - firebasemediaservice
+      - photographyservice
+      - videographyservice
+
+  adminservice:
+    build:
+      context: ./Services/AdminService
+    ports:
+      - "5123:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+
+  projectservice:
+    build:
+      context: ./Services/ProjectService
+    ports:
+      - "5053:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+
+  subscriptionservice:
+    build:
+      context: ./Services/SubscriptionService
+    ports:
+      - "5089:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+
+  firebasemediaservice:
+    build:
+      context: ./Services/FirebaseMediaService
+    ports:
+      - "5201:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+
+  photographyservice:
+    build:
+      context: ./Services/PhotographyService
+    ports:
+      - "5102:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+
+  videographyservice:
+    build:
+      context: ./Services/VideographyService
+    ports:
+      - "5180:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production

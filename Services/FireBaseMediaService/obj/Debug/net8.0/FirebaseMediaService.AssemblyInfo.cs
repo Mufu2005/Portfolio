@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FirebaseMediaService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f57aa4a8729e19434eb6209d0786c77c578be6c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a4712d769091a27c63ffcc62c5c25466d2a944e1")]
 [assembly: System.Reflection.AssemblyProductAttribute("FirebaseMediaService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FirebaseMediaService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

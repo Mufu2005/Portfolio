@@ -224,4 +224,4 @@ C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\ProjectService\obj\Debug\net8
 C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\ProjectService\obj\Debug\net8.0\ProjectService.pdb
 C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\ProjectService\obj\Debug\net8.0\ProjectService.genruntimeconfig.cache
 C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\ProjectService\obj\Debug\net8.0\ref\ProjectService.dll
-C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\ProjectService\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\ProjectService\bin\Debug\net8.0\appsettings.Production.json

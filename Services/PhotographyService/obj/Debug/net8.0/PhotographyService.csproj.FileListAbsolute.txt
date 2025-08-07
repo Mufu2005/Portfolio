@@ -111,4 +111,4 @@ C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\PhotographyService\obj\Debug\
 C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\PhotographyService\obj\Debug\net8.0\PhotographyService.pdb
 C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\PhotographyService\obj\Debug\net8.0\PhotographyService.genruntimeconfig.cache
 C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\PhotographyService\obj\Debug\net8.0\ref\PhotographyService.dll
-C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\PhotographyService\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\mufum\OneDrive\Desktop\Portfolio\Services\PhotographyService\bin\Debug\net8.0\appsettings.Production.json

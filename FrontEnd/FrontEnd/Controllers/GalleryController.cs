@@ -6,9 +6,9 @@ namespace FrontEnd.Controllers
 {
     public class GalleryController : Controller
     {
-        private string photoBaseUrl = "http://localhost:5102/";
+        private string photoBaseUrl = "http://photographyservice:8080/";
         private readonly HttpClient _photoClient;
-        private string videoBaseUrl = "http://localhost:5180/";
+        private string videoBaseUrl = "http://videographyservice:8080/";
         private readonly HttpClient _videoClient;
        
         public GalleryController(IHttpClientFactory factory)

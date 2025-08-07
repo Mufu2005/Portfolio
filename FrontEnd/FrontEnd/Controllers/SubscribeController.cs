@@ -6,7 +6,7 @@ namespace FrontEnd.Controllers
     public class SubscribeController : Controller
     {
         private readonly HttpClient _subClient;
-        private readonly string baseUrl = "http://localhost:5089/";
+        private readonly string baseUrl = "http://subscriptionservice:8080/";
 
         public SubscribeController(IHttpClientFactory factory)
         {

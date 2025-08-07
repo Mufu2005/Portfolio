@@ -5,7 +5,7 @@ namespace FrontEnd.Controllers
 {
     public class ProjectController : Controller
     {
-        private String projectBaseUrl = "http://localhost:5053/";
+        private String projectBaseUrl = "http://projectservice:8080/";
         private HttpClient _projectClient;
 
         public ProjectController(IHttpClientFactory factory)
