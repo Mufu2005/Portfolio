@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: portfolio-mono
+    env: docker
+    plan: free
+    repo: https://github.com/Mufu2005/Portfolio
+    branch: main
+    dockerfilePath: Dockerfile
+    buildCommand: ""
+    startCommand: "./start.sh"
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
